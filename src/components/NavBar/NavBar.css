@@ -1,0 +1,17 @@
+nav.navbar-container {
+    display: flex;
+    /* position: relative */
+}
+
+ul.navbar-links {
+    display: flex;
+    /* position: absolute */
+}
+
+.navbar-links > li {
+    margin: 0 10px;
+    list-style: none;
+}
+.logo {
+    width: 60px
+}
