@@ -12,6 +12,12 @@ massive(CONNECTION_STRING)
     .then((db) => {
         app.set('db', db)
         console.log('DB Set')
+        db.seed([ 
+            '$2a$10$2Lx/1Q5U3GBQk4OcEbXHIuWkRtxgwazFXBTeG/QdX4uIjd7z9pqG.',
+            '$2a$10$VdhgECcxKAN8qkkYIWtkXetVcYh3qnGvyho9tPitsNZj3ozkdTfOa'
+        ]).then(() => {
+            console.log('DB Seeded')
+        })
 app.listen(SERVER_PORT, () => console.log(`Running on ${SERVER_PORT}`))
     })
 
