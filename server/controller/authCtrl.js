@@ -55,6 +55,16 @@ module.exports = {
             console.log({error})
             res.status(500).send(error)
         }
+    },
+    staff: async (req, res) => {
+        try {
+            const db = req.app.get('db')
+            const staffArr = await db.get_staff()
+            res.status(200).send(staffArr)
+        }catch(error){
+            console.log({error})
+            res.status(500).send(error)
+        }
     }
 
 }

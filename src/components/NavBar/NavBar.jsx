@@ -26,7 +26,7 @@ export class navBar extends Component {
   }
   render() {
     const displayCenters = this.state.centers.map(center => {
-      return <li>{center.center_name}</li>
+      return <Link to={`/centers/${center.center_id}`}><li>{center.center_name}</li></Link>
     })
     return (
       <nav className='navbar-container'>
@@ -36,11 +36,11 @@ export class navBar extends Component {
             <Link to='/events'><li>Events</li></Link>
             <Link to='/forms'><li>Forms</li></Link>
             <Link to='./about'><li>About Us</li> </Link>
-            <Link to='/centers/:id'><li>Centers
+            <li>Centers
                 <ul>
                   {displayCenters}
                 </ul>
-              </li></Link>
+              </li>
           </ul>
         
       </nav>

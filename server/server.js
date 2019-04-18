@@ -38,4 +38,6 @@ app.post('/auth/register', authCtrl.register)
 // app.get('/api/staff', authCtrl.viewStaff)
 // app.put('/api/staff/:id', authCtrl.editStaff)
 // app.delete('/api/staff/:id', authCtrl.delStaff)
+app.get(`/api/staff`, authCtrl.staff)
 app.get(`/api/centers`, authCtrl.centers)
+

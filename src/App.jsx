@@ -11,6 +11,7 @@ import Home from './views/Home';
 import Login from './views/Login'
 import NavBar from './components/NavBar/NavBar'
 import Footer from './components/Footer/Footer'
+import Staff from './views/Staff'
 import store from './ducks/store'
 import {getCenters} from './ducks/store'
 
@@ -19,11 +20,9 @@ import {getCenters} from './ducks/store'
 class App extends Component {
 
 componentDidMount(){
-axios.get('/api/centers').then(centers => {
+  axios.get('/api/centers').then(centers => {
   store.dispatch(getCenters(centers.data))
-  
-})
-
+  })
 }
   render() {
     return (
@@ -37,6 +36,7 @@ axios.get('/api/centers').then(centers => {
             <Route path='/events' component={Events}/>
             <Route path='/forms' component={Forms}/>
             <Route path='/login' component={Login}/>
+            <Route path='/staff/:id' component={Staff}/>
           </Switch>
         <Footer/>
       </Router>
