@@ -46,7 +46,7 @@ insert into centers (
 ) values (
     'Ayers',
     'Candice Rapo',
-    'http://via.placeholder.com/100',
+    'http://via.placeholder.com/200',
     '5120 Myrtle Drive, Concord CA 94521',
     'Ayers@dianneadair.org',
     '925.671.4922',
@@ -56,7 +56,7 @@ insert into centers (
 (
     'Bancroft',
     'Stefanie Lee',
-    'http://via.placeholder.com/100',
+    'http://via.placeholder.com/200',
     '2200 Parish Dr., Walnut Creek CA 94598',
     'Bancroft@dianneadair.org',
     '925.938.4063',
@@ -66,7 +66,7 @@ insert into centers (
 (
     'Delta View',
     'Marcia',
-    'http://via.placeholder.com/100',
+    'http://via.placeholder.com/200',
     '2916 Rio Verde Dr., Pittsburg CA 94565',
     'DeltaView@dianneadair.org',
     '925.682.8000',
@@ -76,7 +76,7 @@ insert into centers (
 (
     'El Monte',
     'Lisa Brady',
-    'http://via.placeholder.com/100',
+    'http://via.placeholder.com/200',
     '1400 Dina Drive, Concord, CA 94518',
     'ElMonte@dianneadair.org',
     '925.682.5060',
@@ -86,7 +86,7 @@ insert into centers (
 (
     'Highlands',
     'Danette Mullen',
-    'http://via.placeholder.com/100',
+    'http://via.placeholder.com/200',
     '1326 Pennsylvania, Concord CA 94521',
     'Highlands@dianneadair.org',
     '925.672.6144',
@@ -96,7 +96,7 @@ insert into centers (
 (
     'Monte Gardens',
     'Shauna Potts',
-    'http://via.placeholder.com/100',
+    'http://via.placeholder.com/200',
     '3841 Larkspur Dr, Concord CA 94517',
     'MonteGardens@dianneadair.org',
     '925.356.2343',
@@ -106,7 +106,7 @@ insert into centers (
 (
     'Pleasant Hill',
     'Cindy Hill',
-    'http://via.placeholder.com/100',
+    'http://via.placeholder.com/200',
     '2097 Oak Park Blvd, Pleasant Hill, CA 94523',
     'PleasantHill@dianneadair.org',
     '925.938.3043',
@@ -116,7 +116,7 @@ insert into centers (
 (
     'Sequoia',
     'Janet Moore',
-    'http://via.placeholder.com/100',
+    'http://via.placeholder.com/200',
     '277 Boyd Road, Pleasant Hill, CA 94523',
     'Sequoia@dianneadair.org',
     '925.939.6336',
@@ -126,7 +126,7 @@ insert into centers (
 (
     'Tice Creek',
     'Judy Angel',
-    'http://via.placeholder.com/100',
+    'http://via.placeholder.com/200',
     '1847 Newell Ave, Walnut Creek, CA 94595',
     'TiceCreek@dianneadair.org',
     '925.705.7255',
@@ -136,7 +136,7 @@ insert into centers (
 (
     'Westwood',
     'Debbie Trammel',
-    'http://via.placeholder.com/100',
+    'http://via.placeholder.com/200',
     '1748 West Street, Concord, CA 94521',
     'Westwood@dianneadair.org',
     '925.969.1784',

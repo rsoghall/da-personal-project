@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import store from '../ducks/store'
+import './Centers.css'
 
 export class Centers extends Component {
   constructor(){
@@ -27,16 +28,24 @@ export class Centers extends Component {
     }
     return (
       <div>
-        <h1>{displayCenter.center_name}</h1>
+          <div className='centers-title'>
+            <h1> Dianne Adair</h1>
+            <h1>{displayCenter.center_name}</h1>
+          </div>  
         <img src={displayCenter.director_url} alt={displayCenter.director_name}/>
         <div className='centers-displayInfo'>
           <h4>{displayCenter.director_address}</h4>
           <h4>{displayCenter.director_email}</h4>
           <h4>{displayCenter.director_phone}</h4>
-          <h4>{displayCenter.registration_form}</h4>
         </div>
+        <div className='centers-license'>
         <h5>State License# {displayCenter.state_license}</h5>
+        </div>
+        <div className='centers-reg-link'> 
+          <Link to={displayCenter.registration_form}><li>Registration Forms</li></Link>
+        </div>
         <Link to='/staff'><li>Staff</li></Link>
+
       </div>
     )
   }

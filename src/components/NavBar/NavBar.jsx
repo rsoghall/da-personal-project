@@ -30,17 +30,19 @@ export class navBar extends Component {
     })
     return (
       <nav className='navbar-container'>
+      <Link to='/'><img className='logo' src={logo} alt='Dianne Adair Logo'/></Link>
           <ul className='navbar-links'>
-            <Link to='/'><img className='logo' src={logo} alt='Dianne Adair Logo'/></Link>
-            <Link to='/login'><li>Log In</li></Link>
             <Link to='/events'><li>Events</li></Link>
             <Link to='/forms'><li>Forms</li></Link>
             <Link to='./about'><li>About Us</li> </Link>
-            <li>Centers
-                <ul>
+             <div className='centers-dropdown'>
+                <li>Centers
+                  <ul className='centers-dropdown-content'>
                   {displayCenters}
-                </ul>
-              </li>
+                  </ul>
+                </li>
+              </div>
+            <Link to='/login'><li>Log In</li></Link>
           </ul>
         
       </nav>
