@@ -4,10 +4,15 @@ import {createStore} from 'redux'
 
 const initialState = {
     centers: [],
-    staff: []
+    staff: [],
+    forms: [],
+    role: 'user',
+    centerId: 0
 }
 const GET_CENTERS = 'GET_CENTERS'
 const GET_STAFF = 'GET_STAFF'
+const SET_USER = 'SET_USER'
+const GET_FORMS = 'GET_FORMS'
 
 export function getCenters(payload){
     return {
@@ -23,6 +28,21 @@ export function getStaff(payload){
     }
 }
 
+export function setUser(payload){
+    return {
+        type: SET_USER,
+        payload: payload
+    }
+}
+
+export function getForms(payload){
+    return {
+        type: GET_FORMS,
+        payload: payload
+    }
+}
+    
+
 function reducer(state=initialState, action) {
     switch(action.type){
         case GET_CENTERS: {
@@ -30,6 +50,12 @@ function reducer(state=initialState, action) {
         }
         case GET_STAFF:{
             return{...state, staff: action.payload}
+        }
+        case SET_USER:{
+            return{...state, role: action.payload.role, centerId: action.payload.centerId}
+        }
+        case GET_FORMS:{
+            return{...state, form: action.payload.form, centerId: action.payload.centerId}
         }
         default: return state
     }

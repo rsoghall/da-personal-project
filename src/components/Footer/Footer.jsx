@@ -8,7 +8,9 @@ export class Footer extends Component {
     return (
       <div>
         <nav className='footer-container'>
+        <div className='footer-corporate'>
         <Link to='/corporate'><li>Corporate Office</li></Link>
+        </div>
         </nav>
       </div>
     )

@@ -11,6 +11,7 @@ export class Centers extends Component {
         centers: reduxState.centers
     }
   }
+  
   componentDidMount(){
     store.subscribe(() => {
       const reduxState = store.getState()
@@ -41,10 +42,14 @@ export class Centers extends Component {
         <div className='centers-license'>
         <h5>State License# {displayCenter.state_license}</h5>
         </div>
+        <div className='centers-links-container'>
         <div className='centers-reg-link'> 
-          <Link to={displayCenter.registration_form}><li>Registration Forms</li></Link>
+          <a href={displayCenter.registration_form} download target="_blank" rel="noopener noreferrer" >Registration Forms</a>
         </div>
-        <Link to='/staff'><li>Staff</li></Link>
+        <div className='centers-staff-link'>
+          <Link to={`/centers/staff/${displayCenter.center_id}`}>Staff</Link>
+        </div>
+        </div>
 
       </div>
     )

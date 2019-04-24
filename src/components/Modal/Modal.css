@@ -1,0 +1,26 @@
+.modal-blanket {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(0,0,0,0.3);
+    padding: 150px;
+    z-index: 5;
+}
+
+.modal-card {
+    background-color: #fff;
+    border-radius: 25px;
+    width: 500px;
+    height: 300px;
+    margin: 0px auto;
+    padding: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+.modal-footer {
+    position: absolute;
+    bottom: 20px;
+}

@@ -1,5 +1,6 @@
 drop table if exists users;
 drop table if exists staff;
+drop table if exists forms;
 drop table if exists centers;
 
 
@@ -34,6 +35,13 @@ create table staff (
 
 );
 
+create table forms (
+    form_id serial primary key,
+    form_name varchar(64),
+    form_link text,
+    center_id int REFERENCES centers
+);
+
 insert into centers (
     center_name,
     director_name,
@@ -46,7 +54,7 @@ insert into centers (
 ) values (
     'Ayers',
     'Candice Rapo',
-    'http://via.placeholder.com/200',
+    'https://s3-us-west-1.amazonaws.com/dianne-adair-images/Ayers.jpg',
     '5120 Myrtle Drive, Concord CA 94521',
     'Ayers@dianneadair.org',
     '925.671.4922',
@@ -56,7 +64,7 @@ insert into centers (
 (
     'Bancroft',
     'Stefanie Lee',
-    'http://via.placeholder.com/200',
+    'https://s3-us-west-1.amazonaws.com/dianne-adair-images/stefanie.jpg',
     '2200 Parish Dr., Walnut Creek CA 94598',
     'Bancroft@dianneadair.org',
     '925.938.4063',
@@ -65,7 +73,7 @@ insert into centers (
 ),
 (
     'Delta View',
-    'Marcia',
+    'Marcia Brown',
     'http://via.placeholder.com/200',
     '2916 Rio Verde Dr., Pittsburg CA 94565',
     'DeltaView@dianneadair.org',
@@ -153,17 +161,17 @@ insert into users (
     center_id
 ) values (
     'travis',
-    '123@pizza.com',
+    '123',
     $1,--password 123
-    'fake',
+    'director',
     0,
-    1
+    2
 ),
 (
     'billybob',
     '456@pizza.com',
 	$2, --password 456
-    'fake',
+    'director',
     1,
     1 
 );
@@ -178,5 +186,38 @@ insert into staff (
     'teacher 2 years',
     'http://via.placeholder.com/100',
     1
+),
+(
+    'Janet',
+    'teacher 10 years',
+    'http://via.placeholder.com/100',
+    1
+),
+(
+    'John',
+    'teacher 5 years',
+    'http://via.placeholder.com/100',
+    2
+),
+(
+    'Julie',
+    'teacher 3 years',
+    'http://via.placeholder.com/100',
+    2
+),
+(
+    'dummy',
+    'teacher 2 years',
+    'http://via.placeholder.com/100',
+    1
 );
 
+insert into forms (
+    form_name,
+    form_link,
+    center_id
+) values (
+    'Registration Forms',
+    'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
+    2
+);

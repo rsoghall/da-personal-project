@@ -33,10 +33,10 @@ app.use(session({
 }))
 
 app.post('/auth/register', authCtrl.register)
-// app.post('/auth/login', authCtrl.login)
-// app.post('/api/staff', authCtrl.createStaff)
+app.post('/auth/login', authCtrl.login)
+app.post('/api/staff', authCtrl.createStaff)
 // app.get('/api/staff', authCtrl.viewStaff)
-// app.put('/api/staff/:id', authCtrl.editStaff)
+app.put('/api/staff/:id', authCtrl.editStaff)
 // app.delete('/api/staff/:id', authCtrl.delStaff)
 app.get(`/api/staff`, authCtrl.staff)
 app.get(`/api/centers`, authCtrl.centers)

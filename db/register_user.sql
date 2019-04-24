@@ -3,11 +3,13 @@ insert into users (
     user_email,
     user_hash,
     user_role,
-    user_account
+    user_account,
+    center_id
 ) values (
     $1,
     $2,
     $3,
     $4,
-    $5
+    $5,
+    $6
 ) returning *;
