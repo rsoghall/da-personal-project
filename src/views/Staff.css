@@ -1,0 +1,25 @@
+.staff-displayStaffWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2rem;
+    position: relative
+}
+
+.staff-screenWrapper {
+    height: 100vh - 300px;
+    /* border: blue 5px solid; */
+}
+
+.staff-display {
+    height: 10rem;
+    display: flex;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
+	justify-content: space-between;
+	align-items: center;
+    align-content: center;
+    padding: 2.5rem;
+    margin-top: 0px
+}

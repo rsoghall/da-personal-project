@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Modal.css'
 
 
-class ModalEdit extends Component {
+class Modal extends Component {
 
 
     render() {
@@ -28,7 +28,7 @@ class ModalEdit extends Component {
     }
   }
   
-  export default ModalEdit;
+  export default Modal;
 
   
   
