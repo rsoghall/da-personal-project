@@ -9,7 +9,7 @@ export class Footer extends Component {
       <div>
         <nav className='footer-container'>
         <div className='footer-corporate'>
-        <Link to='/corporate'><li>Corporate Office</li></Link>
+        <Link to='/corporate'><button>Corporate Office</button></Link>
         </div>
         </nav>
       </div>

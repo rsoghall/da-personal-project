@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import store from '../ducks/store'
+import store from '../../ducks/store'
 // import {getForms} from '../ducks/store'
 import './Forms.css'
 

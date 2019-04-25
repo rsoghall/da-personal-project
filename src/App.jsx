@@ -2,19 +2,20 @@ import React, { Component } from 'react';
 import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 import axios from 'axios'
 import './App.css';
-import About from './views/About'
-import Centers from './views/Centers'
-import CentersDashboard from './views/CentersDashboard'
-import Corporate from './views/Corporate'
-import Events from './views/Events'
-import Forms from './views/Forms'
-import Home from './views/Home';
-import Login from './views/Login'
+import About from './views/About/About'
+import Centers from './views/Centers/Centers'
+import CentersDashboard from './views/CentersDashboard/CentersDashboard'
+import Corporate from './views/Corporate/Corporate'
+import Events from './views/Events/Events'
+import Forms from './views/Forms/Forms'
+import Home from './views/Home/Home';
+import Login from './views/Login/Login'
 import NavBar from './components/NavBar/NavBar'
 import Footer from './components/Footer/Footer'
-import Staff from './views/Staff'
+import Staff from './views/Staff/Staff'
 import store from './ducks/store'
-import {getCenters, getStaff} from './ducks/store'
+import { getCenters, getStaff } from './ducks/store'
+import './reset.css'
 
 
 

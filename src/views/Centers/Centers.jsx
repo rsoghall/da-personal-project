@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
-import store from '../ducks/store'
+import store from '../../ducks/store'
 import './Centers.css'
 
 export class Centers extends Component {
@@ -33,7 +33,8 @@ export class Centers extends Component {
             <h1> Dianne Adair</h1>
             <h1>{displayCenter.center_name}</h1>
           </div>  
-        <img src={displayCenter.director_url} alt={displayCenter.director_name}/>
+        <img src={displayCenter.director_url} alt={displayCenter.director_name} />
+        <h4>Director: {displayCenter.director_name}</h4>
         <div className='centers-displayInfo'>
           <h4>{displayCenter.director_address}</h4>
           <h4>{displayCenter.director_email}</h4>
@@ -44,10 +45,10 @@ export class Centers extends Component {
         </div>
         <div className='centers-links-container'>
         <div className='centers-reg-link'> 
-          <a href={displayCenter.registration_form} download target="_blank" rel="noopener noreferrer" >Registration Forms</a>
+          <a href={displayCenter.registration_form} download target="_blank" rel="noopener noreferrer" ><button>Registration Forms</button></a>
         </div>
         <div className='centers-staff-link'>
-          <Link to={`/centers/staff/${displayCenter.center_id}`}>Staff</Link>
+          <Link to={`/centers/staff/${displayCenter.center_id}`}><button>Staff</button></Link>
         </div>
         </div>
 

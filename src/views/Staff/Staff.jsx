@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import store from "../ducks/store";
-import Modal from "../components/Modal/Modal";
+import store from "../../ducks/store";
+import Modal from "../../components/Modal/Modal";
 import axios from "axios";
-import { getStaff } from "../ducks/store";
-import S3upload from '../components/S3/S3'
+import { getStaff } from "../../ducks/store";
+import S3upload from '../../components/S3/S3'
 import "./Staff.css";
 
 export class Staff extends Component {
@@ -165,7 +165,7 @@ export class Staff extends Component {
               </div>
           </div>
           {role === "director" && (
-            <div>
+            <div className="staff-buttons">
               <button onClick={() => this.editStaff(staff)}>Edit</button>
               <button onClick={() => this.openDeleteStaffModal(staff.staff_id, staff.staff_name)}>Delete</button>
             </div>
@@ -193,7 +193,7 @@ export class Staff extends Component {
             <button onClick={() => this.openAddStaffModal(staff.staff_id, staff.staff_name)}>Add Staff</button>
           </div>
         )}
-        <div>
+        <div className="staff-outerWrapper">
           <div className="staff-displayStaffWrapper">
             {displayStaff}
           </div>

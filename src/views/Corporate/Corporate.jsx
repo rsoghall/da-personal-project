@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Todd from '../images/Todd.jpg'
-import Brian from '../images/Brian.jpg'
+import Todd from '../../images/Todd.jpg'
+import Brian from '../../images/Brian.jpg'
 
 export class Corporate extends Component {
   render() {

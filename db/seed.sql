@@ -54,7 +54,7 @@ insert into centers (
 ) values (
     'Ayers',
     'Candice Rapo',
-    'https://s3-us-west-1.amazonaws.com/dianne-adair-images/Ayers.jpg',
+    'https://s3-us-west-1.amazonaws.com/dianne-adair-s3/images/Ayers/Ayers.jpg',
     '5120 Myrtle Drive, Concord CA 94521',
     'Ayers@dianneadair.org',
     '925.671.4922',
@@ -64,7 +64,7 @@ insert into centers (
 (
     'Bancroft',
     'Stefanie Lee',
-    'https://s3-us-west-1.amazonaws.com/dianne-adair-images/stefanie.jpg',
+    'https://s3-us-west-1.amazonaws.com/dianne-adair-s3/images/Bancroft/stefanie.jpg',
     '2200 Parish Dr., Walnut Creek CA 94598',
     'Bancroft@dianneadair.org',
     '925.938.4063',
@@ -184,7 +184,7 @@ insert into staff (
 ) values (
     'Ryan',
     'teacher 2 years',
-    'http://via.placeholder.com/100',
+    'http://via.placeholder.com/150',
     1
 ),
 (
@@ -210,6 +210,54 @@ insert into staff (
     'teacher 2 years',
     'http://via.placeholder.com/100',
     1
+),
+(
+    'John',
+    'teacher 5 years',
+    'http://via.placeholder.com/100',
+    2
+),
+(
+    'John',
+    'teacher 5 years',
+    'http://via.placeholder.com/100',
+    2
+),
+(
+    'John',
+    'teacher 5 years',
+    'http://via.placeholder.com/100',
+    2
+),
+(
+    'John',
+    'teacher 5 years',
+    'http://via.placeholder.com/100',
+    2
+),
+(
+    'John',
+    'teacher 5 years',
+    'http://via.placeholder.com/100',
+    2
+),
+(
+    'John',
+    'teacher 5 years',
+    'http://via.placeholder.com/100',
+    2
+),
+(
+    'John',
+    'teacher 5 years',
+    'http://via.placeholder.com/100',
+    2
+),
+(
+    'Sally',
+    'teacher 5 years',
+    'http://via.placeholder.com/100',
+    2
 );
 
 insert into forms (
