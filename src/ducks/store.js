@@ -6,8 +6,8 @@ const initialState = {
     centers: [],
     staff: [],
     forms: [],
-    role: 'director',
-    centerId: 2
+    role: 'user',
+    centerId: 0
 }
 const GET_CENTERS = 'GET_CENTERS'
 const GET_STAFF = 'GET_STAFF'

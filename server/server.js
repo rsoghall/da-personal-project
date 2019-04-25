@@ -2,11 +2,13 @@ require ('dotenv').config()
 const express = require('express')
 const session = require('express-session')
 const massive = require('massive')
-const authCtrl = require ('./controller/authCtrl')
+const authCtrl = require('./controller/authCtrl')
+
 
 const app = express()
 const{SERVER_PORT, CONNECTION_STRING, SESSION_SECRET,NODE_ENV} = process.env
 app.use(express.json())
+app.use(express.static(`${__dirname}/../build`));
 
 massive(CONNECTION_STRING)
     .then((db) => {
@@ -41,4 +43,3 @@ app.delete('/api/staff/:id', authCtrl.deleteStaff)
 app.get(`/api/staff`, authCtrl.staff)
 app.get(`/api/centers`, authCtrl.centers)
 app.get(`/api/signs3`, authCtrl.aws3)
-
