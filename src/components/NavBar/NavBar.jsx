@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./NavBar.css";
 import store from "../../ducks/store";
 import logo from "../../images/DA-Logo-Color-Crop.jpg";
+import {ReactComponent as DropdownIcon} from "../../images/arrow_down.svg"
 
 export class navBar extends Component {
   constructor() {
@@ -70,6 +71,7 @@ export class navBar extends Component {
           >
             <li>
               Events
+              <DropdownIcon/>
               <ul className="events-dropdown-content"
                 style={{ display: eventsOpen ? "block" : "none" }}
               >{displayCenterEvents}</ul>
@@ -83,6 +85,7 @@ export class navBar extends Component {
             className="forms-dropdown">
             <li>
               Forms
+              <DropdownIcon/>
               <ul className="forms-dropdown-content">{displayCenterForms}</ul>
             </li>
           </div>
@@ -93,13 +96,14 @@ export class navBar extends Component {
             className="centers-dropdown">
             <li>
               Centers
+              <DropdownIcon/>
               <ul className="centers-dropdown-content">{displayCenters}</ul>
             </li>
           </div>
-          <Link style={{ textDecoration: 'none', color: 'white' }} to="/about">
+          <Link style={{ textDecoration: 'none', color: '#0B2FDF', fontWeight: 'bold'}} to="/about">
             <li>About Us</li>
           </Link>
-          <Link style={{ textDecoration: 'none', color: 'white' }} to="/login">
+          <Link className="nav-login" style={{ textDecoration: 'none', color: '#0B2FDF', fontWeight: 'bold' }} to="/login">
             <li>Log In</li>
           </Link>
         </ul>

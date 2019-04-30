@@ -28,7 +28,9 @@ body {
   align-items: center;
   position: relative;
   width: 900px;
+  font-family: 'Times New Roman', Times, serif;
 }
+
 .home-title {
   font-family: "Times New Roman", Times, serif;
   font-weight: normal;
@@ -37,8 +39,8 @@ body {
   text-align: center;
 }
 .home-logo {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
 }
 
 .home-Ayers {
@@ -51,7 +53,17 @@ body {
   text-align: center;
   line-height: 110px;
   border-radius: 50%;
-  text-decoration: none;
+  font-weight: bolder;
+  font-size: 28px;
+  animation: bounce 0.6s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: 3;
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 200px, 0); }
 }
 .home-Bancroft {
   position: absolute;
@@ -63,7 +75,14 @@ body {
   text-align: center;
   line-height: 110px;
   border-radius: 50%;
+  font-weight: bolder;
+  font-size: 24px;
+  animation: bounce 0.9s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: 4;
 }
+
 .home-DeltaView {
   position: absolute;
   left: 3.5rem;
@@ -74,22 +93,37 @@ body {
   height: 110px;
   background: #ffebb3;
   text-align: center;
-  line-height: 40px;
+  line-height: 30px;
   border-radius: 50%;
-  text-decoration: none;
   align-items: center;
+  font-weight: bolder;
+  font-size: 28px;
+  animation: bounce 0.6s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: 6;
 }
+
 .home-ElMonte {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   left: -7rem;
   top: 13rem;
   width: 110px;
   height: 110px;
   background: #fdb70b;
   text-align: center;
-  line-height: 110px;
+  line-height: 30px;
   border-radius: 50%;
   font-size: 20px;
+  font-weight: bolder;
+  font-size: 28px;
+  animation: bounce 0.7s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: 6;
 }
 .home-Highlands {
   position: absolute;
@@ -102,6 +136,12 @@ body {
   line-height: 110px;
   border-radius: 50%;
   font-size: 20px;
+  font-weight: bolder;
+  font-size: 22px;
+  animation: bounce 0.9s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: 7;
 }
 .home-MonteGardens {
   position: absolute;
@@ -117,6 +157,12 @@ body {
   line-height: 4-px;
   border-radius: 50%;
   font-size: 20px;
+  font-weight: bolder;
+  font-size: 22px;
+  animation: bounce 0.6s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: 8;
 }
 .home-PleasantHill {
   position: absolute;
@@ -131,6 +177,12 @@ body {
   text-align: center;
   line-height: 4-px;
   border-radius: 50%;
+  font-weight: bolder;
+  font-size: 24px;
+  animation: bounce 0.7s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: 9;
 }
 .home-Sequoia {
   position: absolute;
@@ -145,6 +197,13 @@ body {
   text-align: center;
   line-height: 4-px;
   border-radius: 50%;
+  font-weight: bolder;
+  font-size: 28px;
+  animation: bounce 0.9s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: 10;
+  
 }
 .home-TiceCreek {
   position: absolute;
@@ -159,6 +218,12 @@ body {
   text-align: center;
   line-height: 4-px;
   border-radius: 50%;
+  font-weight: bolder;
+  font-size: 26px;
+  animation: bounce 0.6s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: 11;
 }
 .home-Westwood {
   position: absolute;
@@ -174,6 +239,12 @@ body {
   line-height: 4-px;
   border-radius: 50%;
   font-size: 20px;
+  font-weight: bolder;
+  font-size: 23px;
+  animation: bounce 0.7s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: 12;
 }
 
 .home-absent-dropIn {

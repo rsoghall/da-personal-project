@@ -9,9 +9,9 @@ export class Footer extends Component {
       <div>
         <nav className='footer-wrapper'>
           <div className='footer-links'>
-            <Link style={{ textDecoration: 'none', color: 'white' }}>Conact Us</Link>
-            <Link style={{ textDecoration: 'none', color: 'white' }} to='/corporate'>Corporate Office</Link>
-            <Link style={{ textDecoration: 'none', color: 'white' }}>Careers</Link>
+            <Link style={{ textDecoration: 'none', color: '#0B2FDF' }}>Conact Us</Link>
+            <Link style={{ textDecoration: 'none', color: '#0B2FDF' }} to='/corporate'>Corporate Office</Link>
+            <Link style={{ textDecoration: 'none', color: '#0B2FDF' }}>Careers</Link>
         </div>
         </nav>
       </div>
