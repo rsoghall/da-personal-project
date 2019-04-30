@@ -45,6 +45,7 @@ ul.navbar-links {
 
 /* EVENTS */
 .events-dropdown {
+  height: 100%;
   position: relative;
   display: inline-block;
   color: white
@@ -68,6 +69,7 @@ ul.navbar-links {
 
 /* FORMS */
 .forms-dropdown {
+  height: 100%;
   position: relative;
   display: inline-block;
   color: white
@@ -91,6 +93,7 @@ ul.navbar-links {
 
 /* CENTERS */
 .centers-dropdown {
+  height: 100%;
   position: relative;
   display: inline-block;
   color: white

@@ -76,13 +76,21 @@ export class navBar extends Component {
             </li>
           </div>
 
-          <div className="forms-dropdown">
+          <div
+            onMouseEnter={() => this.toggleDropDown('formsOpen', true)}
+            onMouseLeave={() => this.toggleDropDown('formsOpen', false)}
+            onClick={() => this.toggleDropDown('formsOpen', !formsOpen)}
+            className="forms-dropdown">
             <li>
               Forms
               <ul className="forms-dropdown-content">{displayCenterForms}</ul>
             </li>
           </div>
-          <div className="centers-dropdown">
+          <div
+            onMouseEnter={() => this.toggleDropDown('centersOpen', true)}
+            onMouseLeave={() => this.toggleDropDown('centersOpen', false)}
+            onClick={() => this.toggleDropDown('centersOpen', !centersOpen)}
+            className="centers-dropdown">
             <li>
               Centers
               <ul className="centers-dropdown-content">{displayCenters}</ul>
