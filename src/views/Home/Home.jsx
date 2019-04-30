@@ -56,7 +56,7 @@ export class Home extends Component {
           <div className="home-Sequoia"> <Link style={{ textDecoration: 'none', color: '#0631DF' }} to='/centers/8'>Sequoia</Link></div>
           <div className="home-TiceCreek"> <Link style={{ textDecoration: 'none', color: '#0631DF' }} to='/centers/9'>Tice<br></br>Creek</Link></div>
           <div className="home-Westwood"> <Link style={{ textDecoration: 'none', color: '#0631DF' }} to='/centers/2'>Westwood</Link></div>
-          {/* <div className="home-absent-dropIn"> <Link style={{ textDecoration: 'none', color: '#0631DF' }} to='/api/login'>Absent/<br></br>Drop In</Link></div> */}
+          {/* <div className="home-absent-dropIn"> <Link style={{ textDecoration: 'none', color: '#0631DF' }} to='/login'>Absent/<br></br>Drop In</Link></div> */}
         
         </div>
         </div>

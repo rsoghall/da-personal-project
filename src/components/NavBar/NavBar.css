@@ -62,9 +62,9 @@ ul.navbar-links {
   list-style: none;
 }
 
-.events-dropdown:hover .events-dropdown-content {
+/* .events-dropdown:hover .events-dropdown-content {
   display: block;
-}
+} */
 
 /* FORMS */
 .forms-dropdown {

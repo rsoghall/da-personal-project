@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import store from "../../ducks/store";
-// import logo from "./../../images/logo-tree-color.jpg";
 import logo from "../../images/DA-Logo-Color-Crop.jpg";
 
 export class navBar extends Component {
@@ -12,7 +11,10 @@ export class navBar extends Component {
     const reduxState = store.getState();
     console.log(reduxState);
     this.state = {
-      centers: reduxState.centers
+      centers: reduxState.centers,
+      eventsOpen: false,
+      formsOpen: false,
+      centersOpen: false
     };
   }
 
@@ -23,6 +25,12 @@ export class navBar extends Component {
         centers: reduxState.centers
       });
     });
+  }
+  toggleDropDown = (dropdown, isOpen) => {
+    this.setState({
+      [dropdown]: isOpen
+    })
+
   }
   render() {
     const displayCenters = this.state.centers.map(center => {
@@ -46,16 +54,25 @@ export class navBar extends Component {
         </Link>
       );
     });
+    const { eventsOpen, formsOpen, centersOpen } = this.state
     return (
       <nav className="navbar-container">
         <Link style={{ textDecoration: 'none', color: '#0631DF' }} to="/">
           <img className="logo" src={logo} alt="Dianne Adair Logo" />
         </Link>
         <ul className="navbar-links">
-          <div className="events-dropdown">
+          <div
+            onMouseEnter={() => this.toggleDropDown('eventsOpen', true)}
+            onMouseLeave={() => this.toggleDropDown('eventsOpen', false)}
+            onClick={() => this.toggleDropDown('eventsOpen', !eventsOpen)}
+            className="events-dropdown"
+            
+          >
             <li>
               Events
-              <ul className="events-dropdown-content">{displayCenterEvents}</ul>
+              <ul className="events-dropdown-content"
+                style={{ display: eventsOpen ? "block" : "none" }}
+              >{displayCenterEvents}</ul>
             </li>
           </div>
 
