@@ -30,13 +30,15 @@
     padding: 10px;
     text-align: center
 }
-.centers-title {
+.centers-title > h1 {
     width: 100vw;
-    margin-bottom: 3rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    font-family: Times, serif;
+    font-size: 3rem;
+    padding: 2rem
 }
 
 .centers-displayInfo {

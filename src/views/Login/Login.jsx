@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../../images/logo2.jpg";
+import logo from "../../images/DA-transparent-logo.png";
 import "./Login.css";
 import axios from "axios";
 import store from "../../ducks/store";
@@ -39,7 +39,7 @@ export class Login extends Component {
     console.log(this.props);
     return (
       <div className="login-container">
-        <h1>Login</h1>
+        <h1>Director Login</h1>
         <img className="loginlogo" src={logo} alt="Dianne Adair Logo" />
         <form onSubmit={this.login}>
           <div>

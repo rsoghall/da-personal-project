@@ -1,39 +1,402 @@
-/* body {
-
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(244, 248, 248, 0.68))), url(../../images/kids-playing.jpg) ;
-    background-size: 75%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover
-
-} */
-
-/* body {
-    background: #FFF7CC;
-} */
-.home-container {
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    /* margin-top: 2rem; */
+body {
+  background: -webkit-gradient(
+      linear,
+      0% 0%,
+      0% 100%,
+      from(rgba(244, 248, 248, 0.68))
+    ),
+    url(../../images/kids-playing.jpg);
+  background-size: 75%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.home-container > h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3rem;
-    padding: 2rem
-    
+.home-outer-container {
+  width: 100vw;
+  height: calc(100vh - 9rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 900px;
+}
+.home-title {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 3.5rem;
+  padding: 1rem;
+  text-align: center;
 }
 .home-logo {
-    /* position: relative;
-    width: 100%;
+  width: 400px;
+  height: 400px;
+}
+
+.home-Ayers {
+  position: absolute;
+  left: 12rem;
+  top: 0rem;
+  width: 110px;
+  height: 110px;
+  background: #fdb70b;
+  text-align: center;
+  line-height: 110px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.home-Bancroft {
+  position: absolute;
+  left: -8rem;
+  top: 1rem;
+  width: 110px;
+  height: 110px;
+  background: #7688e0;
+  text-align: center;
+  line-height: 110px;
+  border-radius: 50%;
+}
+.home-DeltaView {
+  position: absolute;
+  left: 3.5rem;
+  top: 8rem;
+  display: flex;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  background: #ffebb3;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  align-items: center;
+}
+.home-ElMonte {
+  position: absolute;
+  left: -7rem;
+  top: 13rem;
+  width: 110px;
+  height: 110px;
+  background: #fdb70b;
+  text-align: center;
+  line-height: 110px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.home-Highlands {
+  position: absolute;
+  left: 8rem;
+  top:  20rem;
+  width: 110px;
+  height: 110px;
+  background: #7688e0;
+  text-align: center;
+  line-height: 110px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.home-MonteGardens {
+  position: absolute;
+  right: 12rem;
+  top: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background: #ffebb3;
+  text-align: center;
+  line-height: 4-px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.home-PleasantHill {
+  position: absolute;
+  right: -8rem;
+  top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background: #fdb70b;
+  text-align: center;
+  line-height: 4-px;
+  border-radius: 50%;
+}
+.home-Sequoia {
+  position: absolute;
+  right: 3.5rem;
+  top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background: #7688e0;
+  text-align: center;
+  line-height: 4-px;
+  border-radius: 50%;
+}
+.home-TiceCreek {
+  position: absolute;
+  right: -7rem;
+  top: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background: #ffebb3;
+  text-align: center;
+  line-height: 4-px;
+  border-radius: 50%;
+}
+.home-Westwood {
+  position: absolute;
+  right: 8rem;
+  top:  20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background: #fdb70b;
+  text-align: center;
+  line-height: 4-px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.home-absent-dropIn {
+  position: absolute;
+  left: -250px;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background: #fdb70b;
+  text-align: center;
+  line-height: 4-px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+/* ###### RESPONSIVE ####### */
+
+@media screen and (max-width: 414px) {
+  body {
+    background: -webkit-gradient(
+        linear,
+        0% 0%,
+        0% 100%,
+        from(rgba(244, 248, 248, 0.68))
+      ),
+      url(../../images/kids-playing.jpg);
+    /* background-size: 5%; */
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .home-outer-container {
+    width: 100vw;
+    height: calc(100vh - 9rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .home-container {
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-content: center; */
-    
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 450px;
+  }
+  .home-title {
+    font-family: Times;
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .home-logo {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .home-Ayers {
+    visibility: hidden;;
+    position: absolute;
+    left: 12rem;
+    top: 0rem;
+    width: 110px;
+    height: 110px;
+    background: #fdb70b;
+    text-align: center;
+    line-height: 110px;
     border-radius: 50%;
-    width: 700px;
-    height: 700px
+    text-decoration: none;
+  }
+  .home-Bancroft {
+    visibility: hidden;;
+    position: absolute;
+    left: -8rem;
+    top: 1rem;
+    width: 110px;
+    height: 110px;
+    background: red;
+    text-align: center;
+    line-height: 110px;
+    border-radius: 50%;
+  }
+  .home-DeltaView {
+    visibility: hidden;;
+    position: absolute;
+    left: 3.5rem;
+    top: 8rem;
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    background: #23aae2;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    align-items: center;
+  }
+  .home-ElMonte {
+    visibility: hidden;;
+    position: absolute;
+    left: -7rem;
+    top: 13rem;
+    width: 110px;
+    height: 110px;
+    background: #fdb70b;
+    text-align: center;
+    line-height: 110px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+  .home-Highlands {
+    visibility: hidden;;
+    position: absolute;
+    left: 8rem;
+    top:  20rem;
+    width: 110px;
+    height: 110px;
+    background: red;
+    text-align: center;
+    line-height: 110px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+  .home-MonteGardens {
+    visibility: hidden;;
+    position: absolute;
+    right: 12rem;
+    top: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    background: #23aae2;
+    text-align: center;
+    line-height: 4-px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+  .home-PleasantHill {
+    visibility: hidden;;
+    position: absolute;
+    right: -8rem;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    background: #fdb70b;
+    text-align: center;
+    line-height: 4-px;
+    border-radius: 50%;
+  }
+  .home-Sequoia {
+    visibility: hidden;;
+    position: absolute;
+    right: 3.5rem;
+    top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    background: red;
+    text-align: center;
+    line-height: 4-px;
+    border-radius: 50%;
+  }
+  .home-TiceCreek {
+    visibility: hidden;;
+    position: absolute;
+    right: -7rem;
+    top: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    background: #23aae2;
+    text-align: center;
+    line-height: 4-px;
+    border-radius: 50%;
+  }
+  .home-Westwood {
+    visibility: hidden;
+    position: absolute;
+    right: 8rem;
+    top:  20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    background: #fdb70b;
+    text-align: center;
+    line-height: 4-px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+  
+  .home-absent-dropIn {
+    position: absolute;
+    left: 0px;
+    top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    background: #fdb70b;
+    text-align: center;
+    line-height: 4-px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+
 }

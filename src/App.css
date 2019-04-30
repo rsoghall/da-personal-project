@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+.app-container {
+  padding: 5rem 0 4rem;
+
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -21,6 +25,25 @@
 
 .App-link {
   color: #61dafb;
+}
+button{
+  width: 10rem;
+  height: 2.5rem;
+  border-color: #283890 solid 5px;
+  border-radius: 25px;
+  color: #283890;
+  
+}
+
+.staff-buttons > button {
+  width: 5rem;
+  height: 1.75rem;
+  border-color: #283890 solid;
+  color: #283890;
+  
+}
+button:focus {
+  outline: none;
 }
 
 @keyframes App-logo-spin {

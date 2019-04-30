@@ -7,9 +7,11 @@ export class Footer extends Component {
   render() {
     return (
       <div>
-        <nav className='footer-container'>
-        <div className='footer-corporate'>
-        <Link to='/corporate'><button>Corporate Office</button></Link>
+        <nav className='footer-wrapper'>
+          <div className='footer-links'>
+            <Link style={{ textDecoration: 'none', color: 'white' }}>Conact Us</Link>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to='/corporate'>Corporate Office</Link>
+            <Link style={{ textDecoration: 'none', color: 'white' }}>Careers</Link>
         </div>
         </nav>
       </div>

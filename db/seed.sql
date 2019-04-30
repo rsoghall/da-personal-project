@@ -4,7 +4,8 @@ drop table if exists forms;
 drop table if exists centers;
 
 
-create table centers (
+create table centers
+(
     center_id serial primary key,
     center_name varchar(64),
     director_name varchar(64),
@@ -16,7 +17,8 @@ create table centers (
     state_license varchar(64)
 );
 
-create table users (
+create table users
+(
     user_id serial primary key,
     user_name varchar(64),
     user_email varchar(64),
@@ -26,7 +28,8 @@ create table users (
     center_id int REFERENCES centers
 );
 
-create table staff (
+create table staff
+(
     staff_id serial primary key,
     staff_name varchar(64),
     staff_info text,
@@ -35,14 +38,16 @@ create table staff (
 
 );
 
-create table forms (
+create table forms
+(
     form_id serial primary key,
     form_name varchar(64),
     form_link text,
     center_id int REFERENCES centers
 );
 
-insert into centers (
+insert into centers
+    (
     center_name,
     director_name,
     director_url,
@@ -51,221 +56,400 @@ insert into centers (
     director_phone,
     registration_form,
     state_license
-) values (
-    'Ayers',
-    'Candice Rapo',
-    'https://s3-us-west-1.amazonaws.com/dianne-adair-s3/images/Ayers/Ayers.jpg',
-    '5120 Myrtle Drive, Concord CA 94521',
-    'Ayers@dianneadair.org',
-    '925.671.4922',
-    'http://dianneadair.org/PDFs/Ayers%20Packet%202018.pdf',
-    '070215110'
+    )
+values
+    (
+        'Ayers',
+        'Candice Rapo',
+        'https://s3-us-west-1.amazonaws.com/dianne-adair-s3/images/Ayers/Ayers.jpg',
+        '5120 Myrtle Drive, Concord CA 94521',
+        'Ayers@dianneadair.org',
+        '925.671.4922',
+        'http://dianneadair.org/PDFs/Ayers%20Packet%202018.pdf',
+        '070215110'
 ),
-(
-    'Bancroft',
-    'Stefanie Lee',
-    'https://s3-us-west-1.amazonaws.com/dianne-adair-s3/images/Bancroft/stefanie.jpg',
-    '2200 Parish Dr., Walnut Creek CA 94598',
-    'Bancroft@dianneadair.org',
-    '925.938.4063',
-    'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
-    '07209004'
+    (
+        'Bancroft',
+        'Stefanie Lee',
+        'https://s3-us-west-1.amazonaws.com/dianne-adair-s3/images/Bancroft/stefanie.jpg',
+        '2200 Parish Dr., Walnut Creek CA 94598',
+        'Bancroft@dianneadair.org',
+        '925.938.4063',
+        'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
+        '07209004'
 ),
-(
-    'Delta View',
-    'Marcia Brown',
-    'http://via.placeholder.com/200',
-    '2916 Rio Verde Dr., Pittsburg CA 94565',
-    'DeltaView@dianneadair.org',
-    '925.682.8000',
-    'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
-    '073404765'
+    (
+        'Delta View',
+        'Marcia Brown',
+        'http://via.placeholder.com/200',
+        '2916 Rio Verde Dr., Pittsburg CA 94565',
+        'DeltaView@dianneadair.org',
+        '925.682.8000',
+        'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
+        '073404765'
 ),
-(
-    'El Monte',
-    'Lisa Brady',
-    'http://via.placeholder.com/200',
-    '1400 Dina Drive, Concord, CA 94518',
-    'ElMonte@dianneadair.org',
-    '925.682.5060',
-    'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
-    '070215177'
+    (
+        'El Monte',
+        'Lisa Brady',
+        'http://via.placeholder.com/200',
+        '1400 Dina Drive, Concord, CA 94518',
+        'ElMonte@dianneadair.org',
+        '925.682.5060',
+        'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
+        '070215177'
 ),
-(
-    'Highlands',
-    'Danette Mullen',
-    'http://via.placeholder.com/200',
-    '1326 Pennsylvania, Concord CA 94521',
-    'Highlands@dianneadair.org',
-    '925.672.6144',
-    'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
-    '070207264'
+    (
+        'Highlands',
+        'Danette Mullen',
+        'http://via.placeholder.com/200',
+        '1326 Pennsylvania, Concord CA 94521',
+        'Highlands@dianneadair.org',
+        '925.672.6144',
+        'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
+        '070207264'
 ),
-(
-    'Monte Gardens',
-    'Shauna Potts',
-    'http://via.placeholder.com/200',
-    '3841 Larkspur Dr, Concord CA 94517',
-    'MonteGardens@dianneadair.org',
-    '925.356.2343',
-    'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
-    '073404777'
+    (
+        'Monte Gardens',
+        'Shauna Potts',
+        'http://via.placeholder.com/200',
+        '3841 Larkspur Dr, Concord CA 94517',
+        'MonteGardens@dianneadair.org',
+        '925.356.2343',
+        'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
+        '073404777'
 ),
-(
-    'Pleasant Hill',
-    'Cindy Hill',
-    'http://via.placeholder.com/200',
-    '2097 Oak Park Blvd, Pleasant Hill, CA 94523',
-    'PleasantHill@dianneadair.org',
-    '925.938.3043',
-    'http://dianneadair.org/PDFs/ph_2018_packet.pdf',
-    '070210164'
+    (
+        'Pleasant Hill',
+        'Cindy Hill',
+        'http://via.placeholder.com/200',
+        '2097 Oak Park Blvd, Pleasant Hill, CA 94523',
+        'PleasantHill@dianneadair.org',
+        '925.938.3043',
+        'http://dianneadair.org/PDFs/ph_2018_packet.pdf',
+        '070210164'
 ),
-(
-    'Sequoia',
-    'Janet Moore',
-    'http://via.placeholder.com/200',
-    '277 Boyd Road, Pleasant Hill, CA 94523',
-    'Sequoia@dianneadair.org',
-    '925.939.6336',
-    'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
-    '070210898'
+    (
+        'Sequoia',
+        'Janet Moore',
+        'http://via.placeholder.com/200',
+        '277 Boyd Road, Pleasant Hill, CA 94523',
+        'Sequoia@dianneadair.org',
+        '925.939.6336',
+        'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
+        '070210898'
 ),
-(
-    'Tice Creek',
-    'Judy Angel',
-    'http://via.placeholder.com/200',
-    '1847 Newell Ave, Walnut Creek, CA 94595',
-    'TiceCreek@dianneadair.org',
-    '925.705.7255',
-    'http://dianneadair.org/PDFs/TC_2018%20packet.pdf',
-    '073407478'
+    (
+        'Tice Creek',
+        'Judy Angel',
+        'http://via.placeholder.com/200',
+        '1847 Newell Ave, Walnut Creek, CA 94595',
+        'TiceCreek@dianneadair.org',
+        '925.705.7255',
+        'http://dianneadair.org/PDFs/TC_2018%20packet.pdf',
+        '073407478'
 ),
-(
-    'Westwood',
-    'Debbie Trammel',
-    'http://via.placeholder.com/200',
-    '1748 West Street, Concord, CA 94521',
-    'Westwood@dianneadair.org',
-    '925.969.1784',
-    'http://dianneadair.org/PDFs/WW_2018%20Packet.pdf',
-    '0703401954'
+    (
+        'Westwood',
+        'Debbie Trammel',
+        'http://via.placeholder.com/200',
+        '1748 West Street, Concord, CA 94521',
+        'Westwood@dianneadair.org',
+        '925.969.1784',
+        'http://dianneadair.org/PDFs/WW_2018%20Packet.pdf',
+        '0703401954'
 );
 
-insert into users (
-    user_name, 
-    user_email, 
+insert into users
+    (
+    user_name,
+    user_email,
     user_hash,
     user_role,
     user_account,
     center_id
-) values (
-    'travis',
-    '123',
-    $1,--password 123
-    'director',
-    0,
-    2
+    )
+values
+    (
+        '1',
+        '1',
+        $1, --password 1
+        'director',
+        1,
+        1 
 ),
 (
-    'billybob',
-    '456@pizza.com',
-	$2, --password 456
-    'director',
-    1,
-    1 
+        '2',
+        '2',
+        $2, --password 2
+        'director',
+        2,
+        2 
+),
+    
+    (
+        '3',
+        '3',
+        $3, --password 3
+        'director',
+        3,
+        3 
+),
+(
+        '4',
+        '4',
+        $4, --password 4
+        'director',
+        4,
+        4 
+),
+(
+        '5',
+        '5',
+        $5, --password 5
+        'director',
+        5,
+        5 
+),
+(
+        '6',
+        '6',
+        $6, --password 6
+        'director',
+        6,
+        6 
+),
+(
+        '7',
+        '7',
+        $7, --password 7
+        'director',
+        7,
+        7 
+),
+(
+        '8',
+        '8',
+        $8, --password 8
+        'director',
+        8,
+        8 
+),
+(
+        '9',
+        '9',
+        $9, --password 9
+        'director',
+        9,
+        9 
+),
+(
+        '10',
+        '10',
+        $10, --password 10
+        'director',
+        10,
+        10 
 );
-
-insert into staff (
+insert into staff
+    (
     staff_name,
     staff_info,
     staff_url,
     center_id
-) values (
-    'Ryan',
-    'teacher 2 years',
-    'http://via.placeholder.com/150',
-    1
+    )
+values
+    (
+        'Ryan',
+        'teacher 2 years',
+        'http://via.placeholder.com/100',
+        1
+),
+    (
+        'Janet',
+        'teacher 10 years',
+        'http://via.placeholder.com/100',
+        1
+),
+    (
+        'John',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        1
+),
+    (
+        'Julie',
+        'teacher 3 years',
+        'http://via.placeholder.com/100',
+        2
+),
+    (
+        'Erin',
+        'teacher 2 years',
+        'http://via.placeholder.com/100',
+        2
+),
+    (
+        'Kelly',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        2
+),
+    (
+        'Tim',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        3
+),
+    (
+        'John',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        3
+),
+    (
+        'Eric',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        3
+),
+    (
+        'Erin',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        4
+),
+    (
+        'Michelle',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        4
+),
+    (
+        'Lisa',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        4
+),
+    (
+        'Vicki',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        5
+),
+    (
+        'Roxanne',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        5
 ),
 (
-    'Janet',
-    'teacher 10 years',
-    'http://via.placeholder.com/100',
-    1
+        'Ben',
+        'teacher 2 years',
+        'http://via.placeholder.com/100',
+        5
 ),
-(
-    'John',
-    'teacher 5 years',
-    'http://via.placeholder.com/100',
-    2
+    (
+        'Kim',
+        'teacher 10 years',
+        'http://via.placeholder.com/100',
+        6
 ),
-(
-    'Julie',
-    'teacher 3 years',
-    'http://via.placeholder.com/100',
-    2
+    (
+        'Sarah',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        6
 ),
-(
-    'dummy',
-    'teacher 2 years',
-    'http://via.placeholder.com/100',
-    1
+    (
+        'Kristen',
+        'teacher 3 years',
+        'http://via.placeholder.com/100',
+        6
 ),
-(
-    'John',
-    'teacher 5 years',
-    'http://via.placeholder.com/100',
-    2
+    (
+        'Kayla',
+        'teacher 2 years',
+        'http://via.placeholder.com/100',
+        7
 ),
-(
-    'John',
-    'teacher 5 years',
-    'http://via.placeholder.com/100',
-    2
+    (
+        'Ally',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        7
 ),
-(
-    'John',
-    'teacher 5 years',
-    'http://via.placeholder.com/100',
-    2
+    (
+        'Tina',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        7
 ),
-(
-    'John',
-    'teacher 5 years',
-    'http://via.placeholder.com/100',
-    2
+    (
+        'Julia',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        8
 ),
-(
-    'John',
-    'teacher 5 years',
-    'http://via.placeholder.com/100',
-    2
+    (
+        'Cathy',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        8
 ),
-(
-    'John',
-    'teacher 5 years',
-    'http://via.placeholder.com/100',
-    2
+    (
+        'Taylor',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        8
 ),
-(
-    'John',
-    'teacher 5 years',
-    'http://via.placeholder.com/100',
-    2
+    (
+        'Linda',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        9
 ),
-(
-    'Sally',
-    'teacher 5 years',
-    'http://via.placeholder.com/100',
-    2
+    (
+        'Shelby',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        9
+),
+    (
+        'Davann',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        9
+)
+,
+    (
+        'Jill',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        10
+),
+    (
+        'Leah',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        10
+),
+    (
+        'Alyssa',
+        'teacher 5 years',
+        'http://via.placeholder.com/100',
+        10
 );
+        
 
-insert into forms (
+insert into forms
+    (
     form_name,
     form_link,
     center_id
-) values (
-    'Registration Forms',
-    'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
-    2
+    )
+values
+    (
+        'Registration Forms',
+        'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
+        2
 );

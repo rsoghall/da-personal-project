@@ -6,8 +6,20 @@
 
 }
 
+.login-container > h1 {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    font-family: Times;
+    font-size: 3rem;
+    padding: 2rem
+
+}
+
 .loginlogo {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    /* border-radius: 50%; */
 }

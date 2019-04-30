@@ -16,8 +16,16 @@ massive(CONNECTION_STRING)
         console.log('DB Set')
         if(NODE_ENV === 'development'){
             db.seed([ 
-                '$2a$10$2Lx/1Q5U3GBQk4OcEbXHIuWkRtxgwazFXBTeG/QdX4uIjd7z9pqG.',
-                '$2a$10$VdhgECcxKAN8qkkYIWtkXetVcYh3qnGvyho9tPitsNZj3ozkdTfOa'
+                '$2a$10$3dKWS521L.WsyIQhSkbU1OB6hnBv4YfSJ2fsFZu.jpp0oCE7HAW.m',
+                '$2a$10$Kbxk8ck0Sw9tcFp/0roDwOkoqqJIQMTSJnq0fIjREaJcMvGHyb8.y',
+                '$2a$10$S1.snVMvfxIzi6/3zuFoWOpAXTS0WUH8ZvvOe0yimvfZChKne.Xba',
+                '$2a$10$jBSjatGI0bcivvudeeDW6uC9HLwgQjv.2mcYp7ypXPw.HKULgKotm',
+                '$2a$10$aTYRRNBbBOlcEBQL9hiuau3rwjmbxkJ8Uml8dDj42AVNvMHc34JOW',
+                '$2a$10$WRBnpXvbA5DjixGHJowh4OdPB6HVd4WGi9L.1KCHIR2tIMpMPoVoK',
+                '$2a$10$.npbtyo5ACM71sdqA.Uyyu5kyGrxaSYKGabbJHKLOvUdLiimJ5SLC',
+                '$2a$10$lbIFnLUoXfHtZ1E0F9sQkuDlXoHSs6Sn5cW.zgBQMfPeGNE.FtOo6',
+                '$2a$10$nnlHvJOQthfnZE5b9XLkg.7dnwZ8h.RB5pIi5Ycx8C.w9UA4nEuuO',
+                '$2a$10$iJ9/RO7aPOZE5yKG8gKw6ONySXZHSelSgYZSNL4Rp1smgcOxppHWW'
              ]).then(() => {
                  console.log('DB Seeded')
             })
@@ -37,7 +45,7 @@ app.use(session({
 app.post('/auth/register', authCtrl.register)
 app.post('/auth/login', authCtrl.login)
 app.post('/api/staff', authCtrl.createStaff)
-// app.get('/api/staff', authCtrl.viewStaff)
+app.get('/api/allstaff', authCtrl.allStaff)
 app.put('/api/staff/:id', authCtrl.editStaff)
 app.delete('/api/staff/:id', authCtrl.deleteStaff)
 app.get(`/api/staff`, authCtrl.staff)
