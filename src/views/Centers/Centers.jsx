@@ -56,16 +56,17 @@ export class Centers extends Component {
           </a>
         </div>
         <div className="centers-links-container">
-          {/* <div className="centers-staff-link"> */}
-            <Link to={`/centers/staff/${displayCenter.center_id}`}>
-              <button>Staff</button>
-            </Link>
-            <button>Calendar</button>
-            <button>Announcements</button>
-            <button>Pre-K</button>
-            <button>Events</button>
-            <button>Newsletter</button>
+          <Link to={`/centers/staff/${displayCenter.center_id}`}>
+            <button>Staff</button>
+          </Link>
+          <button>Calendar</button>
+          <button>Announcements</button>
+          <button>Pre-K</button>
+          <button>Events</button>
+          <button>Newsletter</button>
+          <Link to={`/contact`}>
             <button>Absent/Drop In</button>
+          </Link>
           {/* </div> */}
         </div>
       </div>

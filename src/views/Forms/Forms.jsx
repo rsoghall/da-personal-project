@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import store from "../../ducks/store";
 import "./Forms.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export class Forms extends Component {
   constructor() {
@@ -13,7 +13,6 @@ export class Forms extends Component {
       forms: reduxState.forms
     };
   }
-
   componentDidMount() {
     store.subscribe(() => {
       const reduxState = store.getState();

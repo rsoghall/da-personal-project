@@ -5,6 +5,7 @@ import "./App.css";
 import About from "./views/About/About";
 import Centers from "./views/Centers/Centers";
 import CentersDashboard from "./views/CentersDashboard/CentersDashboard";
+import Contact from "./views/Contact/Contact";
 import Corporate from "./views/Corporate/Corporate";
 import Events from "./views/Events/Events";
 import Forms from "./views/Forms/Forms";
@@ -31,23 +32,24 @@ class App extends Component {
     return (
       <Router>
         <NavBar />
-         <div className="app-container">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route
-            path="/centers/centersdashboard"
-            component={CentersDashboard}
-          />
-          <Route path="/centers/staff/:id" component={Staff} />
-          <Route path="/centers/allstaff" component={AllStaff} />
-          <Route path="/centers/:id" component={Centers} />
-          <Route path="/corporate" component={Corporate} />
-          <Route path="/events/:id" component={Events} />
-          <Route path="/forms/:id" component={Forms} />
-          <Route path="/login" component={Login} />
+        <div className="app-container">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route
+              path="/centers/centersdashboard"
+              component={CentersDashboard}
+            />
+            <Route path="/centers/staff/:id" component={Staff} />
+            <Route path="/centers/allstaff" component={AllStaff} />
+            <Route path="/centers/:id" component={Centers} />
+            <Route path="/contact/" component={Contact} />
+            <Route path="/corporate" component={Corporate} />
+            <Route path="/events/:id" component={Events} />
+            <Route path="/forms/:id" component={Forms} />
+            <Route path="/login" component={Login} />
           </Switch>
-          </div>
+        </div>
         <Footer />
       </Router>
     );

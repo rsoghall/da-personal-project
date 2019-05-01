@@ -137,6 +137,7 @@ body {
   line-height: 110px;
   border-radius: 50%;
   font-size: 20px;
+  z-index: 1;
   font-weight: bolder;
   font-size: 22px;
   animation: bounce 0.7s;
@@ -241,6 +242,7 @@ body {
   border-radius: 50%;
   font-size: 20px;
   font-weight: bolder;
+  z-index: 1;
   font-size: 23px;
   animation: bounce 0.7s;
   animation-direction: alternate;
@@ -275,8 +277,8 @@ body {
         from(rgba(244, 248, 248, 0.68))
       ),
       url(../../images/kids-playing.jpg);
-    /* background-size: 5%; */
-    /* background-attachment: fixed; */
+    background-size: 25%;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
   }
