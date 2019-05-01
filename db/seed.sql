@@ -91,7 +91,7 @@ values
     (
         'El Monte',
         'Lisa Brady',
-        'http://via.placeholder.com/200',
+        'https://dianne-adair-s3.s3.amazonaws.com/c44a248c-1648-49d6-9c5d-b78280e1bc5c-DA-ElMonte-Lisa.jpg',
         '1400 Dina Drive, Concord, CA 94518',
         'ElMonte@dianneadair.org',
         '925.682.5060',

@@ -36,22 +36,22 @@ export class navBar extends Component {
   render() {
     const displayCenters = this.state.centers.map(center => {
       return (
-        <Link className="navbar-dropLinks" to={`/centers/${center.center_id}`}>
+        <Link key={center.center_id} className="navbar-dropLinks" to={`/centers/${center.center_id}`}>
           <li className="navbar-menuItems">{center.center_name}</li>
         </Link>
       );
     });
     const displayCenterForms = this.state.centers.map(center => {
       return (
-        <Link style={{ textDecoration: 'none', color: '#0631DF' }} to={`/forms/${center.center_id}`}>
-          <li>{center.center_name}</li>
+        <Link key={center.center_id} style={{ textDecoration: 'none', color: '#0631DF' }} to={`/forms/${center.center_id}`}>
+          <li className="navbar-menuItems">{center.center_name}</li>
         </Link>
       );
     });
     const displayCenterEvents = this.state.centers.map(center => {
       return (
-        <Link style={{ textDecoration: 'none', color: '#0631DF' }} to={`/events/${center.center_id}`}>
-          <li>{center.center_name}</li>
+        <Link key={center.center_id} style={{ textDecoration: 'none', color: '#0631DF' }} to={`/events/${center.center_id}`}>
+          <li className="navbar-menuItems">{center.center_name}</li>
         </Link>
       );
     });

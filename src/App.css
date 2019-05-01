@@ -29,17 +29,19 @@
 button{
   width: 10rem;
   height: 2.5rem;
-  border-color: #283890 solid 5px;
+  background-color: rgb(40, 71, 222);
+  border-color: #fdb70b solid 15px;
   border-radius: 25px;
-  color: #283890;
+  font-size: 1rem;
+  color: white;
   
 }
 
 .staff-buttons > button {
   width: 5rem;
   height: 1.75rem;
-  border-color: #283890 solid;
-  color: #283890;
+  border-color: #fdb70b solid;
+  color: #0B2FDF;
   
 }
 button:focus {

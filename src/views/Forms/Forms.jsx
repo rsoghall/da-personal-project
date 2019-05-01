@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import store from "../../ducks/store";
 import "./Forms.css";
+import { Link } from "react-router-dom";
 
 export class Forms extends Component {
   constructor() {
@@ -36,6 +37,13 @@ export class Forms extends Component {
     return (
       <div className="forms-title">
         <h1>{displayCenter.center_name} Forms</h1>
+        <div className="form-reg-link">
+          <ul className="forms-link-list">
+            <a href="http://dianneadair.org/PDFs/Ayers%20Packet%202018.pdf">
+              <button>Registration Forms</button>
+            </a>
+          </ul>
+        </div>
 
         {role === "director" && (
           <div>

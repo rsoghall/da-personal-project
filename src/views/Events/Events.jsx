@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import store from "../../ducks/store";
 import "./Events.css";
+import eventsLogo from "../../images/Events.jpg";
 
 export class Events extends Component {
   constructor() {
@@ -35,6 +36,7 @@ export class Events extends Component {
     return (
       <div className="events-wrapper">
         <h1>{displayCenter.center_name} Events</h1>
+        <img className="events-logo" src={eventsLogo} alt="Dianne Adair Events" />
         {role === "director" && (
           <div>
             <button onClick={() => this.addEvent()}>Add Event</button>
