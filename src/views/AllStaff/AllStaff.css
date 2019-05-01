@@ -1,23 +1,21 @@
-.allStaff-displayStaffWrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1rem;
-    position: relative;
-    width: 87vw;
+.allStaff-title {
+  width: 100vw;
+  height: 2rem;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: normal;
+  font-family: Times, serif;
+  font-size: 2rem;
+  padding: 1.5rem;
 }
 
 .allStaff-center-staffContainer {
-    margin: 10px 0px 0px 100px;
-}
-.allStaff-center-staffDisplay {
-    /* height: 10rem; */
-    display: flex;
-	flex-direction: column;
-	/* flex-wrap: wrap; */
-	justify-content: space-between;
-	align-items: center;
-    align-content: center;
-    padding: .5rem 2.5rem;
-    
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 10rem;
+  /* background-color: yellow; */
+  padding: 1rem;
 }

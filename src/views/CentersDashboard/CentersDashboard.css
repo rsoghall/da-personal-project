@@ -1,24 +1,23 @@
-.centersDashboard-name > h1 {
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    font-family: Times, serif;
-    font-size: 3rem;
-    padding: 2rem
+.centersDashboard-title {
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  font-weight: normal;
+  font-family: Times, serif;
+  font-size: 3rem;
+  padding: 0.5rem;
 }
 
-
-
 .centersDashboard-buttons {
-    /* height: 10rem; */
-    display: flex;
-	flex-direction: column;
-	/* flex-wrap: wrap; */
-	justify-content: space-between;
-	align-items: center;
-    align-content: center;
-    padding: .5rem 2.5rem;
-
+  width: 100vw;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  padding: 0.5rem 2.5rem;
 }

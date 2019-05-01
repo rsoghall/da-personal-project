@@ -187,7 +187,9 @@ export class Staff extends Component {
     } = this.state;
     return (
       <div className="staff-screenWrapper">
+        <div className="staff-title">
         <h1> {displayCenter.center_name} Staff</h1>
+        </div>
         {role === "director" && (
           <div>
             <button onClick={() => this.openAddStaffModal(staff.staff_id, staff.staff_name)}>Add Staff</button>

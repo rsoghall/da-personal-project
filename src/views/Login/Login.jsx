@@ -39,23 +39,29 @@ export class Login extends Component {
     console.log(this.props);
     return (
       <div className="login-container">
+        <div className='login-title'>
         <h1>Director Login</h1>
-        <img className="loginlogo" src={logo} alt="Dianne Adair Logo" />
-        <form onSubmit={this.login}>
-          <div>
-            <span>Email:</span>
+        </div>
+        <div>
+        <img className="login-logo" src={logo} alt="Dianne Adair Logo" />
+        </div>
+        <form className="login-form" onSubmit={this.login}>
+          <div className="login-input">
+            {/* <span>Email:</span> */}
             <input
               onChange={e => this.setState({ email: e.target.value })}
               value={this.state.email}
               type="text"
+              placeholder="Email"
             />
           </div>
           <div>
-            <span>Password:</span>
+            {/* <span>Password:</span> */}
             <input
               onChange={e => this.setState({ password: e.target.value })}
               value={this.state.password}
               type="password"
+              placeholder="Password"
             />
           </div>
         <button type="submit">Log in</button>

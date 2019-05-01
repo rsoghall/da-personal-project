@@ -21,14 +21,16 @@ export class AllStaff extends Component {
     const displayCenterStaff = this.state.centersStaff.map((center) => {
       return (
         <div>
+          <div className="allStaff-title">
           <h1>{center.centerName}</h1>
+          </div>
           <div className='allStaff-center-staffContainer'>
           {
             center.staff.map((staff) => {
               return (
                 <div className='allStaff-center-staffDisplay'>
-                  <h4>{staff.staffName}</h4>
                   <img src={staff.staffUrl} />
+                  <h4>{staff.staffName}</h4>
                   <h4>{staff.staffInfo}</h4>
                 </div>
               )
@@ -41,7 +43,7 @@ export class AllStaff extends Component {
     })
     
     return (
-      <div className="allStaff-displayStaffWrapper">
+      <div>
         {displayCenterStaff }
       </div>
     );

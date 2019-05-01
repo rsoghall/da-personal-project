@@ -39,6 +39,7 @@ body {
   text-align: center;
 }
 .home-logo {
+  position: relative;
   width: 450px;
   height: 450px;
 }
@@ -58,7 +59,8 @@ body {
   animation: bounce 0.6s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  animation-iteration-count: 3;
+  animation-iteration-count: 6;
+  transition: transform 5s ease-in;
 }
 
 @keyframes bounce {
@@ -101,7 +103,7 @@ body {
   animation: bounce 0.6s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  animation-iteration-count: 6;
+  animation-iteration-count: 8;
 }
 
 .home-ElMonte {
@@ -123,7 +125,7 @@ body {
   animation: bounce 0.7s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  animation-iteration-count: 6;
+  animation-iteration-count: 10;
 }
 .home-Highlands {
   position: absolute;
@@ -138,10 +140,10 @@ body {
   font-size: 20px;
   font-weight: bolder;
   font-size: 22px;
-  animation: bounce 0.9s;
+  animation: bounce 0.7s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  animation-iteration-count: 7;
+  animation-iteration-count: 8;
 }
 .home-MonteGardens {
   position: absolute;
@@ -162,7 +164,7 @@ body {
   animation: bounce 0.6s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  animation-iteration-count: 8;
+  animation-iteration-count: 4;
 }
 .home-PleasantHill {
   position: absolute;
@@ -182,7 +184,7 @@ body {
   animation: bounce 0.7s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  animation-iteration-count: 9;
+  animation-iteration-count: 6;
 }
 .home-Sequoia {
   position: absolute;
@@ -223,7 +225,7 @@ body {
   animation: bounce 0.6s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  animation-iteration-count: 11;
+  animation-iteration-count: 10;
 }
 .home-Westwood {
   position: absolute;

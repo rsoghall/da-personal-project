@@ -40,7 +40,7 @@ export class CentersDashboard extends Component {
     }
     return (
       <div>
-        <div className='centersDashboard-name'>
+        <div className='centersDashboard-title'>
           <h1>{displayCenter.center_name} Dashboard</h1>
         </div>
         <div className='centersDashboard-buttons'>
