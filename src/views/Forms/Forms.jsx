@@ -13,6 +13,7 @@ export class Forms extends Component {
       forms: reduxState.forms
     };
   }
+
   componentDidMount() {
     store.subscribe(() => {
       const reduxState = store.getState();
