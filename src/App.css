@@ -29,8 +29,8 @@
 button{
   width: 10rem;
   height: 2.5rem;
-  background-color: rgb(40, 71, 222);
-  border-color: #fdb70b solid 15px;
+  background-color: #417FFC;
+  border-color: #EEF827 solid 15px;
   border-radius: 25px;
   font-size: 1rem;
   color: white;
@@ -40,8 +40,8 @@ button{
 .staff-buttons > button {
   width: 5rem;
   height: 1.75rem;
-  border-color: #fdb70b solid;
-  color: #0B2FDF;
+  border-color: #EEF827 solid;
+  color: #417FFC;
   
 }
 button:focus {

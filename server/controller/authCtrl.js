@@ -12,7 +12,6 @@ const {
 
 module.exports = {
   register: async (req, res) => {
-    console.log("method hit");
     try {
       const {
         user_name,
@@ -31,9 +30,7 @@ module.exports = {
         return res.status(403).send({ message: "Email already exists" });
       }
       const salt = bcrypt.genSaltSync(10);
-      console.log(password, salt);
       const hash = bcrypt.hashSync(password, salt);
-      console.log(hash);
       const [newUser] = await db.register_user([
         user_name,
         user_email,
@@ -42,7 +39,6 @@ module.exports = {
         user_account,
         center_id
       ]);
-      console.log(newUser);
       req.session.user = {
         user_id: newUser.user_id,
         user_name: newUser.user_name,

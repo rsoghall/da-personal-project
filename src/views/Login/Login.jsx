@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../../images/DA-transparent-logo.png";
+import logo from "../../images/DA-Logo-5-3-transparent-crop.png";
 import "./Login.css";
 import axios from "axios";
 import store from "../../ducks/store";

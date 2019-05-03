@@ -256,7 +256,7 @@ export class Staff extends Component {
                 name="editStaffInfo"
                 placeholder="Info"
               />
-              <S3upload onUploadComplete={this.handleUrl}/>
+              <S3upload onUploadComplete={this.handleUrl} filetype="image/*"/>
             </Modal>
           )}
         </div>

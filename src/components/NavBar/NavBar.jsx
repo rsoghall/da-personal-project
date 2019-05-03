@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import store from "../../ducks/store";
-import logo from "../../images/DA-Logo-Color-Crop.jpg";
+import logo from "../../images/DA-Logo-5-3-transparent-crop.png";
 import {ReactComponent as DropdownIcon} from "../../images/arrow_down.svg"
 
 export class navBar extends Component {
@@ -43,14 +43,14 @@ export class navBar extends Component {
     });
     const displayCenterForms = this.state.centers.map(center => {
       return (
-        <Link key={center.center_id} style={{ textDecoration: 'none', color: '#0631DF' }} to={`/forms/${center.center_id}`}>
+        <Link key={center.center_id} style={{ textDecoration: 'none', color: '#417FFC' }} to={`/forms/${center.center_id}`}>
           <li className="navbar-menuItems">{center.center_name}</li>
         </Link>
       );
     });
     const displayCenterEvents = this.state.centers.map(center => {
       return (
-        <Link key={center.center_id} style={{ textDecoration: 'none', color: '#0631DF' }} to={`/events/${center.center_id}`}>
+        <Link key={center.center_id} style={{ textDecoration: 'none', color: '#417FFC' }} to={`/events/${center.center_id}`}>
           <li className="navbar-menuItems">{center.center_name}</li>
         </Link>
       );
@@ -58,7 +58,7 @@ export class navBar extends Component {
     const { eventsOpen, formsOpen, centersOpen } = this.state
     return (
       <nav className="navbar-container">
-        <Link style={{ textDecoration: 'none', color: '#0631DF' }} to="/">
+        <Link style={{ textDecoration: 'none', color: '#417FFC' }} to="/">
           <img className="logo" src={logo} alt="Dianne Adair Logo" />
         </Link>
         <ul className="navbar-links">
@@ -100,10 +100,10 @@ export class navBar extends Component {
               <ul className="centers-dropdown-content">{displayCenters}</ul>
             </li>
           </div>
-          <Link style={{ textDecoration: 'none', color: '#0B2FDF', fontWeight: 'bold'}} to="/about">
+          <Link style={{ textDecoration: 'none', color: '#417FFC', fontWeight: 'bold'}} to="/about">
             <li>About Us</li>
           </Link>
-          <Link className="nav-login" style={{ textDecoration: 'none', color: '#0B2FDF', fontWeight: 'bold' }} to="/login">
+          <Link className="nav-login" style={{ textDecoration: 'none', color: '#417FFC', fontWeight: 'bold' }} to="/login">
             <li>Log In</li>
           </Link>
         </ul>

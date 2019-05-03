@@ -70,7 +70,7 @@ class S3 extends Component {
             alignItems: 'center',
             fontSize: 28,
           }}
-          accept="image/*"
+          accept={this.props.filetype}
           multiple={false}
       >
         {({getRootProps, getInputProps}) => (

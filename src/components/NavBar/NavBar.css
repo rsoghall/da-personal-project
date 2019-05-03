@@ -2,7 +2,7 @@ nav.navbar-container {
   width: 100%;
   height: 5rem;
   background-color: transparent;
-  border-bottom: solid #0631DF;
+  border-bottom: solid #417FFC;
   display: flex;
   position: fixed;
   z-index: 1
@@ -28,13 +28,13 @@ ul.navbar-links {
 }
 .navbar-dropLinks {
   text-decoration: none;
-  color: #0631DF;
+  color: #417FFC;
   font-weight: bold;
 }
 
 .navbar-menuItems {
   padding: 15px;
-  background: #FDB70B;
+  background: #EEF827;
 }
 
 .navbar-menuItems:hover {
@@ -48,7 +48,7 @@ ul.navbar-links {
   position: relative;
   display: flex;
   align-items: center;
-  color: #0B2FDF;
+  color: #417FFC;
   font-weight: bold;
 }
 .events-dropdown > li {
@@ -73,7 +73,7 @@ ul.navbar-links {
   position: relative;
   display: flex;
   align-items: center;
-  color: #0B2FDF;
+  color: #417FFC;
   font-weight: bold;
 }
 .forms-dropdown > li {
@@ -102,7 +102,7 @@ ul.navbar-links {
   position: relative;
   display: flex;
   align-items: center;
-  color: #0B2FDF;
+  color: #417FFC;
   font-weight: bold;
   
 }

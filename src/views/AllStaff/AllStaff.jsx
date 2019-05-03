@@ -29,7 +29,7 @@ export class AllStaff extends Component {
             center.staff.map((staff) => {
               return (
                 <div key={staff.staffId} className='allStaff-center-staffDisplay'>
-                  <img src={staff.staffUrl} />
+                  <img src={staff.staffUrl} alt="staff"/>
                   <h4>{staff.staffName}</h4>
                   <h4>{staff.staffInfo}</h4>
                 </div>

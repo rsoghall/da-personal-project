@@ -1,16 +1,37 @@
 import React, { Component } from "react";
+import store from '../../ducks/store'
 import logo from "../../images/DA-transparent-logo.png";
 import "./Contact.css";
 
 export class Contact extends Component {
+  constructor() {
+    super();
+    const reduxState = store.getState();
+    this.state = {
+      centers: reduxState.centers
+    };
+  }
+
+  componentDidMount() {
+    store.subscribe(() => {
+      const reduxState = store.getState();
+      this.setState({
+        centers: reduxState.centers
+      });
+    });
+  }
   
 
   render() {
+    const centerID = +this.props.match.params.id;
+    const [displayCenter] = this.state.centers.filter(
+      center => centerID === center.center_id
+    );
     
     return (
       <div>
         <div className="contact-title">
-          <h1>Absent/Drop In</h1>
+          <h1>{displayCenter.center_name} Absent/Drop In</h1>
         </div>
         <div>
           <img className="contact-logo" src={logo} alt="Dianne Adair Logo" />
