@@ -47,7 +47,6 @@ export class Login extends Component {
         </div>
         <form className="login-form" onSubmit={this.login}>
           <div className="login-input">
-            {/* <span>Email:</span> */}
             <input
               onChange={e => this.setState({ email: e.target.value })}
               value={this.state.email}
@@ -56,7 +55,6 @@ export class Login extends Component {
             />
           </div>
           <div>
-            {/* <span>Password:</span> */}
             <input
               onChange={e => this.setState({ password: e.target.value })}
               value={this.state.password}

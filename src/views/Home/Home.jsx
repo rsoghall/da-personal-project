@@ -41,21 +41,21 @@ export class Home extends Component {
         </div>
           <div className="home-Ayers">
             <Link
-              style={{ textDecoration: "none", color: "#417FFC" }}
+              style={{ textDecoration: "none", color: "#EEF827" }}
               to="/centers/1"
             >
               Ayers
             </Link>
           </div>
           <div className="home-Bancroft"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/2'>Bancroft</Link></div>
-          <div className="home-DeltaView"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/3'>Delta <br></br>View</Link></div>
+          <div className="home-DeltaView"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/3'>Delta <br></br>View</Link></div>
           <div className="home-ElMonte"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/4'>El Monte</Link></div>
-          <div className="home-Highlands"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/5'>Highlands</Link></div>
-          <div className="home-MonteGardens"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/6'>Monte<br></br>Gardens</Link></div>
+          <div className="home-Highlands"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/5'>Highlands</Link></div>
+          <div className="home-MonteGardens"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/6'>Monte<br></br>Gardens</Link></div>
           <div className="home-PleasantHill"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/7'>Pleasant<br></br>Hill</Link></div>
-          <div className="home-Sequoia"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/8'>Sequoia</Link></div>
+          <div className="home-Sequoia"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/8'>Sequoia</Link></div>
           <div className="home-TiceCreek"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/9'>Tice<br></br>Creek</Link></div>
-          <div className="home-Westwood"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/2'>Westwood</Link></div>
+          <div className="home-Westwood"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/2'>Westwood</Link></div>
           {/* <div className="home-absent-dropIn"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/login'>Absent/<br></br>Drop In</Link></div> */}
         
         </div>
