@@ -40,12 +40,14 @@ export class Home extends Component {
           <img className="home-logo" src={Logo2} alt="Dianne Adair Logo" />
         </div>
           <div className="home-Ayers">
+            <figure className="ball"><span className="shadow"></span>
             <Link
               style={{ textDecoration: "none", color: "#EEF827" }}
               to="/centers/1"
             >
               Ayers
             </Link>
+            </figure>
           </div>
           <div className="home-Bancroft"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/2'>Bancroft</Link></div>
           <div className="home-DeltaView"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/3'>Delta <br></br>View</Link></div>

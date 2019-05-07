@@ -23,6 +23,7 @@ ul.navbar-links {
 .logo {
   padding: 0.4rem;
   border-radius: 50%;
+  /* border: solid #417FFC 1px; */
   width: 70px;
   height: 70px;
 }
@@ -88,7 +89,7 @@ ul.navbar-links {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 5;
+  z-index: 0;
   list-style: none;
 }
 
