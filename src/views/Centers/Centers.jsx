@@ -59,7 +59,9 @@ export class Centers extends Component {
           <Link to={`/centers/staff/${displayCenter.center_id}`}>
             <button>Staff</button>
           </Link>
-          <button>Calendar</button>
+          <Link to={`/centers/calendar/${displayCenter.center_id}`}>
+            <button>Calendar</button>
+          </Link>
           <button>Announcements</button>
           <button>Pre-K</button>
           <button>Events</button>

@@ -16,6 +16,7 @@ const GET_CENTERS = 'GET_CENTERS'
 const GET_STAFF = 'GET_STAFF'
 const SET_USER = 'SET_USER'
 
+
 export function getCenters(payload){
     return {
         type: GET_CENTERS,
@@ -50,6 +51,8 @@ export function getEvents(payload){
         payload: payload
     }
 }
+
+
     
 
 function reducer(state=initialState, action) {
@@ -64,10 +67,10 @@ function reducer(state=initialState, action) {
             return{...state, role: action.payload.role, centerId: action.payload.centerId}
         }
         case GET_FORMS:{
-            return{...state, form: action.payload.form, centerId: action.payload.centerId}
+            return{...state, forms: action.payload}
         }
         case GET_EVENTS:{
-            return{...state, form: action.payload.form, centerId: action.payload.centerId}
+            return{...state, events: action.payload}
         }
         default: return state
     }

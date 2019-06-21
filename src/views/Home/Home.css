@@ -21,14 +21,14 @@
 }
 
 .home-container {
-  height: 100%;
+  height: calc(100vh - 96px);
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 900px;
-  font-family: 'Times New Roman', Times, serif;
+  width: 100vw;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .home-title {
@@ -40,298 +40,369 @@
 }
 .home-logo {
   position: relative;
-  width: 450px;
-  height: 450px;
+  width: 550px;
+  height: 550px;
 }
 
-/* ###BALL### */
 
-/* .ball {
-  display: block;
-  background: black;
-  margin: 0;
-  border-radius: 50%;
-  height: 110px;
-  width: 110px;
-  background: radial-gradient(circle at 110px 110px, #417FFC, #000);
-}
-.ball .shadow {
-position: absolute;
-width: 100%;
-height: 100%;
-background: radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0) 20%);
--webkit-transform: rotateX(90deg) translateZ(-150px);
--moz-transform: rotateX(90deg) translateZ(-150px);
--ms-transform: rotateX(90deg) translateZ(-150px);
--o-transform: rotateX(90deg) translateZ(-150px);
-transform: rotateX(90deg) translateZ(-150px);
-z-index: -1;
-} */
-
-/* .home-Ayers  {
-  width: 110px;
-  height: 110px;
-  -webkit-perspective: 1200px;
-  -moz-perspective: 1200px;
-  -ms-perspective: 1200px;
-  -o-perspective: 1200px;
-  perspective: 1200px;
-  -webkit-perspective-origin: 50% 50%;
-  -moz-perspective-origin: 50% 50%;
-  -ms-perspective-origin: 50% 50%;
-  -o-perspective-origin: 50% 50%;
-  perspective-origin: 50% 50%;
-} */
-
-.home-Ayers {
-  position: absolute;
-  left: 12rem;
-  top: 0rem;
-  width: 110px;
-  height: 110px;
-  background: #417FFC;
-  text-align: center;
-  line-height: 110px;
-  border-radius: 50%;
-  font-weight: bolder;
-  font-size: 28px;
-  animation: bounce 0.6s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
-  animation-iteration-count: 4;
-  background: radial-gradient(farthest-corner at 60px 45px, #417FFC 50%, black 100%);
-}
 
 @keyframes bounce {
-  from { transform: translate3d(0, 0, 0);     }
-  to   { transform: translate3d(0, 200px, 0); }
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 100px, 0);
+  }
 }
-.home-Bancroft {
+
+.home-ball {
   position: absolute;
-  left: -8rem;
-  top: 1rem;
-  width: 110px;
-  height: 110px;
-  background: #EEF827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  line-height: 30px;
   text-align: center;
-  line-height: 110px;
   border-radius: 50%;
   font-weight: bolder;
+}
+
+.home-Ayers {
+  left: 31rem;
+  top: 2rem;
+  background: #417ffc;
+  text-align: center;
+  line-height: 110px;
+  font-size: 28px;
+  animation: bounce 0.6s;
+  animation-iteration-count: 4;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  background: radial-gradient(
+    farthest-corner at 60px 45px,
+    #417ffc 50%,
+    black 100%
+  );
+}
+
+.home-Bancroft {
+  /* line-height: 110px; */
+  left: 12rem;
+  top: 6.5rem;
+  background: #eef827;
   font-size: 24px;
   animation: bounce 0.9s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: 4;
-  background: radial-gradient(farthest-corner at 60px 45px, #EEF827 55%,  black 100%);
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  background: radial-gradient(
+    farthest-corner at 60px 45px,
+    #eef827 55%,
+    black 100%
+  );
 }
 
 .home-DeltaView {
-  position: absolute;
-  left: 3.5rem;
-  top: 8rem;
-  display: flex;
-  justify-content: center;
-  width: 110px;
-  height: 110px;
-  background: #417FFC;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 50%;
+  left: 23rem;
+  top: 15rem;
+  background: #417ffc;
+  /* line-height: 30px; */
   align-items: center;
-  font-weight: bolder;
   font-size: 28px;
   animation: bounce 0.6s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: 6;
-  background: radial-gradient(farthest-corner at 60px 45px, #417FFC 50%, black 100%);
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  background: radial-gradient(
+    farthest-corner at 60px 45px,
+    #417ffc 50%,
+    black 100%
+  );
 }
 
 .home-ElMonte {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: -7rem;
-  top: 13rem;
-  width: 110px;
-  height: 110px;
-  background:#EEF827;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 50%;
-  font-size: 20px;
-  font-weight: bolder;
+  left: 12rem;
+  top: 24rem;
+  background: #eef827;
+  /* line-height: 30px; */
   font-size: 28px;
   animation: bounce 0.7s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: 8;
-  background: radial-gradient(farthest-corner at 60px 45px, #EEF827 55%,  black 100%);
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  background: radial-gradient(
+    farthest-corner at 60px 45px,
+    #eef827 55%,
+    black 100%
+  );
 }
 .home-Highlands {
-  position: absolute;
-  left: 8rem;
-  top:  20rem;
-  width: 110px;
-  height: 110px;
-  background: #417FFC;
-  text-align: center;
-  line-height: 110px;
-  border-radius: 50%;
+  left: 31rem;
+  top: 30rem;
+  background: #417ffc;
   font-size: 20px;
   z-index: 2;
-  font-weight: bolder;
   font-size: 22px;
   animation: bounce 0.7s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: 6;
-  background: radial-gradient(farthest-corner at 60px 45px, #417FFC 50%, black 100%);
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  background: radial-gradient(
+    farthest-corner at 60px 45px,
+    #417ffc 50%,
+    black 100%
+  );
 }
 .home-MonteGardens {
-  position: absolute;
-  right: 12rem;
-  top: 0rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 110px;
-  height: 110px;
-  background: #417FFC;
-  text-align: center;
-  line-height: 4-px;
-  border-radius: 50%;
-  font-size: 20px;
-  font-weight: bolder;
+  right: 31rem;
+  top: 2rem;
+  background: #417ffc;
+  /* line-height: 4px; */
   font-size: 22px;
   animation: bounce 0.6s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: 4;
-  background: radial-gradient(farthest-corner at 60px 45px, #417FFC 50%, black 100%);
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  background: radial-gradient(
+    farthest-corner at 60px 45px,
+    #417ffc 50%,
+    black 100%
+  );
 }
 .home-PleasantHill {
-  position: absolute;
-  right: -8rem;
-  top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 110px;
-  height: 110px;
-  background: #EEF827;
-  text-align: center;
-  line-height: 4-px;
-  border-radius: 50%;
-  font-weight: bolder;
+  right: 12rem;
+  top: 6.5rem;
+  background: #eef827;
+  /* line-height: 4px; */
   font-size: 24px;
   animation: bounce 0.7s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: 4;
-  background: radial-gradient(farthest-corner at 60px 45px, #EEF827 55%,  black 100%);
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  background: radial-gradient(
+    farthest-corner at 60px 45px,
+    #eef827 55%,
+    black 100%
+  );
 }
 .home-Sequoia {
-  position: absolute;
-  right: 3.5rem;
-  top: 8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 110px;
-  height: 110px;
-  background: #417FFC;
-  text-align: center;
-  line-height: 4-px;
-  border-radius: 50%;
-  font-weight: bolder;
+  right: 23rem;
+  top: 15rem;
+  background: #417ffc;
+  line-height: 4px;
   font-size: 28px;
   animation: bounce 0.9s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: 8;
-  background: radial-gradient(farthest-corner at 60px 45px, #417FFC 50%, black 100%);
-  
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  background: radial-gradient(
+    farthest-corner at 60px 45px,
+    #417ffc 50%,
+    black 100%
+  );
 }
 .home-TiceCreek {
-  position: absolute;
-  right: -7rem;
-  top: 13rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 110px;
-  height: 110px;
-  background: #EEF827;
-  text-align: center;
-  line-height: 4-px;
-  border-radius: 50%;
-  font-weight: bolder;
+  right: 12rem;
+  top: 24rem;
+  background: #eef827;
+  /* line-height: 4px; */
+  /* font-weight: bolder;   */
   font-size: 26px;
   animation: bounce 0.6s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: 8;
-  background: radial-gradient(farthest-corner at 60px 45px, #EEF827 55%,  black 100%);
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  background: radial-gradient(
+    farthest-corner at 60px 45px,
+    #eef827 55%,
+    black 100%
+  );
 }
 .home-Westwood {
-  position: absolute;
-  right: 8rem;
-  top:  20rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 110px;
-  height: 110px;
-  background: #417FFC;
-  text-align: center;
-  line-height: 4-px;
-  border-radius: 50%;
+  right: 31rem;
+  top: 30rem;
+  background: #417ffc;
+  /* line-height: 4px; */
   font-size: 20px;
-  font-weight: bolder;
   z-index: 1;
   font-size: 23px;
   animation: bounce 0.7s;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: 10;
-  background: radial-gradient(farthest-corner at 60px 45px, #417FFC 50%, black 100%);
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-direction: alternate;
+  background: radial-gradient(
+    farthest-corner at 60px 45px,
+    #417ffc 50%,
+    black 100%
+  );
 }
 
-.home-absent-dropIn {
-  position: absolute;
-  left: -250px;
-  bottom: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 110px;
-  height: 110px;
-  background: #EEF827;
-  text-align: center;
-  line-height: 4-px;
-  border-radius: 50%;
-  font-size: 20px;
-}
 
-/* ###### RESPONSIVE ####### */
+/* ###### RESPONSIVE 13" LAPTOP ####### */
 
-@media screen and (max-width: 414px) {
-  body {
-    background: -webkit-gradient(
-        linear,
-        0% 0%,
-        0% 100%,
-        from(rgba(244, 248, 248, 0.68))
-      ),
-      url(../../images/kids-playing.jpg);
-    background-size: 25%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+@media screen and (max-width: 1500px) {
+
+  @keyframes bounce {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(0, 70px, 0);
+    }
+  }
+
+  .home-title {
+    font-family: Times;
+    font-weight: normal;
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .home-logo {
+    width: 425px;
+    height: 425px;
+  }
+
+  .home-ball {
+    width: 110px;
+    height: 110px;
+    
+  }
+  .home-Ayers {
+    left: 26rem;
+    top: 0.4rem;
+  }
+  .home-Bancroft {
+    left: 15.5rem;
+    top: 4.0rem;
   }
   
+  .home-DeltaView {
+    left: 22rem;
+    top: 12rem;
+  }
+  
+  .home-ElMonte {
+    left: 17rem;
+    top: 21rem;
+  }
+
+  .home-Highlands {
+    left: 28rem;
+    top: 24rem;
+  }
+
+  .home-MonteGardens {
+    right: 26rem;
+    top: 0.4rem;
+  }
+
+  .home-PleasantHill {
+    right: 15.5rem;
+    top: 4rem;
+  }
+
+  .home-Sequoia {
+    right: 22rem;
+    top: 12rem;
+  }
+
+  .home-TiceCreek {
+    right: 17rem;
+    top: 21rem;
+  }
+
+  .home-Westwood {
+    right: 28rem;
+    top: 24rem;
+  }
+  
+}
+
+
+/* RESPONSIVE IPAD */
+
+@media screen and (max-width: 768px) {
+
+  @keyframes bounce {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(0, 210px, 0);
+    }
+  }
+
+  .home-title {
+    font-family: Times;
+    font-weight: normal;
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .home-logo {
+    width: 425px;
+    height: 425px;
+  }
+
+  .home-ball {
+    width: 100px;
+    height: 100px;
+    
+  }
+  .home-Ayers {
+    left: 14rem;;
+    top: 3.4rem;
+  }
+  .home-Bancroft {
+    left: 6.5rem;;
+    top: 8rem;
+  }
+  
+  .home-DeltaView {
+    left: 3rem;;
+    top: 16rem;
+  }
+  
+  .home-ElMonte {
+    left: 3.5rem;;
+    top: 25rem;
+  }
+
+  .home-Highlands {
+    left: 10rem;;
+    top: 31rem;
+  }
+
+  .home-MonteGardens {
+    right: 14rem;;
+    top: 3.4rem;
+  }
+
+  .home-PleasantHill {
+    right: 6.5rem;;
+    top: 8rem;
+  }
+
+  .home-Sequoia {
+    right: 3rem;;
+    top: 16rem;
+  }
+
+  .home-TiceCreek {
+    right: 3.5rem;;
+    top: 25rem;
+  }
+
+  .home-Westwood {
+    right: 10rem;;
+    top: 31rem;
+  }
+  
+}
+
+@media screen and (max-width: 414px) {
   .home-outer-container {
     width: 100vw;
     height: calc(100vh - 9rem);
@@ -339,7 +410,7 @@ z-index: -1;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .home-container {
     height: 100%;
     display: flex;
@@ -360,26 +431,24 @@ z-index: -1;
     width: 325px;
     height: 325px;
   }
-  
+
   .home-Ayers {
-    visibility: hidden;;
+    visibility: hidden;
     position: absolute;
     left: 12rem;
     top: 0rem;
-    width: 110px;
     height: 110px;
-    background: #EEF827;
+    background: #eef827;
     text-align: center;
     line-height: 110px;
     border-radius: 50%;
     text-decoration: none;
   }
   .home-Bancroft {
-    visibility: hidden;;
+    visibility: hidden;
     position: absolute;
     left: -8rem;
     top: 1rem;
-    width: 110px;
     height: 110px;
     background: EEF827;
     text-align: center;
@@ -387,13 +456,12 @@ z-index: -1;
     border-radius: 50%;
   }
   .home-DeltaView {
-    visibility: hidden;;
+    visibility: hidden;
     position: absolute;
     left: 3.5rem;
     top: 8rem;
     display: flex;
     justify-content: center;
-    width: 110px;
     height: 110px;
     background: #23aae2;
     text-align: center;
@@ -403,23 +471,23 @@ z-index: -1;
     align-items: center;
   }
   .home-ElMonte {
-    visibility: hidden;;
+    visibility: hidden;
     position: absolute;
     left: -7rem;
     top: 13rem;
     width: 110px;
     height: 110px;
-    background:#EEF827;
+    background: #eef827;
     text-align: center;
     line-height: 110px;
     border-radius: 50%;
     font-size: 20px;
   }
   .home-Highlands {
-    visibility: hidden;;
+    visibility: hidden;
     position: absolute;
     left: 8rem;
-    top:  20rem;
+    top: 20rem;
     width: 110px;
     height: 110px;
     background: red;
@@ -429,7 +497,7 @@ z-index: -1;
     font-size: 20px;
   }
   .home-MonteGardens {
-    visibility: hidden;;
+    visibility: hidden;
     position: absolute;
     right: 12rem;
     top: 0rem;
@@ -445,7 +513,7 @@ z-index: -1;
     font-size: 20px;
   }
   .home-PleasantHill {
-    visibility: hidden;;
+    visibility: hidden;
     position: absolute;
     right: -8rem;
     top: 1rem;
@@ -454,13 +522,13 @@ z-index: -1;
     align-items: center;
     width: 110px;
     height: 110px;
-    background: #EEF827;
+    background: #eef827;
     text-align: center;
     line-height: 4-px;
     border-radius: 50%;
   }
   .home-Sequoia {
-    visibility: hidden;;
+    visibility: hidden;
     position: absolute;
     right: 3.5rem;
     top: 8rem;
@@ -475,7 +543,7 @@ z-index: -1;
     border-radius: 50%;
   }
   .home-TiceCreek {
-    visibility: hidden;;
+    visibility: hidden;
     position: absolute;
     right: -7rem;
     top: 13rem;
@@ -493,19 +561,19 @@ z-index: -1;
     visibility: hidden;
     position: absolute;
     right: 8rem;
-    top:  20rem;
+    top: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 110px;
     height: 110px;
-    background: #EEF827;
+    background: #eef827;
     text-align: center;
     line-height: 4-px;
     border-radius: 50%;
     font-size: 20px;
   }
-  
+
   .home-absent-dropIn {
     position: absolute;
     left: 0px;
@@ -515,11 +583,10 @@ z-index: -1;
     align-items: center;
     width: 110px;
     height: 110px;
-    background: #EEF827;
+    background: #eef827;
     text-align: center;
     line-height: 4-px;
     border-radius: 50%;
     font-size: 20px;
   }
-
 }

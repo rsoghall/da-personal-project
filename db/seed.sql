@@ -14,7 +14,8 @@ create table centers
     director_address text,
     director_phone text,
     registration_form text,
-    state_license varchar(64)
+    state_license varchar(64),
+    calendar text
 );
 
 create table users
@@ -55,7 +56,8 @@ insert into centers
     director_email,
     director_phone,
     registration_form,
-    state_license
+    state_license,
+    calendar
     )
 values
     (
@@ -66,7 +68,8 @@ values
         'Ayers@dianneadair.org',
         '925.671.4922',
         'http://dianneadair.org/PDFs/Ayers%20Packet%202018.pdf',
-        '070215110'
+        '070215110',
+        'https://calendar.google.com/calendar/embed?src=dianneadair.org_84o21m4h41q8pal7dvsq93pi8s%40group.calendar.google.com&ctz=America%2FLos_Angeles'
 ),
     (
         'Bancroft',
@@ -76,7 +79,8 @@ values
         'Bancroft@dianneadair.org',
         '925.938.4063',
         'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
-        '07209004'
+        '07209004',
+        'https://calendar.google.com/calendar/embed?src=dianneadair.org_hhlk2enfbips2g3m01t5mqs35o%40group.calendar.google.com&ctz=America%2FLos_Angeles'
 ),
     (
         'Delta View',
@@ -86,7 +90,9 @@ values
         'DeltaView@dianneadair.org',
         '925.682.8000',
         'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
-        '073404765'
+        '073404765',
+        'https://calendar.google.com/calendar/embed?src=dianneadair.org_l9bspgmbrj3fqbssgjgkergrss%40group.calendar.google.com&ctz=America%2FLos_Angeles'
+
 ),
     (
         'El Monte',
@@ -96,27 +102,30 @@ values
         'ElMonte@dianneadair.org',
         '925.682.5060',
         'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
-        '070215177'
+        '070215177',
+        'https://calendar.google.com/calendar/embed?src=dianneadair.org_2j3ebuvee5m5388a8vmp009fgo%40group.calendar.google.com&ctz=America%2FLos_Angeles'
 ),
     (
         'Highlands',
         'Danette Mullen',
-        'http://via.placeholder.com/200',
+        'https://dianne-adair-s3.s3.amazonaws.com/fab1d736-1b1b-4410-b099-64f1bb538736-Shauna.jpg',
         '1326 Pennsylvania, Concord CA 94521',
         'Highlands@dianneadair.org',
         '925.672.6144',
         'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
-        '070207264'
+        '070207264',
+        'https://calendar.google.com/calendar/embed?src=dianneadair.org_u33griitv2jljeqr3e0pqki378%40group.calendar.google.com&ctz=America%2FLos_Angeles'
 ),
     (
         'Monte Gardens',
         'Shauna Potts',
-        'http://via.placeholder.com/200',
+        'https://dianne-adair-s3.s3.amazonaws.com/fab1d736-1b1b-4410-b099-64f1bb538736-Shauna.jpg',
         '3841 Larkspur Dr, Concord CA 94517',
         'MonteGardens@dianneadair.org',
         '925.356.2343',
         'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
-        '073404777'
+        '073404777',
+        'https://calendar.google.com/calendar/embed?src=dianneadair.org_c1sorinupm17cd3d2k0mpld8uk%40group.calendar.google.com&ctz=America%2FLos_Angeles'
 ),
     (
         'Pleasant Hill',
@@ -126,37 +135,41 @@ values
         'PleasantHill@dianneadair.org',
         '925.938.3043',
         'http://dianneadair.org/PDFs/ph_2018_packet.pdf',
-        '070210164'
+        '070210164',
+        'https://calendar.google.com/calendar/embed?src=dianneadair.org_u3tm43qhau7jr2j3nml6557dhk%40group.calendar.google.com&ctz=America%2FLos_Angeles'
 ),
     (
         'Sequoia',
         'Janet Moore',
-        'http://via.placeholder.com/200',
+        'https://dianne-adair-s3.s3.amazonaws.com/d52cb6c3-588d-4e50-8674-4b5866ee85cb-Janet.jpg',
         '277 Boyd Road, Pleasant Hill, CA 94523',
         'Sequoia@dianneadair.org',
         '925.939.6336',
         'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
-        '070210898'
+        '070210898',
+        'https://calendar.google.com/calendar/embed?src=dianneadair.org_ui9cdlosc3fkn71brgjjklgqu4%40group.calendar.google.com&ctz=America%2FLos_Angeles'
 ),
     (
         'Tice Creek',
         'Judy Angel',
-        'http://via.placeholder.com/200',
+        'https://dianne-adair-s3.s3.amazonaws.com/36aad290-9842-47d8-84c6-bf21d721f68c-Judy-Jerry.jpg',
         '1847 Newell Ave, Walnut Creek, CA 94595',
         'TiceCreek@dianneadair.org',
         '925.705.7255',
         'http://dianneadair.org/PDFs/TC_2018%20packet.pdf',
-        '073407478'
+        '073407478',
+        'https://calendar.google.com/calendar/embed?src=dianneadair.org_l98lf6ej1edaduplstssv131bo%40group.calendar.google.com&ctz=America%2FLos_Angeles'
 ),
     (
         'Westwood',
         'Debbie Trammel',
-        'http://via.placeholder.com/200',
+        'https://dianne-adair-s3.s3.amazonaws.com/50a5244c-8cef-4a62-9f87-75a836d7b440-Debbie.jpg',
         '1748 West Street, Concord, CA 94521',
         'Westwood@dianneadair.org',
         '925.969.1784',
         'http://dianneadair.org/PDFs/WW_2018%20Packet.pdf',
-        '0703401954'
+        '0703401954',
+        'https://calendar.google.com/calendar/embed?src=dianneadair.org_kj1or7lu4fcuf408b98bed0jho%40group.calendar.google.com&ctz=America%2FLos_Angeles'
 );
 
 insert into users

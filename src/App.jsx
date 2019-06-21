@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import axios from "axios";
 import "./App.css";
 import About from "./views/About/About";
+import Calendars from "./views/Calendars/Calendars"
 import Centers from "./views/Centers/Centers";
 import CentersDashboard from "./views/CentersDashboard/CentersDashboard";
 import Contact from "./views/Contact/Contact";
@@ -16,7 +17,7 @@ import Footer from "./components/Footer/Footer";
 import Staff from "./views/Staff/Staff";
 import AllStaff from "./views/AllStaff/AllStaff";
 import store from "./ducks/store";
-import { getCenters, getStaff } from "./ducks/store";
+import { getCenters, getStaff, getForms } from "./ducks/store";
 import "./reset.css";
 
 class App extends Component {
@@ -26,6 +27,9 @@ class App extends Component {
     });
     axios.get("/api/staff").then(staff => {
       store.dispatch(getStaff(staff.data));
+    });
+    axios.get("/api/forms").then(forms => {
+      store.dispatch(getForms(forms.data));
     });
   }
   render() {
@@ -42,6 +46,7 @@ class App extends Component {
             />
             <Route path="/centers/staff/:id" component={Staff} />
             <Route path="/centers/allstaff" component={AllStaff} />
+            <Route path="/centers/calendar/:id" component={Calendars} />
             <Route path="/centers/:id" component={Centers} />
             <Route path="/contact/:id" component={Contact} />
             <Route path="/corporate" component={Corporate} />

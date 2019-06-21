@@ -66,7 +66,7 @@ module.exports = {
       const [foundUser] = await db.login_user([user_email]);
       console.log(foundUser);
       if (!foundUser) {
-        return res.status(404).send("User not found");
+        return res.status(200).send("User not found");
       }
       const isAuth = bcrypt.compareSync(password, foundUser.user_hash);
       if (isAuth) {
@@ -153,6 +153,36 @@ module.exports = {
     }
   },
 
+
+  createForm: async (req, res) => {
+    try {
+      const { formName, formLink } = req.body;
+      const centerId = req.session.center_id;
+      const db = req.app.get("db");
+      const addForm = await db.add_form(
+        formName,
+        formLink,
+        centerId
+      );
+      res.status(200).send(addForm);
+    } catch (error) {
+      console.log({ error });
+      res.status(500).send(error);
+    }
+  },
+
+
+  forms: async (req, res) => {
+    try {
+      const db = req.app.get("db");
+      const formsArr = await db.get_forms();
+      res.status(200).send(formsArr);
+    } catch (error) {
+      console.log({ error });
+      res.status(500).send(error);
+    }
+  },
+  
   aws3: (req, res) => {
     aws.config = {
       region: AWS_REGION,
