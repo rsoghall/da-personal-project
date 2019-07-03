@@ -24,13 +24,6 @@ export class Home extends Component {
     });
   }
   render() {
-    // const displayCenters = this.state.centers.map(center => {
-    //   return (
-    //     <Link to={`/centers/${center.center_id}`}>
-    //       <li>{center.center_name}</li>
-    //     </Link>
-    //   );
-    // });
     return (
       <div className="home-outer-container">
         <h1 className="home-title">Dianne Adair Enrichment Programs</h1>
@@ -39,16 +32,9 @@ export class Home extends Component {
         <div>
           <img className="home-logo" src={Logo2} alt="Dianne Adair Logo" />
         </div>
-          <div className="home-ball home-Ayers">
-            <figure className="ball"><span className="shadow"></span>
-            <Link
-              style={{ textDecoration: "none", color: "#EEF827" }}
-              to="/centers/1"
-            >
-              Ayers
-            </Link>
-            </figure>
-          </div>
+            
+        <div className="home-balls">
+          <div className="home-ball home-Ayers"> <Link style={{ textDecoration: "none", color: "#EEF827" }} to="/centers/1">Ayers</Link></div>
           <div className="home-ball home-Bancroft"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/2'>Bancroft</Link></div>
           <div className="home-ball home-DeltaView"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/3'>Delta <br></br>View</Link></div>
           <div className="home-ball home-ElMonte"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/4'>El Monte</Link></div>
@@ -58,8 +44,8 @@ export class Home extends Component {
           <div className="home-ball home-Sequoia"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/8'>Sequoia</Link></div>
           <div className="home-ball home-TiceCreek"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/9'>Tice<br></br>Creek</Link></div>
           <div className="home-ball home-Westwood"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/10'>Westwood</Link></div>
-          {/* <div className="home-absent-dropIn"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/login'>Absent/<br></br>Drop In</Link></div> */}
-        
+          </div>
+          {/* <div className="home-absent-dropIn"> <Link style={{ textDecoration: 'none', color: 'white' }} to='/contact/1'>Absent/Drop In</Link></div> */}
         </div>
         </div>
     );

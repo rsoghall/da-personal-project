@@ -1,5 +1,5 @@
-@import "https://fonts.googleapis.com/css?family=Raleway";
-* { box-sizing: border-box; }
+/* @import "https://fonts.googleapis.com/css?family=Raleway"; */
+/* * { box-sizing: border-box; } */
 
 .contact-title{ 
   position: relative;
@@ -12,9 +12,21 @@
   font-weight: normal;
   font-family: Times, serif;
   font-size: 3rem;
-  padding: 0.5rem; }
+  padding: 0.5rem; 
+}
 
-
+.contact-title > h1 {
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  font-weight: normal;
+  font-family: Times, serif;
+  font-size: 3rem;
+  padding: .5rem;
+}
 #contact:hover { background: #666; }
 #contact:active { background: #444; }
 

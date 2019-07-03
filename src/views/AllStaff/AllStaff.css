@@ -15,7 +15,6 @@
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
-  height: 10rem;
-  /* background-color: yellow; */
+  /* height: 10rem; */
   padding: 1rem;
 }

@@ -4,33 +4,27 @@ import './About.css';
 export default function About() {
   return (
     <div className="aboutUs-wrapper">
-      <div className="aboutUs-about">
         <h1> About Us</h1>
-      </div>
-      <div className="info-wrapper">
-      <div className="aboutUs-info">
+        <div className="aboutUs-info">
         <p>
           Welcome to Dianne Adair Enrichment Programs web site. Welcome to
-          Dianne Adair Enrichment Programs web site. Starting in 1983 with one
-          location, Dianne Carbine opened Dianne Adair Daycare Centers with the
-          ideal to bring safe, affordable daycare in an educational environment
-          to working parents of school age children. Through her vision and
-          guidance along with her husband Larry, we have grown to nine sites
-          with over a hundred employees and have had thousands of children under
-          our care. In 2003 Dianne and Larry retired turning the company over to
-          the capable hands of Dianne’s son, Todd Porter, and Larry’s son, Brian
-          Carbine and we became Dianne Adair Enrichment Programs. Together they
-          have great plans for future growth while maintaining the integrity of
-          the original dream. Please feel free to browse through our pages and
-          to contact us any time at one of our sites or the main office for
-          questions regarding daycare or employment opportunities.
+            Dianne Adair Enrichment Programs web site. Starting in 1983 with one
+            location, Dianne Carbine opened Dianne Adair Daycare Centers with the
+            ideal to bring safe, affordable daycare in an educational environment
+            to working parents of school age children. Through her vision and
+            guidance along with her husband Larry, we have grown to nine sites
+            with over a hundred employees and have had thousands of children under
+            our care. In 2003 Dianne and Larry retired turning the company over to
+            the capable hands of Dianne’s son, Todd Porter, and Larry’s son, Brian
+            Carbine and we became Dianne Adair Enrichment Programs. Together they
+            have great plans for future growth while maintaining the integrity of
+            the original dream. Please feel free to browse through our pages and
+            to contact us any time at one of our sites or the main office for
+            questions regarding daycare or employment opportunities.
         </p>
         </div>
-      </div>
 
-      <div className="aboutUs-mission">
         <h1>Mission Statement</h1>
-      </div>
 
       <div className="aboutUs-statement">
         <p>

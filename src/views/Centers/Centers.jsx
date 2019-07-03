@@ -30,45 +30,51 @@ export class Centers extends Component {
       return <h1>loading</h1>;
     }
     return (
-      <div>
-        <div className="centers-title">
-          <h1>Dianne Adair {displayCenter.center_name}</h1>
-        </div>
-        <div className="centers-info-container">
-          <img
-            src={displayCenter.director_url}
-            alt={displayCenter.director_name}
-          />
+      <div className="centers-info-container">
+        <h1>Dianne Adair {displayCenter.center_name}</h1>
+        <img
+          className="centers-image"
+          src={displayCenter.director_url}
+          alt={displayCenter.director_name}
+        />
+        <div className="centers-info">
           <h4>Director: {displayCenter.director_name}</h4>
           <h4>{displayCenter.director_address}</h4>
           <h4>{displayCenter.director_email}</h4>
           <h4>{displayCenter.director_phone}</h4>
           <h4>State License# {displayCenter.state_license}</h4>
         </div>
-        <div className="centers-reg-link">
+        <div className="centers-links-container">
+          <Link className="centers-link" to={`/contact`}>
+            <button>Absent/Drop In</button>
+          </Link>
+          <Link
+            className="centers-staff-link centers-link"
+            to={`/centers/staff/${displayCenter.center_id}`}
+          >
+            <button>Staff</button>
+          </Link>
+          <Link
+            className="centers-link"
+            to={`/centers/calendar/${displayCenter.center_id}`}
+          >
+            <button>Calendar</button>
+          </Link>
+          {/* <div className="centers-button-hidden">
+            <button>Announcements</button>
+            <button>Pre-K</button>
+            <button>Events</button>
+            <button>Newsletter</button>
+          </div> */}
           <a
+            className="centers-link"
             href={displayCenter.registration_form}
             download
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>Registration Forms</button>
+            <button className="centers-hidden">Registration Forms</button>
           </a>
-        </div>
-        <div className="centers-links-container">
-          <Link to={`/centers/staff/${displayCenter.center_id}`}>
-            <button>Staff</button>
-          </Link>
-          <Link to={`/centers/calendar/${displayCenter.center_id}`}>
-            <button>Calendar</button>
-          </Link>
-          <button>Announcements</button>
-          <button>Pre-K</button>
-          <button>Events</button>
-          <button>Newsletter</button>
-          <Link to={`/contact`}>
-            <button>Absent/Drop In</button>
-          </Link>
           {/* </div> */}
         </div>
       </div>

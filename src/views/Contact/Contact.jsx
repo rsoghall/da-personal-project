@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import store from '../../ducks/store'
-import logo from "../../images/DA-transparent-logo.png";
+import Logo2 from "../../images/DA-Logo-5-3-transparent-crop.png";
 import "./Contact.css";
 
 export class Contact extends Component {
@@ -34,13 +34,14 @@ export class Contact extends Component {
           <h1>{displayCenter.center_name} Absent/Drop In</h1>
         </div>
         <div>
-          <img className="contact-logo" src={logo} alt="Dianne Adair Logo" />
+          <img className="contact-logo" src={Logo2} alt="Dianne Adair Logo" />
         </div>
 
         <form className="cf">
           <div className="half-left-cf">
             <input type="text" id="input-name" placeholder="Name" />
             <input type="email" id="input-email" placeholder="Email address" />
+            <input type="text" id="input-center" placeholder="Select Center" />
             <input
               type="text"
               id="input-subject"

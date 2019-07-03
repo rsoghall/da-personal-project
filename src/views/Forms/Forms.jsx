@@ -255,7 +255,7 @@ export class Forms extends Component {
               />
             </Modal>
           )}
-          <div className = "forms-registration">
+          {/* <div className = "forms-registration">
             <iframe
               title="online registration form"
               src="http://weblink.donorperfect.com/EzGoingChildcare_Registration"
@@ -266,7 +266,7 @@ export class Forms extends Component {
                 frameborder: 0,
                 scrolling: false
               }}/>
-          </div>
+          </div> */}
         </div>
       </div>
     );

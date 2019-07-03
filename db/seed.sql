@@ -74,7 +74,7 @@ values
     (
         'Bancroft',
         'Stefanie Lee',
-        'https://s3-us-west-1.amazonaws.com/dianne-adair-s3/images/Bancroft/stefanie.jpg',
+        'https://dianne-adair-s3.s3.amazonaws.com/aa2f7dbb-4989-4c4a-9ea6-58a48ceb88a0-stefanie-2.jpg',
         '2200 Parish Dr., Walnut Creek CA 94598',
         'Bancroft@dianneadair.org',
         '925.938.4063',
@@ -85,7 +85,7 @@ values
     (
         'Delta View',
         'Marcia Brown',
-        'http://via.placeholder.com/200',
+        'https://dianne-adair-s3.s3.amazonaws.com/b61c5c08-9c33-4031-bdf0-3b1ce26caeb1-Marcia.jpg',
         '2916 Rio Verde Dr., Pittsburg CA 94565',
         'DeltaView@dianneadair.org',
         '925.682.8000',
@@ -97,7 +97,7 @@ values
     (
         'El Monte',
         'Lisa Brady',
-        'https://dianne-adair-s3.s3.amazonaws.com/c44a248c-1648-49d6-9c5d-b78280e1bc5c-DA-ElMonte-Lisa.jpg',
+        'https://dianne-adair-s3.s3.amazonaws.com/afd70908-333b-4087-8d6c-949f187be45c-DA-ElMonte-Lisa2.jpg',
         '1400 Dina Drive, Concord, CA 94518',
         'ElMonte@dianneadair.org',
         '925.682.5060',
@@ -108,7 +108,7 @@ values
     (
         'Highlands',
         'Danette Mullen',
-        'https://dianne-adair-s3.s3.amazonaws.com/fab1d736-1b1b-4410-b099-64f1bb538736-Shauna.jpg',
+        'https://dianne-adair-s3.s3.amazonaws.com/64ec470b-91e0-45de-a00e-f6a1f5ddf493-HIghlands-Group.jpg',
         '1326 Pennsylvania, Concord CA 94521',
         'Highlands@dianneadair.org',
         '925.672.6144',
@@ -119,7 +119,7 @@ values
     (
         'Monte Gardens',
         'Shauna Potts',
-        'https://dianne-adair-s3.s3.amazonaws.com/fab1d736-1b1b-4410-b099-64f1bb538736-Shauna.jpg',
+        'https://dianne-adair-s3.s3.amazonaws.com/5e0ec16b-dd40-4420-a059-0d300c2ef3da-Shauna2.jpg',
         '3841 Larkspur Dr, Concord CA 94517',
         'MonteGardens@dianneadair.org',
         '925.356.2343',
@@ -130,7 +130,7 @@ values
     (
         'Pleasant Hill',
         'Cindy Hill',
-        'http://via.placeholder.com/200',
+        'https://dianne-adair-s3.s3.amazonaws.com/be6e8665-c9c9-4602-b560-caa704225eae-Cindy-PH-2.jpg',
         '2097 Oak Park Blvd, Pleasant Hill, CA 94523',
         'PleasantHill@dianneadair.org',
         '925.938.3043',
