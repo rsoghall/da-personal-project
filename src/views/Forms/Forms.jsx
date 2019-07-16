@@ -26,7 +26,6 @@ export class Forms extends Component {
   componentDidMount() {
     store.subscribe(() => {
       const reduxState = store.getState();
-      debugger
       this.setState({
         centers: reduxState.centers,
         forms: reduxState.forms,
@@ -184,9 +183,9 @@ export class Forms extends Component {
     const { editFormName, editFormLink, targetFormNameReadOnly } = this.state;
     return (
       <div className="forms-screenWrapper">
-        <div className="forms-title">
-          <h1> {displayCenter.center_name} Forms</h1>
-        </div>
+          <h1 className="forms-title"> {displayCenter.center_name} Forms</h1>
+        {/* <div className="forms-title"> */}
+        {/* </div> */}
         {role === "director" && (
           <div>
             <button

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./NavBar.css";
 import store from "../../ducks/store";
 import logo from "../../images/DA-Logo-5-3-transparent-crop.png";
-import OutsideClickHandler from 'react-outside-click-handler';
 
 export class navBar extends Component {
   constructor() {
@@ -25,30 +24,38 @@ export class navBar extends Component {
       });
     });
   }
-  toggleDropDown = (dropdown, isOpen) => {
+  toggleDropDown = (e, dropdown, isOpen, handler) => {
+    e.stopPropagation();
     this.setState({
       [dropdown]: isOpen
-    })
-
-  }
+    });
+  };
   render() {
-
-  let  linkStyle = {
-      textDecoration: 'none',
-    color: '#417FFC',
-    fontWeight: 'bold'
-      
-    }
+    let linkStyle = {
+      textDecoration: "none",
+      color: "#417FFC",
+      fontWeight: "bold"
+    };
     const displayCenters = this.state.centers.map(center => {
       return (
-        <Link key={center.center_id} className="navbar-dropLinks" to={`/centers/${center.center_id}`}>
+        <Link
+          key={center.center_id}
+          className="navbar-dropLinks"
+          to={`/centers/${center.center_id}`}
+          onClick={e => this.toggleDropDown(e, "centersOpen", false)}
+        >
           <li className="navbar-menuItems">{center.center_name}</li>
         </Link>
       );
     });
     const displayCenterForms = this.state.centers.map(center => {
       return (
-        <Link key={center.center_id} style={linkStyle} to={`/forms/${center.center_id}`}>
+        <Link
+          key={center.center_id}
+          style={linkStyle}
+          to={`/forms/${center.center_id}`}
+          onClick={e => this.toggleDropDown(e, "formsOpen", false)}
+        >
           <li className="navbar-menuItems">{center.center_name}</li>
         </Link>
       );
@@ -60,7 +67,7 @@ export class navBar extends Component {
     //     </Link>
     //   );
     // });
-    const { formsOpen, centersOpen } = this.state
+    const { formsOpen, centersOpen } = this.state;
     return (
       <nav className="navbar-container">
         <Link style={linkStyle} to="/">
@@ -84,39 +91,61 @@ export class navBar extends Component {
           </div> */}
 
           <div
-            onMouseEnter={() => this.toggleDropDown('formsOpen', true)}
-            onMouseLeave={() => this.toggleDropDown('formsOpen', false)}
-            onClick={() => this.toggleDropDown('formsOpen', !formsOpen)}
-            className="forms-dropdown navbar-hidden">
+            onMouseEnter={e => this.toggleDropDown(e, "formsOpen", true)}
+            onMouseLeave={e => this.toggleDropDown(e, "formsOpen", false)}
+            onClick={e => this.toggleDropDown(e, "formsOpen", !formsOpen)}
+            className="forms-dropdown navbar-hidden"
+          >
             <li>
-              Forms
-              &#9776;
-              <ul className="forms-dropdown-content">{displayCenterForms}</ul>
+              Forms &#9776;
+              {formsOpen && (
+                <ul className="forms-dropdown-content">{displayCenterForms}</ul>
+              )}
             </li>
           </div>
           <div
-            onMouseEnter={() => this.toggleDropDown('centersOpen', true)}
-            onMouseLeave={() => this.toggleDropDown('centersOpen', false)}
-            onClick={() => this.toggleDropDown('centersOpen', !centersOpen)}
-            className="centers-dropdown">
+            onMouseEnter={e =>
+              this.toggleDropDown(e, "centersOpen", true, "onMouseEnter")
+            }
+            onMouseLeave={e =>
+              this.toggleDropDown(e, "centersOpen", false, "onMouseLeave")
+            }
+            onClick={e => this.toggleDropDown(e, "centersOpen", true)}
+            className="centers-dropdown"
+          >
             {/* navbar */}
-            <li className="navbar-centers"> 
-              Centers
-              &#9776;
-              <ul className="centers-dropdown-content">{displayCenters}</ul>
+            <li className="navbar-centers">
+              Centers &#9776;
+              {centersOpen && (
+                <ul className="centers-dropdown-content">{displayCenters}</ul>
+              )}
             </li>
           </div>
-          <Link className="navbar-hidden" style={{ textDecoration: 'none', color: '#417FFC', fontWeight: 'bold'}} to="/about">
+          <Link
+            className="navbar-hidden"
+            style={{
+              textDecoration: "none",
+              color: "#417FFC",
+              fontWeight: "bold"
+            }}
+            to="/about"
+          >
             <li>About Us</li>
           </Link>
-          <Link className="navbar-hidden" style={{ textDecoration: 'none', color: '#417FFC', fontWeight: 'bold' }} to="/login">
+          <Link
+            className="navbar-hidden"
+            style={{
+              textDecoration: "none",
+              color: "#417FFC",
+              fontWeight: "bold"
+            }}
+            to="/login"
+          >
             <li>Log In</li>
           </Link>
         </ul>
       </nav>
-      
     );
-    
   }
 }
 

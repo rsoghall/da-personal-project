@@ -78,7 +78,7 @@ values
         '2200 Parish Dr., Walnut Creek CA 94598',
         'Bancroft@dianneadair.org',
         '925.938.4063',
-        'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
+        -- 'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
         '07209004',
         'https://calendar.google.com/calendar/embed?src=dianneadair.org_hhlk2enfbips2g3m01t5mqs35o%40group.calendar.google.com&ctz=America%2FLos_Angeles'
 ),

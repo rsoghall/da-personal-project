@@ -14,7 +14,7 @@
       background-position: center;
       background-size: 520px 520px;
 }
-.forms-title > h1{
+.forms-title {
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
@@ -23,7 +23,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
     padding: 2rem;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .form-reg-link {

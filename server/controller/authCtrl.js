@@ -171,6 +171,18 @@ module.exports = {
     }
   },
 
+  deleteForm: async (req, res) => {
+    try {
+      const formId = req.params.id;
+      const db = req.app.get("db");
+      const delForm = await db.delete_form(formId);
+      res.status(200).send(delForm);
+    } catch (error) {
+      console.log({ error });
+      res.status(500).send(error);
+    }
+  },
+
 
   forms: async (req, res) => {
     try {
