@@ -39,7 +39,7 @@ export class CentersDashboard extends Component {
       return <h1>loading</h1>;
     }
     return (
-      <div>
+      <div className='centersDashboard-screenWrapper'>
         <div className='centersDashboard-title'>
           <h1>{displayCenter.center_name} Dashboard</h1>
         </div>

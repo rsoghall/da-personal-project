@@ -1,3 +1,5 @@
+drop table if exists contract_days;
+drop table if exists contract;
 drop table if exists users;
 drop table if exists staff;
 drop table if exists forms;
@@ -47,6 +49,27 @@ create table forms
     center_id int REFERENCES centers
 );
 
+create table contract
+(
+    contract_id serial primary key,
+    center_id int REFERENCES centers,
+    child_name varchar(128),
+    contract_month varchar(64),
+    contract_year varchar(64),
+    grade varchar(64)
+);
+
+create table contract_days
+(
+    contract_day_id SERIAL PRIMARY KEY,
+    contract_id int REFERENCES contract,
+    contract_date date,
+    in_time varchar(64),
+    week_number int,
+    out_time varchar(64),
+    total_hours decimal
+);
+
 insert into centers
     (
     center_name,
@@ -78,7 +101,7 @@ values
         '2200 Parish Dr., Walnut Creek CA 94598',
         'Bancroft@dianneadair.org',
         '925.938.4063',
-        -- 'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
+        'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
         '07209004',
         'https://calendar.google.com/calendar/embed?src=dianneadair.org_hhlk2enfbips2g3m01t5mqs35o%40group.calendar.google.com&ctz=America%2FLos_Angeles'
 ),
@@ -108,7 +131,7 @@ values
     (
         'Highlands',
         'Danette Mullen',
-        'https://dianne-adair-s3.s3.amazonaws.com/64ec470b-91e0-45de-a00e-f6a1f5ddf493-HIghlands-Group.jpg',
+        'https://dianne-adair-s3.s3.amazonaws.com/ecdf4ba5-91bd-40d9-8134-772ac09faad4-Danette-Highlands.jpg',
         '1326 Pennsylvania, Concord CA 94521',
         'Highlands@dianneadair.org',
         '925.672.6144',
@@ -120,7 +143,7 @@ values
         'Monte Gardens',
         'Shauna Potts',
         'https://dianne-adair-s3.s3.amazonaws.com/5e0ec16b-dd40-4420-a059-0d300c2ef3da-Shauna2.jpg',
-        '3841 Larkspur Dr, Concord CA 94517',
+        '3841 Larkspur Dr, Concord CA 94519',
         'MonteGardens@dianneadair.org',
         '925.356.2343',
         'http://dianneadair.org/PDFs/Dianne%20Adair%20El%20Monte%20Admission%20Packet%20Blanks%202017-2018.pdf',
@@ -156,7 +179,8 @@ values
         '1847 Newell Ave, Walnut Creek, CA 94595',
         'TiceCreek@dianneadair.org',
         '925.705.7255',
-        'http://dianneadair.org/PDFs/TC_2018%20packet.pdf',
+        -- 'http://dianneadair.org/PDFs/TC_2018%20packet.pdf',
+        'http://weblink.donorperfect.com/dae_reg_tikes_creek',
         '073407478',
         'https://calendar.google.com/calendar/embed?src=dianneadair.org_l98lf6ej1edaduplstssv131bo%40group.calendar.google.com&ctz=America%2FLos_Angeles'
 ),
@@ -190,7 +214,7 @@ values
         1,
         1 
 ),
-(
+    (
         '2',
         '2',
         $2, --password 2
@@ -198,7 +222,7 @@ values
         2,
         2 
 ),
-    
+
     (
         '3',
         '3',
@@ -207,7 +231,7 @@ values
         3,
         3 
 ),
-(
+    (
         '4',
         '4',
         $4, --password 4
@@ -215,7 +239,7 @@ values
         4,
         4 
 ),
-(
+    (
         '5',
         '5',
         $5, --password 5
@@ -223,7 +247,7 @@ values
         5,
         5 
 ),
-(
+    (
         '6',
         '6',
         $6, --password 6
@@ -231,7 +255,7 @@ values
         6,
         6 
 ),
-(
+    (
         '7',
         '7',
         $7, --password 7
@@ -239,7 +263,7 @@ values
         7,
         7 
 ),
-(
+    (
         '8',
         '8',
         $8, --password 8
@@ -247,7 +271,7 @@ values
         8,
         8 
 ),
-(
+    (
         '9',
         '9',
         $9, --password 9
@@ -255,7 +279,7 @@ values
         9,
         9 
 ),
-(
+    (
         '10',
         '10',
         $10, --password 10
@@ -263,196 +287,22 @@ values
         10,
         10 
 );
-insert into staff
-    (
-    staff_name,
-    staff_info,
-    staff_url,
-    center_id
-    )
-values
-    (
-        'Ryan',
-        'teacher 2 years',
-        'http://via.placeholder.com/100',
-        1
-),
-    (
-        'Janet',
-        'teacher 10 years',
-        'http://via.placeholder.com/100',
-        1
-),
-    (
-        'John',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        1
-),
-    (
-        'Julie',
-        'teacher 3 years',
-        'http://via.placeholder.com/100',
-        2
-),
-    (
-        'Erin',
-        'teacher 2 years',
-        'http://via.placeholder.com/100',
-        2
-),
-    (
-        'Kelly',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        2
-),
-    (
-        'Tim',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        3
-),
-    (
-        'John',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        3
-),
-    (
-        'Eric',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        3
-),
-    (
-        'Erin',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        4
-),
-    (
-        'Michelle',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        4
-),
-    (
-        'Lisa',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        4
-),
-    (
-        'Vicki',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        5
-),
-    (
-        'Roxanne',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        5
-),
-(
-        'Ben',
-        'teacher 2 years',
-        'http://via.placeholder.com/100',
-        5
-),
-    (
-        'Kim',
-        'teacher 10 years',
-        'http://via.placeholder.com/100',
-        6
-),
-    (
-        'Sarah',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        6
-),
-    (
-        'Kristen',
-        'teacher 3 years',
-        'http://via.placeholder.com/100',
-        6
-),
-    (
-        'Kayla',
-        'teacher 2 years',
-        'http://via.placeholder.com/100',
-        7
-),
-    (
-        'Ally',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        7
-),
-    (
-        'Tina',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        7
-),
-    (
-        'Julia',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        8
-),
-    (
-        'Cathy',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        8
-),
-    (
-        'Taylor',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        8
-),
-    (
-        'Linda',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        9
-),
-    (
-        'Shelby',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        9
-),
-    (
-        'Davann',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        9
-)
-,
-    (
-        'Jill',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        10
-),
-    (
-        'Leah',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        10
-),
-    (
-        'Alyssa',
-        'teacher 5 years',
-        'http://via.placeholder.com/100',
-        10
-);
-        
+-- insert into staff
+--     (
+--     staff_name,
+--     staff_info,
+--     staff_url,
+--     center_id
+--     )
+-- values
+--     (
+--         'Ryan',
+--         'teacher 2 years',
+--         'http://via.placeholder.com/100',
+--         1
+-- ),
+    
+
 
 insert into forms
     (
@@ -466,3 +316,36 @@ values
         'http://dianneadair.org/PDFs/Dianne%20Adair%20at%20Bancroft%20Admission%20Packet.pdf',
         2
 );
+
+
+INSERT INTO contract
+    (center_id, child_name, contract_month, contract_year, grade)
+VALUES
+    (1, 'Billy', 8, 2019, 'pre-k'),
+    (1, 'Jane', 8, 2019, 'school age'),
+    (1, 'Joe', 8, 2019, 'kinder');
+
+INSERT INTO contract_days
+    (contract_id, contract_date, in_time, out_time, total_hours, week_number)
+VALUES
+    (1, '2019-09-02T06:00:00.000Z', '7:30 AM', '3:00 PM', 7.5, 1),
+    (1, '2019-09-03T06:00:00.000Z', '7:30 AM', '3:00 PM', 7.5, 1),
+    (1, '2019-09-04T06:00:00.000Z', '7:30 AM', '3:00 PM', 7.5, 1),
+    (1, '2019-09-09T06:00:00.000Z', '7:30 AM', '3:00 PM', 7.5, 2),
+    (1, '2019-09-10T06:00:00.000Z', '7:30 AM', '3:00 PM', 7.5, 2),
+    (1, '2019-09-11T06:00:00.000Z', '7:30 AM', '3:00 PM', 7.5, 2),
+    (1, '2019-09-16T06:00:00.000Z', '7:30 AM', '3:00 PM', 7.5, 3),
+    (1, '2019-09-17T06:00:00.000Z', '7:30 AM', '3:00 PM', 7.5, 3),
+    (1, '2019-09-18T06:00:00.000Z', '7:30 AM', '3:00 PM', 7.5, 3),
+    (2, '2019-09-02T06:00:00.000Z', '8:30 AM', '3:00 PM', 6.5, 1),
+    (2, '2019-09-03T06:00:00.000Z', '8:30 AM', '3:00 PM', 6.5, 1),
+    (2, '2019-09-04T06:00:00.000Z', '8:30 AM', '3:00 PM', 6.5, 1),
+    (2, '2019-09-09T06:00:00.000Z', '8:30 AM', '3:00 PM', 6.5, 2),
+    (2, '2019-09-10T06:00:00.000Z', '8:30 AM', '3:00 PM', 6.5, 2),
+    (2, '2019-09-11T06:00:00.000Z', '8:30 AM', '3:00 PM', 6.5, 2),
+    (2, '2019-09-16T06:00:00.000Z', '8:30 AM', '3:00 PM', 6.5, 3),
+    (2, '2019-09-17T06:00:00.000Z', '8:30 AM', '3:00 PM', 6.5, 3),
+    (2, '2019-09-18T06:00:00.000Z', '8:30 AM', '3:00 PM', 6.5, 3);
+
+
+

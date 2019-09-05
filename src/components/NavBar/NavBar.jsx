@@ -12,7 +12,8 @@ export class navBar extends Component {
       centers: reduxState.centers,
       eventsOpen: false,
       formsOpen: false,
-      centersOpen: false
+      centersOpen: false,
+      contractOpen: false
     };
   }
 
@@ -60,6 +61,18 @@ export class navBar extends Component {
         </Link>
       );
     });
+    const displayContract = this.state.centers.map(center => {
+      return (
+        <Link
+          key={center.center_id}
+          style={linkStyle}
+          to={`/contract/${center.center_id}`}
+          onClick={e => this.toggleDropDown(e, "contractOpen", false)}
+        >
+          <li className="navbar-menuItems">{center.center_name}</li>
+        </Link>
+      );
+    });
     // const displayCenterEvents = this.state.centers.map(center => {
     //   return (
     //     <Link key={center.center_id} style={linkStyle} to={`/events/${center.center_id}`}>
@@ -67,7 +80,7 @@ export class navBar extends Component {
     //     </Link>
     //   );
     // });
-    const { formsOpen, centersOpen } = this.state;
+    const { formsOpen, centersOpen, contractOpen } = this.state;
     return (
       <nav className="navbar-container">
         <Link style={linkStyle} to="/">
@@ -100,6 +113,19 @@ export class navBar extends Component {
               Forms &#9776;
               {formsOpen && (
                 <ul className="forms-dropdown-content">{displayCenterForms}</ul>
+              )}
+            </li>
+          </div>
+          <div
+            onMouseEnter={e => this.toggleDropDown(e, "contractOpen", true)}
+            onMouseLeave={e => this.toggleDropDown(e, "contractOpen", false)}
+            onClick={e => this.toggleDropDown(e, "contractOpen", !formsOpen)}
+            className="contract-dropdown navbar-hidden"
+          >
+            <li>
+              Contract &#9776;
+              {contractOpen && (
+                <ul className="contract-dropdown-content">{displayContract}</ul>
               )}
             </li>
           </div>

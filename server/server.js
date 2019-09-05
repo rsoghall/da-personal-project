@@ -90,3 +90,5 @@ app.get(`/api/staff`, authCtrl.staff);
 app.get(`/api/forms`, authCtrl.forms);
 app.get(`/api/centers`, authCtrl.centers);
 app.get(`/api/signs3`, authCtrl.aws3);
+app.get('/api/contract', authCtrl.getContractDates)
+app.post('/api/contract', authCtrl.addContract)

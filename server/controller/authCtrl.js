@@ -2,6 +2,20 @@ const bcrypt = require("bcryptjs");
 require("dotenv").config();
 
 const aws = require("aws-sdk");
+const _chunk = require("lodash.chunk");
+const {
+  startOfMonth,
+  getDate,
+  addMonths,
+  addDays,
+  getDay,
+  getMonth,
+  subDays,
+  endOfMonth,
+  eachDay,
+  isWeekend,
+  format
+} = require("date-fns");
 
 const {
   S3_BUCKET,
@@ -153,17 +167,12 @@ module.exports = {
     }
   },
 
-
   createForm: async (req, res) => {
     try {
       const { formName, formLink } = req.body;
       const centerId = req.session.center_id;
       const db = req.app.get("db");
-      const addForm = await db.add_form(
-        formName,
-        formLink,
-        centerId
-      );
+      const addForm = await db.add_form(formName, formLink, centerId);
       res.status(200).send(addForm);
     } catch (error) {
       console.log({ error });
@@ -183,7 +192,6 @@ module.exports = {
     }
   },
 
-
   forms: async (req, res) => {
     try {
       const db = req.app.get("db");
@@ -194,7 +202,7 @@ module.exports = {
       res.status(500).send(error);
     }
   },
-  
+
   aws3: (req, res) => {
     aws.config = {
       region: AWS_REGION,
@@ -251,5 +259,81 @@ module.exports = {
       console.log({ error });
       res.status(500).send(error);
     }
+  },
+  getContractDates: (req, res) => {
+    // get current date.
+    const today = new Date();
+    // const today = new Date();
+    today.setHours(0);
+    today.setMinutes(0);
+    today.setSeconds(0);
+    today.setMilliseconds(0);
+    // If its 15th show next month
+    // If its 16th show two months
+    const isBeforeFifteenth = getDate(today) <= 15;
+    const monthsToAdd = isBeforeFifteenth ? 1 : 2;
+    // get the first day of that month
+    const dateStart = startOfMonth(addMonths(today, monthsToAdd));
+    // get the target month
+    const targetMonth = getMonth(dateStart);
+    // go back to monday
+    const weekDayOfStart = getDay(dateStart);
+    const daysToSubtactFromStart = weekDayOfStart <= 1 ? 0 : weekDayOfStart - 1;
+    const adjustedDateStart = subDays(dateStart, daysToSubtactFromStart);
+    // get the end of the target month
+    const dateEnd = endOfMonth(addMonths(today, monthsToAdd));
+    const weekDayOfEnd = getDay(dateEnd);
+    // add extra days to friday or saturday
+    const daysToAddToEnd =
+      weekDayOfEnd === 0 || weekDayOfEnd >= 5 ? 0 : 5 - weekDayOfEnd;
+    const adjustedDateEnd = addDays(dateEnd, daysToAddToEnd);
+    // populate to end of month
+    const days = eachDay(adjustedDateStart, adjustedDateEnd)
+      .filter(day => !isWeekend(day))
+      .map(date => {
+        return {
+          date,
+          isInTargetMonth: getMonth(date) === targetMonth
+        };
+      });
+    // TODO (work in closed days)
+    res.send({
+      currentMonth: format(dateStart, "MMMM"),
+      currentYear: format(dateStart, "YYYY"),
+      days: _chunk(days, 5)
+    });
+  },
+
+  addContract: async (req, res) => {
+    const {
+      centerId,
+      childName,
+      currentYear,
+      grade,
+      contractedDays
+    } = req.body;
+    const db = req.app.get("db");
+    const [{ date: firstDay }] = contractedDays;
+    const [{ contract_id: contractId }] = await db.add_contract([
+      centerId,
+      childName,
+      getMonth(firstDay),
+      currentYear,
+      grade
+    ]);
+    await Promise.all(
+      contractedDays.map(day => {
+        const { date, inTime, outTime, totalHours, weekNumber } = day;
+        return db.add_contract_day([
+          contractId,
+          date,
+          inTime,
+          outTime,
+          totalHours,
+          weekNumber
+        ]);
+      })
+    );
+    return res.sendStatus(201);
   }
 };

@@ -3,7 +3,7 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import axios from "axios";
 import "./App.css";
 import About from "./views/About/About";
-import Calendars from "./views/Calendars/Calendars"
+import Calendars from "./views/Calendars/Calendars";
 import Centers from "./views/Centers/Centers";
 import CentersDashboard from "./views/CentersDashboard/CentersDashboard";
 import Contact from "./views/Contact/Contact";
@@ -16,6 +16,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import Staff from "./views/Staff/Staff";
 import AllStaff from "./views/AllStaff/AllStaff";
+import Contract from "./views/Contract/Contract";
 import store from "./ducks/store";
 import { getCenters, getStaff, getForms } from "./ducks/store";
 import "./reset.css";
@@ -49,6 +50,8 @@ class App extends Component {
             <Route path="/centers/calendar/:id" component={Calendars} />
             <Route path="/centers/:id" component={Centers} />
             <Route path="/contact/:id" component={Contact} />
+            <Route path="/contract/:id" component={Contract} />
+            <Route path="/contract/" component={Contract} />
             <Route path="/corporate" component={Corporate} />
             <Route path="/events/:id" component={Events} />
             <Route path="/forms/:id" component={Forms} />

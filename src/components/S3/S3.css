@@ -1,0 +1,29 @@
+#S3-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#S3-dropWrapper {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 200px;
+  border-radius: 25px;
+
+}
+#S3-Drop {
+  text-align: center;
+  font-size: 1.5rem;
+  /* padding: 2rem; */
+}
+
+#S3-imageCrop {
+  /* display: flex; */
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+

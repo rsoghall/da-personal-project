@@ -18,8 +18,8 @@ export class Login extends Component {
   // redux
   // endpoint responds with director centerId
 
-   login = async (e) => {
-    e.preventDefault()
+  login = async e => {
+    e.preventDefault();
     try {
       const { email, password } = this.state;
       const res = await axios.post("/auth/login", { email, password });
@@ -33,17 +33,16 @@ export class Login extends Component {
     } catch (error) {
       alert("login");
     }
-  }
+  };
 
   render() {
-    console.log(this.props);
     return (
       <div className="login-container">
-        <div className='login-title'>
-        <h1>Director Login</h1>
+        <div className="login-title">
+          <h1>Director Login</h1>
         </div>
         <div>
-        <img className="login-logo" src={logo} alt="Dianne Adair Logo" />
+          <img className="login-logo" src={logo} alt="Dianne Adair Logo" />
         </div>
         <form className="login-form" onSubmit={this.login}>
           <div className="login-input">
@@ -62,7 +61,7 @@ export class Login extends Component {
               placeholder="Password"
             />
           </div>
-        <button type="submit">Log in</button>
+          <button type="submit">Log in</button>
         </form>
       </div>
     );

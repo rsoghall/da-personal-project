@@ -3,7 +3,7 @@ import store from "../../ducks/store";
 import Modal from "../../components/Modal/Modal";
 import axios from "axios";
 import { getStaff } from "../../ducks/store";
-import S3upload from '../../components/S3/S3'
+import S3upload from "../../components/S3/S3";
 import "./Staff.css";
 
 export class Staff extends Component {
@@ -21,7 +21,8 @@ export class Staff extends Component {
       editStaffInfo: "",
       modalEditOpen: false,
       modalDeleteOpen: false,
-      modalMode: "create"
+      modalMode: "create",
+      cropMode: true
     };
   }
   componentDidMount() {
@@ -105,7 +106,7 @@ export class Staff extends Component {
         modalMode: "create"
       });
       store.dispatch(getStaff(addStaff.data));
-      this.onCancelModal()
+      this.onCancelModal();
     } catch (error) {
       console.log({ error });
     }
@@ -116,7 +117,7 @@ export class Staff extends Component {
     try {
       const deleteStaff = await axios.delete(`/api/staff/${targetStaffId}`);
       store.dispatch(getStaff(deleteStaff.data));
-      this.onCancelModal()
+      this.onCancelModal();
     } catch (error) {
       console.log({ error });
     }
@@ -127,16 +128,16 @@ export class Staff extends Component {
       modalDeleteOpen: true,
       targetStaffId: staffId,
       targetStaffNameReadOnly: staffName
-    })
-  }
+    });
+  };
 
   openAddStaffModal = (staffId, staffName) => {
     this.setState({
       modalAddOpen: true,
       targetStaffId: staffId,
       targetStaffNameReadOnly: staffName
-    })
-  }
+    });
+  };
 
   handleChange = e => {
     this.setState({
@@ -144,30 +145,48 @@ export class Staff extends Component {
     });
   };
 
-  handleUrl = (url) => {
+  handleUrl = url => {
     this.setState({
-      editStaffUrl: url
-    })
-  }
+      editStaffUrl: url,
+      cropMode: false
+    });
+  };
 
   render() {
     const centerID = +this.props.match.params.id;
-    const { role, staff, centers, modalEditOpen, modalAddOpen, modalDeleteOpen} = this.state;
+    const {
+      role,
+      staff,
+      centers,
+      modalEditOpen,
+      modalAddOpen,
+      modalDeleteOpen
+    } = this.state;
     const displayStaff = staff
       .filter(staff => centerID === staff.center_id)
       .map(staff => (
         <div className="staff-container">
           <div className="staff-display">
-          <h1>{staff.staff_name}</h1>
-          <img src={staff.staff_url} alt={staff.staff_name} />
-          <div className="staff-displayInfo">
+            <h1>{staff.staff_name}</h1>
+            <img
+              src={staff.staff_url}
+              style={{ width: 200 }}
+              alt={staff.staff_name}
+            />
+            <div className="staff-displayInfo">
               <h4>{staff.staff_info}</h4>
-              </div>
+            </div>
           </div>
           {role === "director" && (
             <div className="staff-buttons">
               <button onClick={() => this.editStaff(staff)}>Edit</button>
-              <button onClick={() => this.openDeleteStaffModal(staff.staff_id, staff.staff_name)}>Delete</button>
+              <button
+                onClick={() =>
+                  this.openDeleteStaffModal(staff.staff_id, staff.staff_name)
+                }
+              >
+                Delete
+              </button>
             </div>
           )}
         </div>
@@ -183,22 +202,27 @@ export class Staff extends Component {
       editStaffName,
       editStaffUrl,
       editStaffInfo,
-      targetStaffNameReadOnly
+      targetStaffNameReadOnly,
+      cropMode
     } = this.state;
     return (
       <div className="staff-screenWrapper">
         <div className="staff-title">
-        <h1> {displayCenter.center_name} Staff</h1>
+          <h1> {displayCenter.center_name} Staff</h1>
         </div>
         {role === "director" && (
           <div>
-            <button onClick={() => this.openAddStaffModal(staff.staff_id, staff.staff_name)}>Add Staff</button>
+            <button
+              onClick={() =>
+                this.openAddStaffModal(staff.staff_id, staff.staff_name)
+              }
+            >
+              Add Staff
+            </button>
           </div>
         )}
         <div className="staff-outerWrapper">
-          <div className="staff-displayStaffWrapper">
-            {displayStaff}
-          </div>
+          <div className="staff-displayStaffWrapper">{displayStaff}</div>
 
           {modalEditOpen && (
             <Modal onCancel={this.onCancelModal} onConfirm={this.onConfirmEdit}>
@@ -227,36 +251,58 @@ export class Staff extends Component {
             </Modal>
           )}
           {modalDeleteOpen && (
-            <Modal onCancel={this.onCancelModal} onConfirm={this.onConfirmDelete} confirmText="Delete">
-              <h3>Are you sure you want to DELETE {targetStaffNameReadOnly} ?</h3>
-              
+            <Modal
+              onCancel={this.onCancelModal}
+              onConfirm={this.onConfirmDelete}
+              confirmText="Delete"
+            >
+              <h3>
+                Are you sure you want to DELETE {targetStaffNameReadOnly} ?
+              </h3>
             </Modal>
           )}
           {modalAddOpen && (
-            <Modal onCancel={this.onCancelModal} onConfirm={this.onConfirmAddStaff}>
-              <h3>{targetStaffNameReadOnly}</h3>
-              <input
-                onChange={this.handleChange}
-                type="text"
-                value={editStaffName}
-                name="editStaffName"
-                placeholder="Name"
-              />
-              <input
+            <Modal
+              onCancel={this.onCancelModal}
+              onConfirm={this.onConfirmAddStaff}
+            >
+              {cropMode ? (
+                <S3upload
+                  onUploadComplete={this.handleUrl}
+                  filetype="image/*"
+                  cropFirst={true}
+                />
+              ) : (
+                <div>
+                  <h3>{targetStaffNameReadOnly}</h3>
+                  <input
+                    onChange={this.handleChange}
+                    type="text"
+                    value={editStaffName}
+                    name="editStaffName"
+                    placeholder="Name"
+                  />
+                  {/* <input
                 onChange={this.handleChange}
                 type="text"
                 value={editStaffUrl}
                 name="editStaffUrl"
                 placeholder="Picture Url"
-              />
-              <input
-                onChange={this.handleChange}
-                type="text"
-                value={editStaffInfo}
-                name="editStaffInfo"
-                placeholder="Info"
-              />
-              <S3upload onUploadComplete={this.handleUrl} filetype="image/*"/>
+              /> */}
+                  <input
+                    onChange={this.handleChange}
+                    type="text"
+                    value={editStaffInfo}
+                    name="editStaffInfo"
+                    placeholder="Info"
+                  />
+                  <img
+                    className="staff-imageCrop"
+                    src={editStaffUrl}
+                    alt="staffUrl"
+                  />
+                </div>
+              )}
             </Modal>
           )}
         </div>

@@ -1,0 +1,41 @@
+.selectHours-selected {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* margin-left: 2rem; */
+  /* margin-right: 2rem; */
+  margin-top: -2rem;
+  width: 15.25rem;
+  height: 9.5rem;
+  /* border: solid 2px orange; */
+}
+
+#selectReset {
+  background-color: #417ffc;;
+  width: 5rem;
+  height: 1.75rem;
+}
+
+.selectHours {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1.25rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  /* margin-bottom: 1rem; */
+  align-items: center;
+  font-size: 1.25rem;
+  width: 14.25rem;
+  height: 8.5rem;
+  /* border: solid 2px green; */
+}
+#selectIN {
+  margin-left: 1rem;
+}
+
+select {
+    font-size: 1.2rem;
+    /* color:#417ffc; */
+}
