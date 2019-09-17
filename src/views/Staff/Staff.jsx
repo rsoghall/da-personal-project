@@ -58,7 +58,8 @@ export class Staff extends Component {
       modalEditOpen: false,
       modalAddOpen: false,
       modalDeleteOpen: false,
-      modalMode: "create"
+      modalMode: "create",
+      cropMode: true,
     });
   };
   onConfirmEdit = async () => {
@@ -170,7 +171,7 @@ export class Staff extends Component {
             <h1>{staff.staff_name}</h1>
             <img
               src={staff.staff_url}
-              style={{ width: 200 }}
+              style={{ width:150 }}
               alt={staff.staff_name}
             />
             <div className="staff-displayInfo">

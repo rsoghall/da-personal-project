@@ -86,9 +86,12 @@ class S3 extends Component {
     const canvas = document.createElement("canvas");
     const image = new Image();
     image.src = imageToCrop;
-
-    const scaleX = image.naturalWidth / image.width;
-    const scaleY = image.naturalHeight / image.height;
+    const adjustedWidth = image.width >= 300 ? 300 : image.width;
+    const ratio = image.height / image.width;
+    const adjustedHeight =
+      image.width >= 300 ? ratio * adjustedWidth : image.height;
+    const scaleX = image.naturalWidth / adjustedWidth;
+    const scaleY = image.naturalHeight / adjustedHeight;
     canvas.width = crop.width;
     canvas.height = crop.height;
     const ctx = canvas.getContext("2d");
@@ -118,7 +121,12 @@ class S3 extends Component {
     if (cropping) {
       return (
         <div id="S3-imageCrop">
-          <ReactCrop src={imageToCrop} crop={crop} onChange={this.changeCrop} />
+          <ReactCrop
+            src={imageToCrop}
+            crop={crop}
+            onChange={this.changeCrop}
+            imageStyle={{ maxWidth: 300 }}
+          />
           <button onClick={this.getCroppedImg}>Crop</button>
         </div>
       );
