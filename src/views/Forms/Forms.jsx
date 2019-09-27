@@ -5,6 +5,7 @@ import axios from "axios";
 import { getForms } from "../../ducks/store";
 import S3upload from "../../components/S3/S3";
 import "./Forms.css";
+import pdfLogo from "../../images/pdf.png";
 
 export class Forms extends Component {
   constructor() {
@@ -155,10 +156,11 @@ export class Forms extends Component {
     })
       .map(forms => (
         <div className="forms-container">
-          <div className="forms-display">
-            <h1>{forms.form_name}</h1>
+
+        <img src={pdfLogo} alt="pdf logo" />
+              
             <a href={forms.form_link}>{forms.form_name}</a>
-          </div>
+            {/* <h1>{forms.form_name}</h1> */}
           {role === "director" && (
             <div className="forms-buttons">
               <button onClick={() => this.editForms(forms)}>Edit</button>
@@ -184,8 +186,6 @@ export class Forms extends Component {
     return (
       <div className="forms-screenWrapper">
           <h1 className="forms-title"> {displayCenter.center_name} Forms</h1>
-        {/* <div className="forms-title"> */}
-        {/* </div> */}
         {role === "director" && (
           <div>
             <button

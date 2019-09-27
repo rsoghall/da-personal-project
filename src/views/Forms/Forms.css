@@ -1,5 +1,4 @@
 .forms-screenWrapper {
-
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -17,21 +16,28 @@
 .forms-title {
     width: 100vw;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
     padding: 2rem;
-    /* position: fixed; */
+    /* border: solid 3px red; */
 }
 
-.form-reg-link {
+
+.forms-container {
+    margin-top: 2rem;
+    width: 100vw;
+    height: 5rem;
     display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    /* border: solid 5px red; */
 }
 
-.forms-link-list a {
-   text-decoration: none;
-   color: #417FFC;
-}
+
+
