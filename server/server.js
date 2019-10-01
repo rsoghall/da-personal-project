@@ -2,8 +2,9 @@ require("dotenv").config();
 const express = require("express");
 const session = require("express-session");
 const massive = require("massive");
-const authCtrl = require("./controller/authCtrl");
+const { authCtrl, contractCtrl } = require("./controller");
 const nodemailer = require("nodemailer");
+const buildContractHours = require("./database/buildContractHours");
 
 const app = express();
 const {
@@ -42,7 +43,9 @@ massive(CONNECTION_STRING).then(db => {
       "$2a$10$nnlHvJOQthfnZE5b9XLkg.7dnwZ8h.RB5pIi5Ycx8C.w9UA4nEuuO",
       "$2a$10$iJ9/RO7aPOZE5yKG8gKw6ONySXZHSelSgYZSNL4Rp1smgcOxppHWW"
     ]).then(() => {
-      console.log("DB Seeded");
+      buildContractHours(db).then(() => {
+        console.log("DB Seeded");
+      });
     });
   }
   app.listen(SERVER_PORT, () => console.log(`Running on ${SERVER_PORT}`));
@@ -90,5 +93,6 @@ app.get(`/api/staff`, authCtrl.staff);
 app.get(`/api/forms`, authCtrl.forms);
 app.get(`/api/centers`, authCtrl.centers);
 app.get(`/api/signs3`, authCtrl.aws3);
-app.get('/api/contract', authCtrl.getContractDates)
-app.post('/api/contract', authCtrl.addContract)
+app.get("/api/contract", authCtrl.getContractDates);
+app.post("/api/contract", authCtrl.addContract);
+app.get("/api/contract/:centerId/:ageGroup", contractCtrl.getOptions);

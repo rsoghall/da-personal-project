@@ -14,8 +14,14 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Launch Server",
       "program": "${workspaceFolder}/server/server.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Build Contract Hours",
+      "program": "${workspaceFolder}/server/database/buildContractHours.js"
     }
   ]
 }

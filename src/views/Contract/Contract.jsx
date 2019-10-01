@@ -108,44 +108,20 @@ export default class Contract extends Component {
     const [center] = this.state.centers.filter(center => {
       return center.center_id === +this.props.match.params.id;
     });
-    const displayWeeks = this.state.availableDates.map((week, weekInd) => {
-      const displayDays = week.map(day => {
-        const style = day.isInTargetMonth
-          ? {}
-          : { backgroundColor: "#d6d6d6", color: "#888787" };
-        return (
-          <div className="grid-item" style={style} key={day.date}>
-            {getDate(day.date)}
-            {day.isInTargetMonth && (
-              <BancroftSelectHours
-                weekNumber={weekInd + 1}
-                date={day.date}
-                open="07:00"
-                close="18:00"
-                onValidRange={this.handleValidRange}
-                removeDate={this.removeDate}
-              />
-            )}
-          </div>
-        );
-      });
-      return (
-        <div className="grid-days" key={weekInd}>
-          {displayDays}
-        </div>
-      );
-    });
+    const dayInputs = new Array(5).fill(0).map((item, i) => item + i);
     return (
       <div className="contract-body">
         <header className="contract-header">
-          <div className="contract-center">{center ? center.center_name : null}</div>
+          <div className="contract-center">
+            {center ? center.center_name : null}
+          </div>
           <h1>
-             {this.state.currentMonth}{" "}
-            {this.state.currentYear} School Year Contract
+            {this.state.currentMonth} {this.state.currentYear} School Year
+            Contract
           </h1>
           <div className="contract-childInfo">
             <div className="contract-childName">
-              <div className="contract-child">Child's Name:{" "}</div>
+              <div className="contract-child">Child's Name: </div>
               <input
                 id="contract-childInput"
                 type="text"
@@ -184,7 +160,22 @@ export default class Contract extends Component {
             <h3>Thursday</h3>
             <h3>Friday</h3>
           </div>
-          {displayWeeks}
+          <div className="grid-days">
+            {dayInputs.map(day => {
+              return (
+                <div className="grid-item" style={{}} key={day.date}>
+                  <BancroftSelectHours
+                    weekNumber={day + 1}
+                    date={new Date()}
+                    open="07:00"
+                    close="18:00"
+                    onValidRange={this.handleValidRange}
+                    removeDate={this.removeDate}
+                  />
+                </div>
+              );
+            })}
+          </div>
           <button onClick={this.submitForm} className="contract-submit">
             SUBMIT
           </button>

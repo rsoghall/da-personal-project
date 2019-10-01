@@ -1,4 +1,6 @@
 drop table if exists contract_days;
+drop table if exists contract_times;
+drop table if exists age_groups;
 drop table if exists contract;
 drop table if exists users;
 drop table if exists staff;
@@ -287,21 +289,21 @@ values
         10,
         10 
 );
--- insert into staff
---     (
---     staff_name,
---     staff_info,
---     staff_url,
---     center_id
---     )
--- values
---     (
---         'Ryan',
---         'teacher 2 years',
---         'http://via.placeholder.com/100',
---         1
--- ),
-    
+insert into staff
+    (
+    staff_name,
+    staff_info,
+    staff_url,
+    center_id
+    )
+values
+    (
+        'Ryan',
+        'teacher 2 years',
+        'http://via.placeholder.com/100',
+        1
+);
+
 
 
 insert into forms

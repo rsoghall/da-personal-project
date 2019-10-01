@@ -43,5 +43,8 @@
     "not op_mini all"
   ],
   "main": "server/server.js",
-  "proxy": "http://localhost:4766"
+  "proxy": "http://localhost:4766",
+  "devDependencies": {
+    "csvtojson": "^2.0.10"
+  }
 }
