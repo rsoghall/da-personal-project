@@ -46,7 +46,7 @@ export class Centers extends Component {
         </div>
         <div className="centers-links-container">
           <Link className="centers-link" to={`/contact`}>
-            <button>Absent/Drop In</button>
+            <button>About {displayCenter.center_name}</button>
           </Link>
           <Link
             className="centers-staff-link centers-link"
