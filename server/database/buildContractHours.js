@@ -3,6 +3,7 @@ const csv = require("csvtojson");
 const massive = require("massive");
 require("dotenv").config();
 const { format } = require("date-fns");
+const path = require('path')
 
 function toMilitaryTime(time) {
   const isPm = time.includes(" PM");
@@ -15,7 +16,7 @@ function toMilitaryTime(time) {
 }
 
 const buildContractHours = async db => {
-  const json = await csv().fromFile("./data/contract-times.csv");
+  const json = await csv().fromFile(path.join(__dirname, '../data/contract-times.csv'));
   await db.bootstrap_contract_hours();
   const results = await Promise.all(
     json.map(record => {
