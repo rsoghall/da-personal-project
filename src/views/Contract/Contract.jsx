@@ -11,7 +11,7 @@ export default class Contract extends Component {
   constructor() {
     super();
     const reduxState = store.getState();
-
+    const dayInputs = new Array(5).fill(0).map((item, i) => ({dayIndex: i}));
     this.state = {
       centers: reduxState.centers,
       availableDates: [],
@@ -19,7 +19,8 @@ export default class Contract extends Component {
       currentMonth: "",
       currentYear: "",
       grade: "",
-      inOut: []
+      inOut: [],
+      dayInputs,
     };
   }
 
@@ -108,7 +109,7 @@ export default class Contract extends Component {
     const [center] = this.state.centers.filter(center => {
       return center.center_id === +this.props.match.params.id;
     });
-    const dayInputs = new Array(5).fill(0).map((item, i) => item + i);
+    const { dayInputs } = this.state;
     return (
       <div className="contract-body">
         <header className="contract-header">
@@ -161,16 +162,11 @@ export default class Contract extends Component {
             <h3>Friday</h3>
           </div>
           <div className="grid-days">
-            {dayInputs.map(day => {
+            {dayInputs.map((day, i) => {
               return (
                 <div className="grid-item" style={{}} key={day.date}>
                   <BancroftSelectHours
-                    weekNumber={day + 1}
-                    date={new Date()}
-                    open="07:00"
-                    close="18:00"
-                    onValidRange={this.handleValidRange}
-                    removeDate={this.removeDate}
+                    dayIndex={day.dayIndex}
                   />
                 </div>
               );
