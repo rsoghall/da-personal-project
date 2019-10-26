@@ -28,16 +28,16 @@
 .corporate-brian {
   width: 26vw;
   /* border: solid 5px red; */
-  margin-top: 5rem;
-  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .corporate-todd {
   width: 35vw;
-  margin-top: 5rem;
-  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
   /* border: solid 10px purple; */
   display: flex;
   flex-direction: column;
@@ -100,10 +100,10 @@
   /* border: solid 10px orange; */
   font-weight: normal;
   font-size: 2rem;
-  margin-top: 11rem;
+  margin-top: 8rem;
   margin-left: 1rem;
   /* margin-bottom: 1rem; */
-  margin-right: 1rem;
+  margin-right: 2rem;
   /* margin-left: .5rem; */
 
   background-size: cover;
