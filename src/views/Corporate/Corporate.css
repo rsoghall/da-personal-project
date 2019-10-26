@@ -1,55 +1,129 @@
-.corporate-container {
+.corporate-screenWrapper {
   width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: -webkit-gradient(
+      linear,
+      0% 0%,
+      0% 50%,
+      from(rgba(254, 255, 255, 0.817))
+    ),
+    url("../../images/DA-Logo-5-3-transparent-crop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 520px 520px;
+}
+
+.corporate-container {
+  max-width: 100%;
+  height: auto;
+  width: 100vw;
+  /* border: solid 10px green; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.corporate-group {
-  width: 100vw;
-  justify-content: space-evenly;
+.corporate-brian {
+  width: 26vw;
+  /* border: solid 5px red; */
+  margin-top: 5rem;
+  margin-right: 5rem;
   display: flex;
-  align-items: center;
-  font-size: 22px;
-  margin-top: 1rem;
-  font-family: "Times New Roman", Times, serif;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
-.corporate-info {
-  margin: 2rem 0 1rem;
+.corporate-todd {
+  width: 35vw;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  /* border: solid 10px purple; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.corporate-brian-info {
+  width: 25.5rem;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
   font-family: Times, serif;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  font-size: 22px;
+  font-size: 1.65rem;
   line-height: 2rem;
-  border: solid #417ffc;
+  /* border: solid #417ffc; */
   border-radius: 25px;
   padding: 1rem;
 }
-
-.corporate-todd {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.corporate-brian > h1 {
+  max-width: 100%;
+  height: auto;
+  width: 25.5rem;
+  /* border: solid 5px blue; */
+  text-align: center;
+  font-weight: normal;
+  font-size: 3rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.corporate-brian > img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 20px 20px 10px lightgrey;
 }
 
 .corporate-todd > h1 {
+  width: 25.5rem;
+  /* border: solid 5px darkcyan; */
+  text-align: center;
   font-weight: normal;
   font-size: 3rem;
   padding: 1rem;
   margin-bottom: 1rem;
 }
-.corporate-brian {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.corporate-todd > img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 20px 20px 10px lightgrey;
 }
 
-.corporate-brian > h1 {
+.corporate-todd-text {
+  max-width: 100%;
+  height: auto;
+  text-indent: 7rem;
+  text-align: justify;
+  line-height: 3.45rem;
+  /* border: solid 10px orange; */
   font-weight: normal;
-  font-size: 3rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  margin-top: 11rem;
+  margin-left: 3rem;
+  /* margin-bottom: 1rem; */
+  margin-right: 3rem;
+  /* margin-left: .5rem; */
+
+  background-size: cover;
+  background-image: -webkit-gradient(
+      linear,
+      0% 0%,
+      0% 50%,
+      from(rgba(254, 255, 255, 0.850))
+    ),
+    url("../../images/DA-Logo-5-3-transparent-crop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 620px 620px;
 }
+
+/* .corporate-group {
+width: 100vw;
+justify-content: space-evenly;
+display: flex;
+align-items: center;
+font-size: 22px;
+margin-top: 1rem;
+font-family: "Times New Roman", Times, serif;
+} */
