@@ -71,7 +71,7 @@
   margin-bottom: 1rem;
 }
 .corporate-brian > img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   box-shadow: 20px 20px 10px lightgrey;
 }
@@ -86,7 +86,7 @@
   margin-bottom: 1rem;
 }
 .corporate-todd > img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   box-shadow: 20px 20px 10px lightgrey;
 }
