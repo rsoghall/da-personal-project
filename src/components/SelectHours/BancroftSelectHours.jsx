@@ -1,13 +1,5 @@
 import React, { Component } from "react";
 import "./BancroftSelectHours.css";
-import {
-  format,
-  addMinutes,
-  differenceInMinutes,
-  setMinutes,
-  setHours,
-  isBefore
-} from "date-fns";
 
 export class BancroftSelectHours extends Component {
   constructor(props) {
