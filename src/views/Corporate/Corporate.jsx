@@ -39,7 +39,7 @@ export class Corporate extends Component {
             <h4>Pleasanton, CA 94566</h4>
             <a href="tel: 9255809704"> Phone: 925.580.9704</a>
             <a href="mailto:bcarbine@dianneadair.org">
-              Email: bcarbine@dianneadiar.org
+              Email: bcarbine@dianneadair.org
             </a>
           </div>
         </div>

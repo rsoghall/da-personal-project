@@ -1,19 +1,4 @@
-.corporate-screenWrapper {
-  width: 100vw;
-  height: 100vh;
-  font-family: "Times New Roman", Times, serif;
-  background-size: cover;
-  background-image: -webkit-gradient(
-      linear,
-      0% 0%,
-      0% 50%,
-      from(rgba(254, 255, 255, 0.817))
-    ),
-    url("../../images/DA-Logo-5-3-transparent-crop.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 520px 520px;
-}
+
 
 .corporate-container {
   max-width: 100%;
@@ -99,7 +84,7 @@
   line-height: 2.45rem;
   /* border: solid 10px orange; */
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 100%;
   margin-top: 8rem;
   margin-left: 2rem;
   /* margin-bottom: 1rem; */
