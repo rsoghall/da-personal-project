@@ -1,25 +1,26 @@
 .contract-body {
   background-size: cover;
-  background-image: -webkit-gradient(
-      linear,
+  background-image: -webkit-gradient(linear,
       0% 0%,
       0% 50%,
-      from(rgba(254, 255, 255, 0.845))
-    ),
+      from(rgba(254, 255, 255, 0.845))),
     url("../../images/DA-Logo-5-3-transparent-crop.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 870px 870px;
 }
+
 .contract-header {
   text-align: center;
 }
+
 .contract-center {
   margin-top: -1.5rem;
   margin-bottom: 1.5rem;
   font-size: 4rem;
   font-weight: bolder;
 }
+
 .contract-childInfo {
   display: flex;
   justify-content: space-between;
@@ -34,6 +35,7 @@
 .contract-child {
   margin-left: 5rem;
 }
+
 .contract-childName {
   display: flex;
   flex-direction: row;
@@ -45,6 +47,7 @@
   /* border: solid 3px orange; */
   align-content: center;
 }
+
 #contract-childInput {
   /* margin: 20rem; */
   width: 42rem;
@@ -65,6 +68,7 @@ span {
   text-decoration: underline;
   font-weight: bold;
 }
+
 .contract-header {
   margin: 2rem;
   font-size: 3rem;
@@ -79,20 +83,23 @@ span {
   border-radius: 10px;
   margin-right: 2rem;
 }
+
 .contract-days {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-bottom: 1rem;
-  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 20px;
+  justify-content: center;
+}
+
+.contract-days>h3 {
+  border: 1px solid black;
 }
 
 .grid-days {
   display: grid;
-  grid-template-columns: 16rem 16rem 16rem 16rem 16rem;
+  grid-template-columns: repeat(7, 1fr);
   justify-content: center;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .grid-item {
@@ -102,12 +109,14 @@ span {
   text-align: left;
   height: 14rem;
 }
+
 .contract-inOut {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 20px;
 }
+
 .contract-closed {
   text-align: center;
   text-decoration: underline;

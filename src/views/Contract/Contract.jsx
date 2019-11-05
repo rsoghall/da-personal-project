@@ -1,17 +1,20 @@
-import React, { Component } from "react";
 import "./Contract.css";
+import React, { Component } from "react";
 import axios from "axios";
 import store from "../../ducks/store";
-import { getDate } from "date-fns";
+import { addDays, startOfWeek, addWeeks, isAfter, isBefore } from "date-fns";
 import swal from "@sweetalert/with-react";
+import DatePicker from 'react-datepicker'
 
 import BancroftSelectHours from "../../components/SelectHours/BancroftSelectHours";
+import "react-datepicker/dist/react-datepicker.css";
 
 export default class Contract extends Component {
   constructor() {
     super();
     const reduxState = store.getState();
     const dayInputs = new Array(5).fill(0).map((item, i) => ({dayIndex: i}));
+    const startDates = this.includeStartDates();
     this.state = {
       centers: reduxState.centers,
       availableDates: [],
@@ -21,6 +24,10 @@ export default class Contract extends Component {
       grade: "",
       inOut: [],
       dayInputs,
+      startDateInput: startDates,
+      endDateInput: this.includeEndDates(startDates),
+      selectedStartDate: startDates[0],
+      selectedEndDate: null,
     };
   }
 
@@ -105,11 +112,46 @@ export default class Contract extends Component {
     }
   };
 
+  includeStartDates = () => {
+    const startDate = addDays(
+      startOfWeek(
+        addWeeks(new Date(), 1)
+      ),
+      1
+    )
+    return new Array(30).fill(0).map((_, i) => addWeeks(startDate, i * 1));
+  }
+
+  includeEndDates = (dates) => {
+    return  dates.map(date => addDays(date, 4))
+  }
+
+  changeStartDate = (date) => {
+    const {selectedEndDate} = this.state;
+    const endDate = isBefore(date, selectedEndDate) ? date : null;
+    this.setState({selectedStartDate: date, selectedEndDate: endDate})
+  }
+
+  changeEndDate = (date) => {
+    this.setState({selectedEndDate: date})
+  }
+
+  filterOutDatesAfter = (dates, filterDate) => {
+    const removedPreviousDates = dates.filter(date => {
+      if(!date) {
+        return date;
+      }
+      return isAfter(date, filterDate)
+    })
+    return removedPreviousDates;
+  }
+
   render() {
     const [center] = this.state.centers.filter(center => {
       return center.center_id === +this.props.match.params.id;
     });
-    const { dayInputs } = this.state;
+    const { startDateInput, endDateInput, selectedStartDate, selectedEndDate, dayInputs } = this.state;
+    const removedPreviousDates = this.filterOutDatesAfter(endDateInput, selectedStartDate)
     return (
       <div className="contract-body">
         <header className="contract-header">
@@ -155,13 +197,27 @@ export default class Contract extends Component {
             responsible for all the hours that I signed up for.
           </p>
           <div className="contract-days">
+            <h3>Start/End Dates</h3>
             <h3>Monday</h3>
             <h3>Tuesday</h3>
             <h3>Wednesday</h3>
             <h3>Thursday</h3>
             <h3>Friday</h3>
+            <h3>Total Hours</h3>
           </div>
           <div className="grid-days">
+            <div>
+              <DatePicker 
+                selected={selectedStartDate} 
+                onChange={this.changeStartDate}
+                includeDates={startDateInput}
+              />
+              <DatePicker 
+                selected={selectedEndDate} 
+                onChange={this.changeEndDate}
+                includeDates={removedPreviousDates}
+              />
+            </div>
             {dayInputs.map((day, i) => {
               return (
                 <div className="grid-item" style={{}} key={day.date}>
@@ -171,6 +227,9 @@ export default class Contract extends Component {
                 </div>
               );
             })}
+            <div>
+              0
+            </div>
           </div>
           <button onClick={this.submitForm} className="contract-submit">
             SUBMIT
