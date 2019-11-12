@@ -116,7 +116,7 @@ export class navBar extends Component {
               )}
             </li>
           </div>
-          <div
+          {/* <div
             onMouseEnter={e => this.toggleDropDown(e, "contractOpen", true)}
             onMouseLeave={e => this.toggleDropDown(e, "contractOpen", false)}
             onClick={e => this.toggleDropDown(e, "contractOpen", !formsOpen)}
@@ -128,7 +128,7 @@ export class navBar extends Component {
                 <ul className="contract-dropdown-content">{displayContract}</ul>
               )}
             </li>
-          </div>
+          </div> */}
           <div
             onMouseEnter={e =>
               this.toggleDropDown(e, "centersOpen", true, "onMouseEnter")
