@@ -1,11 +1,12 @@
 INSERT INTO contract_times
     (
     center_id,
-    time_type,
     day_of_week,
     age_group_id,
-    time_option,
-    am_pm
+    program,
+    in_time,
+    out_time,
+    before_school
     )
 VALUES
-    ($1, $2, $3, $4, $5, $6 );
+    ($1, $2, $3, $4, $5, $6, $7 );

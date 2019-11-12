@@ -12,11 +12,12 @@ CREATE TABLE contract_times
 (
     contract_time_id serial primary key,
     center_id INT REFERENCES centers,
-    time_type VARCHAR(8),
     day_of_week INT,
     age_group_id INT REFERENCES age_groups,
-    time_option time,
-    am_pm VARCHAR(8)
+    program VARCHAR(64),
+    in_time TIME,
+    out_time TIME,
+    before_school BOOLEAN
 );
 
 INSERT INTO age_groups
@@ -25,4 +26,4 @@ VALUES
     ('pre-k'),
     ('t-k'),
     ('kinder'),
-    ('school-age')
+    ('school-age');

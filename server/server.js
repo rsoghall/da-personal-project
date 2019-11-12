@@ -44,9 +44,13 @@ massive(CONNECTION_STRING).then(db => {
       "$2a$10$iJ9/RO7aPOZE5yKG8gKw6ONySXZHSelSgYZSNL4Rp1smgcOxppHWW"
     ]).then(() => {
       console.log("DB Seeded");
-      // buildContractHours(db).then(() => {
-        // console.log("DB Seeded");
-      // });
+      buildContractHours(db).then(() => {
+        console.log("contract_times seeded");
+      });
+    });
+  } else {
+    buildContractHours(db).then(() => {
+      console.log("contract_times seeded");
     });
   }
   app.listen(SERVER_PORT, () => console.log(`Running on ${SERVER_PORT}`));
