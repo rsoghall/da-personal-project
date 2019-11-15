@@ -3,7 +3,7 @@ INSERT INTO contract_times
     center_id,
     day_of_week,
     age_group_id,
-    program,
+    program_id,
     in_time,
     out_time,
     before_school

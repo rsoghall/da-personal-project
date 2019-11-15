@@ -31,7 +31,7 @@ const buildContractHours = async db => {
         record.center_id,
         record.day_of_week,
         record.age_group_id,
-        record.program,
+        record.program_id,
         inTime,
         outTime,
         beforeSchool
