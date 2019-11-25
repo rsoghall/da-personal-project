@@ -28,16 +28,27 @@ export default class Contract extends Component {
       endDateInput: this.includeEndDates(startDates),
       selectedStartDate: startDates[0],
       selectedEndDate: null,
+      groupOptions: [],
+      selectedGroupOption: {
+        programs: []
+      },
+      selectedProgram: {}
     };
   }
 
   componentDidMount = () => {
+    const { id: centerId } = this.props.match.params
     store.subscribe(() => {
       const reduxState = store.getState();
       this.setState({
         centers: reduxState.centers
       });
     });
+    axios.get(`/api/contract/groups/${centerId}`).then(({data}) => {
+      this.setState({
+        groupOptions: data
+      })
+    })
     axios.get("/api/contract").then(contractInfo => {
       const {
         currentMonth,
@@ -146,11 +157,25 @@ export default class Contract extends Component {
     return removedPreviousDates;
   }
 
+  selectAgeGroup = (e) => {
+    const selectedGroupOption = this.state.groupOptions.find(option => {
+      return option.id === +e.target.value
+    })
+    this.setState({selectedGroupOption, selectedProgram: {}})
+  }
+
+  selectProgram = (e) => {
+    const selectedProgram = this.state.selectedGroupOption.programs.find(option => {
+      return option.programId === +e.target.value
+    })
+    this.setState({selectedProgram})
+  }
+
   render() {
     const [center] = this.state.centers.filter(center => {
       return center.center_id === +this.props.match.params.id;
     });
-    const { startDateInput, endDateInput, selectedStartDate, selectedEndDate, dayInputs } = this.state;
+    const { startDateInput, endDateInput, selectedStartDate, selectedEndDate, dayInputs, selectedGroupOption, selectedProgram } = this.state;
     const removedPreviousDates = this.filterOutDatesAfter(endDateInput, selectedStartDate)
     return (
       <div className="contract-body">
@@ -177,15 +202,38 @@ export default class Contract extends Component {
               Grade:{" "}
               <select
                 id="contract-grade"
-                value={this.state.grade}
-                onChange={this.handleInput}
+                value={selectedGroupOption.id || ''}
+                onChange={this.selectAgeGroup}
                 name="grade"
               >
                 <option value="">Please Select</option>
-                <option value="pre-k">Pre-K</option>
-                <option value="t-k">T-K</option>
-                <option value="kinder">Kinder</option>
-                <option value="School Age">School Age</option>
+                {
+                  this.state.groupOptions.map(option => {
+                    return (
+                    <option value={option.id} key={option.id}>{option.ageGroupName}</option>
+                    )
+                  })
+                }
+              </select>
+            </div>
+            <div>
+              Program:{" "}
+              <select
+                id="contract-grade"
+                value={selectedProgram.programId || ''}
+                onChange={this.selectProgram}
+                name="program"
+                disabled={!selectedGroupOption.ageGroupName}
+              >
+                <option value="">Please Select</option>
+
+                {
+                  selectedGroupOption.programs.map(option => {
+                    return (
+                    <option value={option.programId} key={option.id}>{option.programName}</option>
+                    )
+                  })
+                }
               </select>
             </div>
           </div>

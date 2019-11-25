@@ -1,3 +1,4 @@
+drop table if exists contract_days;
 drop table if exists contract_times;
 drop table if exists age_groups;
 drop table if exists contract;
@@ -58,17 +59,6 @@ create table contract
     contract_month varchar(64),
     contract_year varchar(64),
     grade varchar(64)
-);
-
-create table contract_days
-(
-    contract_day_id SERIAL PRIMARY KEY,
-    contract_id int REFERENCES contract,
-    contract_date date,
-    in_time varchar(64),
-    week_number int,
-    out_time varchar(64),
-    total_hours decimal
 );
 
 insert into centers
