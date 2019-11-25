@@ -66,6 +66,7 @@ app.use(
     }
   })
 );
+
 app.post("/api/email", (req, res) => {
   console.log(req.body);
   const { name, message, email, directorEmail, absentOrDropIn } = req.body;
@@ -94,10 +95,10 @@ app.delete("/api/forms/:id", authCtrl.deleteForm);
 app.get("/api/allstaff", authCtrl.allStaff);
 app.put("/api/staff/:id", authCtrl.editStaff);
 app.delete("/api/staff/:id", authCtrl.deleteStaff);
-app.get(`/api/staff`, authCtrl.staff);
-app.get(`/api/forms`, authCtrl.forms);
-app.get(`/api/centers`, authCtrl.centers);
-app.get(`/api/signs3`, authCtrl.aws3);
+app.get("/api/staff", authCtrl.staff);
+app.get("/api/forms", authCtrl.forms);
+app.get("/api/centers", authCtrl.centers);
+app.get("/api/signs3", authCtrl.aws3);
 app.get("/api/contract", authCtrl.getContractDates);
 app.post("/api/contract", authCtrl.addContract);
-app.get("/api/contract/:centerId/:ageGroup", contractCtrl.getOptions);
+app.get("/api/contract/groups/:centerId", contractCtrl.getOptions);
