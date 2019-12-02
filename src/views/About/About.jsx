@@ -1,4 +1,5 @@
 import React from "react";
+import Todd from "../../images/Todd50-2.jpg";
 import './About.css';
 
 export default function About() {
@@ -21,6 +22,27 @@ export default function About() {
             the original dream. Please feel free to browse through our pages and
             to contact us any time at one of our sites or the main office for
             questions regarding daycare or employment opportunities.
+        </p>
+      </div>
+      
+      <h1>Todd Porter</h1>
+      
+      
+      <div className="About-todd">
+          <img src={Todd} alt="Todd Porter" />
+        <p className="About-todd-text">
+          Todd Porter, son of Dianne Adair and brother to Brian Carbine, was our
+          Executive Director from 2003 until 2019 when he tragically left us due
+          to a hiking accident. Todd had a passion for life, for nature, and for
+          people. This was evident almost immediately upon meeting him. He would
+          make you feel like age old friends from the start. His dedication to
+          family and friends ran deep, as well as his love for this company and
+          everything it represented. He leaves a hole in our hearts and in our
+          Dianne Adair Centers that can’t be replaced, but he leaves a legacy
+          that we at Dianne Adair will strive to uphold and we will continue to
+          make him proud every day. We will miss him immensely and we are
+          committed to carry the torch nobly as we know he will live on in each
+          and every child’s smiling face.
         </p>
         </div>
 
