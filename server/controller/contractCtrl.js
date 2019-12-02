@@ -1,26 +1,24 @@
 module.exports = {
   getOptions: async (req, res) => {
-    const { centerId, ageGroup } = req.params;
-    const db = req.app.get("db");
-    const options = await db.get_contract_options([centerId, ageGroup]);
-    const shapedOptions = new Array(5).fill(0).map((pos, i) => ({
-      day: i + 1,
-      am: {
-        in: [],
-        out: []
-      },
-      pm: {
-        in: [],
-        out: []
+    const {centerId} = req.params;
+    const db = req.app.get('db');
+    const results = await db.get_center_age_group_program([centerId]);
+    const shapedResults = results.reduce((acc, curr) => {
+      let located = acc.find(item => item.id === curr.age_group_id)
+      if(!located) {
+        located = {
+          id: curr.age_group_id,
+          ageGroupName: curr.group_name,
+          programs: []
+        }
+        acc.push(located);
       }
-    }));
-
-    options.forEach(day => {
-      const index = +day.day_of_week - 1;
-      const amPm = day.am_pm.toLowerCase();
-      const inOut = day.time_type.toLowerCase();
-      shapedOptions[index][amPm][inOut].push(day.time_option);
-    });
-    return res.send(shapedOptions);
+      located.programs.push({
+        programId: curr.program_id,
+        programName: curr.program_name,
+      })
+      return acc;
+    }, [])
+    res.send(shapedResults) 
   }
 };

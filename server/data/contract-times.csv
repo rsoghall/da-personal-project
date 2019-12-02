@@ -1,462 +1,462 @@
-﻿center_id,day_of_week,age_group_id,program,in_time,out_time,before_school
-1,1,1,curriculum,8:00:00 AM,12:00:00 PM,FALSE
-1,1,1,full-day,6:45:00 AM,6:00:00 PM,FALSE
-1,1,1,late,6:45:00 AM,2:00:00 PM,FALSE
-1,2,1,curriculum,8:00:00 AM,12:00:00 PM,FALSE
-1,2,1,full-day,6:45:00 AM,6:00:00 PM,FALSE
-1,2,1,late,6:45:00 AM,2:00:00 PM,FALSE
-1,3,1,curriculum,8:00:00 AM,12:00:00 PM,FALSE
-1,3,1,full-day,6:45:00 AM,6:00:00 PM,FALSE
-1,3,1,late,6:45:00 AM,2:00:00 PM,FALSE
-1,4,1,curriculum,8:00:00 AM,12:00:00 PM,FALSE
-1,4,1,full-day,6:45:00 AM,6:00:00 PM,FALSE
-1,4,1,late,6:45:00 AM,2:00:00 PM,FALSE
-1,5,1,curriculum,8:00:00 AM,12:00:00 PM,FALSE
-1,5,1,full-day,6:45:00 AM,6:00:00 PM,FALSE
-1,5,1,late,6:45:00 AM,2:00:00 PM,FALSE
-1,1,2,curriculum,8:00:00 AM,12:00:00 PM,FALSE
-1,1,2,full-day,6:45:00 AM,6:00:00 PM,FALSE
-1,1,2,late,6:45:00 AM,2:00:00 PM,FALSE
-1,1,2,special-needs,12:00:00 PM,null,FALSE
-1,1,2,special-needs,null,12:30:00 PM,FALSE
-1,1,2,special-needs,null,1:00:00 PM,FALSE
-1,1,2,special-needs,null,1:30:00 PM,FALSE
-1,1,2,special-needs,null,2:00:00 PM,FALSE
-1,1,2,special-needs,null,2:30:00 PM,FALSE
-1,1,2,special-needs,null,3:00:00 PM,FALSE
-1,1,2,special-needs,null,3:30:00 PM,FALSE
-1,1,2,special-needs,null,4:00:00 PM,FALSE
-1,1,2,special-needs,null,4:30:00 PM,FALSE
-1,1,2,special-needs,null,5:00:00 PM,FALSE
-1,1,2,special-needs,null,5:30:00 PM,FALSE
-1,1,2,special-needs,null,6:00:00 PM,FALSE
-1,1,2,special-needs,6:45:00 AM,7:45:00 AM,TRUE
-1,2,2,curriculum,8:00:00 AM,12:00:00 PM,FALSE
-1,2,2,full-day,6:45:00 AM,6:00:00 PM,FALSE
-1,2,2,late,6:45:00 AM,2:00:00 PM,FALSE
-1,2,2,special-needs,12:00:00 PM,null,FALSE
-1,2,2,special-needs,null,12:30:00 PM,FALSE
-1,2,2,special-needs,null,1:00:00 PM,FALSE
-1,2,2,special-needs,null,1:30:00 PM,FALSE
-1,2,2,special-needs,null,2:00:00 PM,FALSE
-1,2,2,special-needs,null,2:30:00 PM,FALSE
-1,2,2,special-needs,null,3:00:00 PM,FALSE
-1,2,2,special-needs,null,3:30:00 PM,FALSE
-1,2,2,special-needs,null,4:00:00 PM,FALSE
-1,2,2,special-needs,null,4:30:00 PM,FALSE
-1,2,2,special-needs,null,5:00:00 PM,FALSE
-1,2,2,special-needs,null,5:30:00 PM,FALSE
-1,2,2,special-needs,null,6:00:00 PM,FALSE
-1,2,2,special-needs,6:45:00 AM,7:45:00 AM,TRUE
-1,3,2,curriculum,8:00:00 AM,12:00:00 PM,FALSE
-1,3,2,full-day,6:45:00 AM,6:00:00 PM,FALSE
-1,3,2,late,6:45:00 AM,2:00:00 PM,FALSE
-1,3,2,special-needs,12:00:00 PM,null,FALSE
-1,3,2,special-needs,null,12:30:00 PM,FALSE
-1,3,2,special-needs,null,1:00:00 PM,FALSE
-1,3,2,special-needs,null,1:30:00 PM,FALSE
-1,3,2,special-needs,null,2:00:00 PM,FALSE
-1,3,2,special-needs,null,2:30:00 PM,FALSE
-1,3,2,special-needs,null,3:00:00 PM,FALSE
-1,3,2,special-needs,null,3:30:00 PM,FALSE
-1,3,2,special-needs,null,4:00:00 PM,FALSE
-1,3,2,special-needs,null,4:30:00 PM,FALSE
-1,3,2,special-needs,null,5:00:00 PM,FALSE
-1,3,2,special-needs,null,5:30:00 PM,FALSE
-1,3,2,special-needs,null,6:00:00 PM,FALSE
-1,3,2,special-needs,6:45:00 AM,7:45:00 AM,TRUE
-1,4,2,curriculum,8:00:00 AM,12:00:00 PM,FALSE
-1,4,2,full-day,6:45:00 AM,6:00:00 PM,FALSE
-1,4,2,late,6:45:00 AM,2:00:00 PM,FALSE
-1,4,2,special-needs,12:00:00 PM,null,FALSE
-1,4,2,special-needs,null,12:30:00 PM,FALSE
-1,4,2,special-needs,null,1:00:00 PM,FALSE
-1,4,2,special-needs,null,1:30:00 PM,FALSE
-1,4,2,special-needs,null,2:00:00 PM,FALSE
-1,4,2,special-needs,null,2:30:00 PM,FALSE
-1,4,2,special-needs,null,3:00:00 PM,FALSE
-1,4,2,special-needs,null,3:30:00 PM,FALSE
-1,4,2,special-needs,null,4:00:00 PM,FALSE
-1,4,2,special-needs,null,4:30:00 PM,FALSE
-1,4,2,special-needs,null,5:00:00 PM,FALSE
-1,4,2,special-needs,null,5:30:00 PM,FALSE
-1,4,2,special-needs,null,6:00:00 PM,FALSE
-1,4,2,special-needs,6:45:00 AM,7:45:00 AM,TRUE
-1,5,2,curriculum,8:00:00 AM,12:00:00 PM,FALSE
-1,5,2,full-day,6:45:00 AM,6:00:00 PM,FALSE
-1,5,2,late,6:45:00 AM,2:00:00 PM,FALSE
-1,5,2,special-needs,12:00:00 PM,null,FALSE
-1,5,2,special-needs,null,12:30:00 PM,FALSE
-1,5,2,special-needs,null,1:00:00 PM,FALSE
-1,5,2,special-needs,null,1:30:00 PM,FALSE
-1,5,2,special-needs,null,2:00:00 PM,FALSE
-1,5,2,special-needs,null,2:30:00 PM,FALSE
-1,5,2,special-needs,null,3:00:00 PM,FALSE
-1,5,2,special-needs,null,3:30:00 PM,FALSE
-1,5,2,special-needs,null,4:00:00 PM,FALSE
-1,5,2,special-needs,null,4:30:00 PM,FALSE
-1,5,2,special-needs,null,5:00:00 PM,FALSE
-1,5,2,special-needs,null,5:30:00 PM,FALSE
-1,5,2,special-needs,null,6:00:00 PM,FALSE
-1,5,2,special-needs,6:45:00 AM,7:45:00 AM,TRUE
-1,1,3,am,11:00:00 AM,null,FALSE
-1,1,3,am,null,11:30:00 AM,FALSE
-1,1,3,am,null,12:00:00 PM,FALSE
-1,1,3,am,null,12:30:00 PM,FALSE
-1,1,3,am,null,1:00:00 PM,FALSE
-1,1,3,am,null,1:30:00 PM,FALSE
-1,1,3,am,null,2:00:00 PM,FALSE
-1,1,3,am,null,2:30:00 PM,FALSE
-1,1,3,am,null,3:00:00 PM,FALSE
-1,1,3,am,null,3:30:00 PM,FALSE
-1,1,3,am,null,4:00:00 PM,FALSE
-1,1,3,am,null,4:30:00 PM,FALSE
-1,1,3,am,null,5:00:00 PM,FALSE
-1,1,3,am,null,5:30:00 PM,FALSE
-1,1,3,am,null,6:00:00 PM,FALSE
-1,1,3,am,6:45:00 AM,7:45:00 AM,TRUE
-1,1,3,pm,2:00:00 PM,null,FALSE
-1,1,3,pm,null,2:30:00 PM,FALSE
-1,1,3,pm,null,3:00:00 PM,FALSE
-1,1,3,pm,null,3:30:00 PM,FALSE
-1,1,3,pm,null,4:00:00 PM,FALSE
-1,1,3,pm,null,4:30:00 PM,FALSE
-1,1,3,pm,null,5:00:00 PM,FALSE
-1,1,3,pm,null,5:30:00 PM,FALSE
-1,1,3,pm,null,6:00:00 PM,FALSE
-1,1,3,pm,6:45:00 AM,10:00:00 AM,TRUE
-1,2,3,am,11:00:00 AM,null,FALSE
-1,2,3,am,null,11:30:00 AM,FALSE
-1,2,3,am,null,12:00:00 PM,FALSE
-1,2,3,am,null,12:30:00 PM,FALSE
-1,2,3,am,null,1:00:00 PM,FALSE
-1,2,3,am,null,1:30:00 PM,FALSE
-1,2,3,am,null,2:00:00 PM,FALSE
-1,2,3,am,null,2:30:00 PM,FALSE
-1,2,3,am,null,3:00:00 PM,FALSE
-1,2,3,am,null,3:30:00 PM,FALSE
-1,2,3,am,null,4:00:00 PM,FALSE
-1,2,3,am,null,4:30:00 PM,FALSE
-1,2,3,am,null,5:00:00 PM,FALSE
-1,2,3,am,null,5:30:00 PM,FALSE
-1,2,3,am,null,6:00:00 PM,FALSE
-1,2,3,am,6:45:00 AM,7:45:00 AM,TRUE
-1,2,3,pm,2:00:00 PM,null,FALSE
-1,2,3,pm,null,2:30:00 PM,FALSE
-1,2,3,pm,null,3:00:00 PM,FALSE
-1,2,3,pm,null,3:30:00 PM,FALSE
-1,2,3,pm,null,4:00:00 PM,FALSE
-1,2,3,pm,null,4:30:00 PM,FALSE
-1,2,3,pm,null,5:00:00 PM,FALSE
-1,2,3,pm,null,5:30:00 PM,FALSE
-1,2,3,pm,null,6:00:00 PM,FALSE
-1,2,3,pm,6:45:00 AM,10:00:00 AM,TRUE
-1,3,3,am,11:00:00 AM,null,FALSE
-1,3,3,am,null,11:30:00 AM,FALSE
-1,3,3,am,null,12:00:00 PM,FALSE
-1,3,3,am,null,12:30:00 PM,FALSE
-1,3,3,am,null,1:00:00 PM,FALSE
-1,3,3,am,null,1:30:00 PM,FALSE
-1,3,3,am,null,2:00:00 PM,FALSE
-1,3,3,am,null,2:30:00 PM,FALSE
-1,3,3,am,null,3:00:00 PM,FALSE
-1,3,3,am,null,3:30:00 PM,FALSE
-1,3,3,am,null,4:00:00 PM,FALSE
-1,3,3,am,null,4:30:00 PM,FALSE
-1,3,3,am,null,5:00:00 PM,FALSE
-1,3,3,am,null,5:30:00 PM,FALSE
-1,3,3,am,null,6:00:00 PM,FALSE
-1,3,3,am,6:45:00 AM,7:45:00 AM,TRUE
-1,4,3,am,11:00:00 AM,null,FALSE
-1,4,3,am,null,11:30:00 AM,FALSE
-1,4,3,am,null,12:00:00 PM,FALSE
-1,4,3,am,null,12:30:00 PM,FALSE
-1,4,3,am,null,1:00:00 PM,FALSE
-1,4,3,am,null,1:30:00 PM,FALSE
-1,4,3,am,null,2:00:00 PM,FALSE
-1,4,3,am,null,2:30:00 PM,FALSE
-1,4,3,am,null,3:00:00 PM,FALSE
-1,4,3,am,null,3:30:00 PM,FALSE
-1,4,3,am,null,4:00:00 PM,FALSE
-1,4,3,am,null,4:30:00 PM,FALSE
-1,4,3,am,null,5:00:00 PM,FALSE
-1,4,3,am,null,5:30:00 PM,FALSE
-1,4,3,am,null,6:00:00 PM,FALSE
-1,4,3,am,6:45:00 AM,7:45:00 AM,TRUE
-1,4,3,pm,2:00:00 PM,null,FALSE
-1,4,3,pm,null,2:30:00 PM,FALSE
-1,4,3,pm,null,3:00:00 PM,FALSE
-1,4,3,pm,null,3:30:00 PM,FALSE
-1,4,3,pm,null,4:00:00 PM,FALSE
-1,4,3,pm,null,4:30:00 PM,FALSE
-1,4,3,pm,null,5:00:00 PM,FALSE
-1,4,3,pm,null,5:30:00 PM,FALSE
-1,4,3,pm,null,6:00:00 PM,FALSE
-1,4,3,pm,6:45:00 AM,10:00:00 AM,TRUE
-1,5,3,am,11:00:00 AM,null,FALSE
-1,5,3,am,null,11:30:00 AM,FALSE
-1,5,3,am,null,12:00:00 PM,FALSE
-1,5,3,am,null,12:30:00 PM,FALSE
-1,5,3,am,null,1:00:00 PM,FALSE
-1,5,3,am,null,1:30:00 PM,FALSE
-1,5,3,am,null,2:00:00 PM,FALSE
-1,5,3,am,null,2:30:00 PM,FALSE
-1,5,3,am,null,3:00:00 PM,FALSE
-1,5,3,am,null,3:30:00 PM,FALSE
-1,5,3,am,null,4:00:00 PM,FALSE
-1,5,3,am,null,4:30:00 PM,FALSE
-1,5,3,am,null,5:00:00 PM,FALSE
-1,5,3,am,null,5:30:00 PM,FALSE
-1,5,3,am,null,6:00:00 PM,FALSE
-1,5,3,am,6:45:00 AM,7:45:00 AM,TRUE
-1,5,3,pm,2:00:00 PM,null,FALSE
-1,5,3,pm,null,2:30:00 PM,FALSE
-1,5,3,pm,null,3:00:00 PM,FALSE
-1,5,3,pm,null,3:30:00 PM,FALSE
-1,5,3,pm,null,4:00:00 PM,FALSE
-1,5,3,pm,null,4:30:00 PM,FALSE
-1,5,3,pm,null,5:00:00 PM,FALSE
-1,5,3,pm,null,5:30:00 PM,FALSE
-1,5,3,pm,null,6:00:00 PM,FALSE
-1,5,3,pm,6:45:00 AM,10:00:00 AM,TRUE
-1,1,4,curriculum,2:15:00 PM,null,FALSE
-1,1,4,curriculum,null,2:30:00 PM,FALSE
-1,1,4,curriculum,null,3:00:00 PM,FALSE
-1,1,4,curriculum,null,3:30:00 PM,FALSE
-1,1,4,curriculum,null,4:00:00 PM,FALSE
-1,1,4,curriculum,null,4:30:00 PM,FALSE
-1,1,4,curriculum,null,5:00:00 PM,FALSE
-1,1,4,curriculum,null,5:30:00 PM,FALSE
-1,1,4,curriculum,null,6:00:00 PM,FALSE
-1,1,4,curriculum,6:45:00 AM,7:45:00 AM,TRUE
-1,2,4,curriculum,2:15:00 PM,null,FALSE
-1,2,4,curriculum,null,2:30:00 PM,FALSE
-1,2,4,curriculum,null,3:00:00 PM,FALSE
-1,2,4,curriculum,null,3:30:00 PM,FALSE
-1,2,4,curriculum,null,4:00:00 PM,FALSE
-1,2,4,curriculum,null,4:30:00 PM,FALSE
-1,2,4,curriculum,null,5:00:00 PM,FALSE
-1,2,4,curriculum,null,5:30:00 PM,FALSE
-1,2,4,curriculum,null,6:00:00 PM,FALSE
-1,2,4,curriculum,6:45:00 AM,7:45:00 AM,TRUE
-1,3,4,curriculum,1:00:00 PM,null,FALSE
-1,3,4,curriculum,null,1:30:00 PM,FALSE
-1,3,4,curriculum,null,2:00:00 PM,FALSE
-1,3,4,curriculum,null,2:30:00 PM,FALSE
-1,3,4,curriculum,null,3:00:00 PM,FALSE
-1,3,4,curriculum,null,3:30:00 PM,FALSE
-1,3,4,curriculum,null,4:00:00 PM,FALSE
-1,3,4,curriculum,null,4:30:00 PM,FALSE
-1,3,4,curriculum,null,5:00:00 PM,FALSE
-1,3,4,curriculum,null,5:30:00 PM,FALSE
-1,3,4,curriculum,null,6:00:00 PM,FALSE
-1,3,4,curriculum,6:45:00 AM,9:00:00 AM,TRUE
-1,4,4,curriculum,2:15:00 PM,null,FALSE
-1,4,4,curriculum,null,2:30:00 PM,FALSE
-1,4,4,curriculum,null,3:00:00 PM,FALSE
-1,4,4,curriculum,null,3:30:00 PM,FALSE
-1,4,4,curriculum,null,4:00:00 PM,FALSE
-1,4,4,curriculum,null,4:30:00 PM,FALSE
-1,4,4,curriculum,null,5:00:00 PM,FALSE
-1,4,4,curriculum,null,5:30:00 PM,FALSE
-1,4,4,curriculum,null,6:00:00 PM,FALSE
-1,4,4,curriculum,6:45:00 AM,7:45:00 AM,TRUE
-1,5,4,curriculum,2:15:00 PM,null,FALSE
-1,5,4,curriculum,null,2:30:00 PM,FALSE
-1,5,4,curriculum,null,3:00:00 PM,FALSE
-1,5,4,curriculum,null,3:30:00 PM,FALSE
-1,5,4,curriculum,null,4:00:00 PM,FALSE
-1,5,4,curriculum,null,4:30:00 PM,FALSE
-1,5,4,curriculum,null,5:00:00 PM,FALSE
-1,5,4,curriculum,null,5:30:00 PM,FALSE
-1,5,4,curriculum,null,6:00:00 PM,FALSE
-1,5,4,curriculum,6:45:00 AM,7:45:00 AM,TRUE
-1,3,3,pm,1:00:00 PM,null,FALSE
-1,3,3,pm,null,1:30:00 PM,FALSE
-1,3,3,pm,null,2:00:00 PM,FALSE
-1,3,3,pm,null,2:30:00 PM,FALSE
-1,3,3,pm,null,3:00:00 PM,FALSE
-1,3,3,pm,null,3:30:00 PM,FALSE
-1,3,3,pm,null,4:00:00 PM,FALSE
-1,3,3,pm,null,4:30:00 PM,FALSE
-1,3,3,pm,null,5:00:00 PM,FALSE
-1,3,3,pm,null,5:30:00 PM,FALSE
-1,3,3,pm,null,6:00:00 PM,FALSE
-1,3,3,pm,6:45:00 AM,9:00:00 AM,TRUE
-2,1,1,early,7:00:00 AM,12:30:00 PM,FALSE
-2,1,1,full-day,7:00:00 AM,6:00:00 PM,FALSE
-2,1,1,late,7:00:00 AM,2:30:00 PM,FALSE
-2,2,1,early,7:00:00 AM,12:30:00 PM,FALSE
-2,2,1,full-day,7:00:00 AM,6:00:00 PM,FALSE
-2,2,1,late,7:00:00 AM,2:30:00 PM,FALSE
-2,3,1,early,7:00:00 AM,12:30:00 PM,FALSE
-2,3,1,full-day,7:00:00 AM,6:00:00 PM,FALSE
-2,3,1,late,7:00:00 AM,2:30:00 PM,FALSE
-2,4,1,early,7:00:00 AM,12:30:00 PM,FALSE
-2,4,1,full-day,7:00:00 AM,6:00:00 PM,FALSE
-2,4,1,late,7:00:00 AM,2:30:00 PM,FALSE
-2,5,1,early,7:00:00 AM,12:30:00 PM,FALSE
-2,5,1,full-day,7:00:00 AM,6:00:00 PM,FALSE
-2,5,1,late,7:00:00 AM,2:30:00 PM,FALSE
-2,1,3,am,11:30:00 AM,null,FALSE
-2,1,3,am,null,12:00:00 PM,FALSE
-2,1,3,am,null,12:30:00 PM,FALSE
-2,1,3,am,null,1:00:00 PM,FALSE
-2,1,3,am,null,1:30:00 PM,FALSE
-2,1,3,am,null,2:00:00 PM,FALSE
-2,1,3,am,null,2:30:00 PM,FALSE
-2,1,3,am,null,3:00:00 PM,FALSE
-2,1,3,am,null,3:30:00 PM,FALSE
-2,1,3,am,null,4:00:00 PM,FALSE
-2,1,3,am,null,4:30:00 PM,FALSE
-2,1,3,am,null,5:00:00 PM,FALSE
-2,1,3,am,null,5:30:00 PM,FALSE
-2,1,3,am,null,6:00:00 PM,FALSE
-2,1,3,am,7:00:00 AM,7:30:00 AM,TRUE
-2,1,3,pm,3:00:00 PM,null,FALSE
-2,1,3,pm,null,3:30:00 PM,FALSE
-2,1,3,pm,null,4:00:00 PM,FALSE
-2,1,3,pm,null,4:30:00 PM,FALSE
-2,1,3,pm,null,5:00:00 PM,FALSE
-2,1,3,pm,null,5:30:00 PM,FALSE
-2,1,3,pm,null,6:00:00 PM,FALSE
-2,1,3,pm,7:00:00 AM,11:30:00 AM,TRUE
-2,2,3,am,11:30:00 AM,null,FALSE
-2,2,3,am,null,12:00:00 PM,FALSE
-2,2,3,am,null,12:30:00 PM,FALSE
-2,2,3,am,null,1:00:00 PM,FALSE
-2,2,3,am,null,1:30:00 PM,FALSE
-2,2,3,am,null,2:00:00 PM,FALSE
-2,2,3,am,null,2:30:00 PM,FALSE
-2,2,3,am,null,3:00:00 PM,FALSE
-2,2,3,am,null,3:30:00 PM,FALSE
-2,2,3,am,null,4:00:00 PM,FALSE
-2,2,3,am,null,4:30:00 PM,FALSE
-2,2,3,am,null,5:00:00 PM,FALSE
-2,2,3,am,null,5:30:00 PM,FALSE
-2,2,3,am,null,6:00:00 PM,FALSE
-2,2,3,am,7:00:00 AM,7:30:00 AM,TRUE
-2,2,3,pm,3:00:00 PM,null,FALSE
-2,2,3,pm,null,3:30:00 PM,FALSE
-2,2,3,pm,null,4:00:00 PM,FALSE
-2,2,3,pm,null,4:30:00 PM,FALSE
-2,2,3,pm,null,5:00:00 PM,FALSE
-2,2,3,pm,null,5:30:00 PM,FALSE
-2,2,3,pm,null,6:00:00 PM,FALSE
-2,2,3,pm,7:00:00 AM,11:30:00 AM,TRUE
-2,3,3,am,11:30:00 AM,null,FALSE
-2,3,3,am,null,12:00:00 PM,FALSE
-2,3,3,am,null,12:30:00 PM,FALSE
-2,3,3,am,null,1:00:00 PM,FALSE
-2,3,3,am,null,1:30:00 PM,FALSE
-2,3,3,am,null,2:00:00 PM,FALSE
-2,3,3,am,null,2:30:00 PM,FALSE
-2,3,3,am,null,3:00:00 PM,FALSE
-2,3,3,am,null,3:30:00 PM,FALSE
-2,3,3,am,null,4:00:00 PM,FALSE
-2,3,3,am,null,4:30:00 PM,FALSE
-2,3,3,am,null,5:00:00 PM,FALSE
-2,3,3,am,null,5:30:00 PM,FALSE
-2,3,3,am,null,6:00:00 PM,FALSE
-2,3,3,am,7:00:00 AM,10:00:00 AM,TRUE
-2,3,3,pm,2:00:00 PM,null,FALSE
-2,3,3,pm,null,2:30:00 PM,FALSE
-2,3,3,pm,null,3:00:00 PM,FALSE
-2,3,3,pm,null,3:30:00 PM,FALSE
-2,3,3,pm,null,4:00:00 PM,FALSE
-2,3,3,pm,null,4:30:00 PM,FALSE
-2,3,3,pm,null,5:00:00 PM,FALSE
-2,3,3,pm,null,5:30:00 PM,FALSE
-2,3,3,pm,null,6:00:00 PM,FALSE
-2,3,3,pm,7:00:00 AM,10:30:00 AM,TRUE
-2,4,3,am,11:30:00 AM,null,FALSE
-2,4,3,am,null,12:00:00 PM,FALSE
-2,4,3,am,null,12:30:00 PM,FALSE
-2,4,3,am,null,1:00:00 PM,FALSE
-2,4,3,am,null,1:30:00 PM,FALSE
-2,4,3,am,null,2:00:00 PM,FALSE
-2,4,3,am,null,2:30:00 PM,FALSE
-2,4,3,am,null,3:00:00 PM,FALSE
-2,4,3,am,null,3:30:00 PM,FALSE
-2,4,3,am,null,4:00:00 PM,FALSE
-2,4,3,am,null,4:30:00 PM,FALSE
-2,4,3,am,null,5:00:00 PM,FALSE
-2,4,3,am,null,5:30:00 PM,FALSE
-2,4,3,am,null,6:00:00 PM,FALSE
-2,4,3,am,7:00:00 AM,7:30:00 AM,TRUE
-2,4,3,pm,3:00:00 PM,null,FALSE
-2,4,3,pm,null,3:30:00 PM,FALSE
-2,4,3,pm,null,4:00:00 PM,FALSE
-2,4,3,pm,null,4:30:00 PM,FALSE
-2,4,3,pm,null,5:00:00 PM,FALSE
-2,4,3,pm,null,5:30:00 PM,FALSE
-2,4,3,pm,null,6:00:00 PM,FALSE
-2,4,3,pm,7:00:00 AM,11:30:00 AM,TRUE
-2,5,3,am,11:30:00 AM,null,FALSE
-2,5,3,am,null,12:00:00 PM,FALSE
-2,5,3,am,null,12:30:00 PM,FALSE
-2,5,3,am,null,1:00:00 PM,FALSE
-2,5,3,am,null,1:30:00 PM,FALSE
-2,5,3,am,null,2:00:00 PM,FALSE
-2,5,3,am,null,2:30:00 PM,FALSE
-2,5,3,am,null,3:00:00 PM,FALSE
-2,5,3,am,null,3:30:00 PM,FALSE
-2,5,3,am,null,4:00:00 PM,FALSE
-2,5,3,am,null,4:30:00 PM,FALSE
-2,5,3,am,null,5:00:00 PM,FALSE
-2,5,3,am,null,5:30:00 PM,FALSE
-2,5,3,am,null,6:00:00 PM,FALSE
-2,5,3,am,7:00:00 AM,7:30:00 AM,TRUE
-2,5,3,pm,3:00:00 PM,null,FALSE
-2,5,3,pm,null,3:30:00 PM,FALSE
-2,5,3,pm,null,4:00:00 PM,FALSE
-2,5,3,pm,null,4:30:00 PM,FALSE
-2,5,3,pm,null,5:00:00 PM,FALSE
-2,5,3,pm,null,5:30:00 PM,FALSE
-2,5,3,pm,null,6:00:00 PM,FALSE
-2,5,3,pm,7:00:00 AM,11:30:00 AM,TRUE
-2,1,4,early,7:00:00 AM,7:30:00 AM,TRUE
-2,1,4,flex,3:00:00 PM,null,FALSE
-2,1,4,flex,null,3:30:00 PM,FALSE
-2,1,4,flex,null,4:00:00 PM,FALSE
-2,1,4,flex,null,4:30:00 PM,FALSE
-2,1,4,flex,null,5:00:00 PM,FALSE
-2,1,4,flex,null,5:30:00 PM,FALSE
-2,1,4,flex,null,6:00:00 PM,FALSE
-2,2,4,flex,3:00:00 PM,null,FALSE
-2,2,4,flex,null,3:30:00 PM,FALSE
-2,2,4,flex,null,4:00:00 PM,FALSE
-2,2,4,flex,null,4:30:00 PM,FALSE
-2,2,4,flex,null,5:00:00 PM,FALSE
-2,2,4,flex,null,5:30:00 PM,FALSE
-2,2,4,flex,null,6:00:00 PM,FALSE
-2,2,4,flex,7:00:00 AM,7:30:00 AM,TRUE
-2,3,4,early,7:00:00 AM,7:30:00 AM,TRUE
-2,3,4,flex,12:30:00 PM,null,FALSE
-2,3,4,flex,null,1:00:00 PM,FALSE
-2,3,4,flex,null,1:30:00 PM,FALSE
-2,3,4,flex,null,2:00:00 PM,FALSE
-2,3,4,flex,null,2:30:00 PM,FALSE
-2,3,4,flex,null,3:00:00 PM,FALSE
-2,3,4,flex,null,3:30:00 PM,FALSE
-2,3,4,flex,null,4:00:00 PM,FALSE
-2,3,4,flex,null,4:30:00 PM,FALSE
-2,3,4,flex,null,5:00:00 PM,FALSE
-2,3,4,flex,null,5:30:00 PM,FALSE
-2,3,4,flex,null,6:00:00 PM,FALSE
-2,4,4,early,7:00:00 AM,7:30:00 AM,TRUE
-2,4,4,flex,3:00:00 PM,null,FALSE
-2,4,4,flex,null,3:30:00 PM,FALSE
-2,4,4,flex,null,4:00:00 PM,FALSE
-2,4,4,flex,null,4:30:00 PM,FALSE
-2,4,4,flex,null,5:00:00 PM,FALSE
-2,4,4,flex,null,5:30:00 PM,FALSE
-2,4,4,flex,null,6:00:00 PM,FALSE
-2,5,4,early,7:00:00 AM,7:30:00 AM,TRUE
-2,5,4,flex,3:00:00 PM,null,FALSE
-2,5,4,flex,null,3:30:00 PM,FALSE
-2,5,4,flex,null,4:00:00 PM,FALSE
-2,5,4,flex,null,4:30:00 PM,FALSE
-2,5,4,flex,null,5:00:00 PM,FALSE
-2,5,4,flex,null,5:30:00 PM,FALSE
-2,5,4,flex,null,6:00:00 PM,FALSE
+center_id,day_of_week,age_group_id,program_id,in_time,out_time,before_school
+1,1,1,1,8:00:00 AM,12:00:00 PM,FALSE
+1,2,1,1,8:00:00 AM,12:00:00 PM,FALSE
+1,3,1,1,8:00:00 AM,12:00:00 PM,FALSE
+1,4,1,1,8:00:00 AM,12:00:00 PM,FALSE
+1,5,1,1,8:00:00 AM,12:00:00 PM,FALSE
+1,1,2,1,8:00:00 AM,12:00:00 PM,FALSE
+1,2,2,1,8:00:00 AM,12:00:00 PM,FALSE
+1,3,2,1,8:00:00 AM,12:00:00 PM,FALSE
+1,4,2,1,8:00:00 AM,12:00:00 PM,FALSE
+1,5,2,1,8:00:00 AM,12:00:00 PM,FALSE
+1,1,4,1,2:15:00 PM,null,FALSE
+1,1,4,1,null,2:30:00 PM,FALSE
+1,1,4,1,null,3:00:00 PM,FALSE
+1,1,4,1,null,3:30:00 PM,FALSE
+1,1,4,1,null,4:00:00 PM,FALSE
+1,1,4,1,null,4:30:00 PM,FALSE
+1,1,4,1,null,5:00:00 PM,FALSE
+1,1,4,1,null,5:30:00 PM,FALSE
+1,1,4,1,null,6:00:00 PM,FALSE
+1,1,4,1,6:45:00 AM,7:45:00 AM,TRUE
+1,2,4,1,2:15:00 PM,null,FALSE
+1,2,4,1,null,2:30:00 PM,FALSE
+1,2,4,1,null,3:00:00 PM,FALSE
+1,2,4,1,null,3:30:00 PM,FALSE
+1,2,4,1,null,4:00:00 PM,FALSE
+1,2,4,1,null,4:30:00 PM,FALSE
+1,2,4,1,null,5:00:00 PM,FALSE
+1,2,4,1,null,5:30:00 PM,FALSE
+1,2,4,1,null,6:00:00 PM,FALSE
+1,2,4,1,6:45:00 AM,7:45:00 AM,TRUE
+1,3,4,1,1:00:00 PM,null,FALSE
+1,3,4,1,null,1:30:00 PM,FALSE
+1,3,4,1,null,2:00:00 PM,FALSE
+1,3,4,1,null,2:30:00 PM,FALSE
+1,3,4,1,null,3:00:00 PM,FALSE
+1,3,4,1,null,3:30:00 PM,FALSE
+1,3,4,1,null,4:00:00 PM,FALSE
+1,3,4,1,null,4:30:00 PM,FALSE
+1,3,4,1,null,5:00:00 PM,FALSE
+1,3,4,1,null,5:30:00 PM,FALSE
+1,3,4,1,null,6:00:00 PM,FALSE
+1,3,4,1,6:45:00 AM,9:00:00 AM,TRUE
+1,4,4,1,2:15:00 PM,null,FALSE
+1,4,4,1,null,2:30:00 PM,FALSE
+1,4,4,1,null,3:00:00 PM,FALSE
+1,4,4,1,null,3:30:00 PM,FALSE
+1,4,4,1,null,4:00:00 PM,FALSE
+1,4,4,1,null,4:30:00 PM,FALSE
+1,4,4,1,null,5:00:00 PM,FALSE
+1,4,4,1,null,5:30:00 PM,FALSE
+1,4,4,1,null,6:00:00 PM,FALSE
+1,4,4,1,6:45:00 AM,7:45:00 AM,TRUE
+1,5,4,1,2:15:00 PM,null,FALSE
+1,5,4,1,null,2:30:00 PM,FALSE
+1,5,4,1,null,3:00:00 PM,FALSE
+1,5,4,1,null,3:30:00 PM,FALSE
+1,5,4,1,null,4:00:00 PM,FALSE
+1,5,4,1,null,4:30:00 PM,FALSE
+1,5,4,1,null,5:00:00 PM,FALSE
+1,5,4,1,null,5:30:00 PM,FALSE
+1,5,4,1,null,6:00:00 PM,FALSE
+1,5,4,1,6:45:00 AM,7:45:00 AM,TRUE
+2,1,4,1,3:00:00 PM,null,FALSE
+2,1,4,1,null,3:30:00 PM,FALSE
+2,1,4,1,null,4:00:00 PM,FALSE
+2,1,4,1,null,4:30:00 PM,FALSE
+2,1,4,1,null,5:00:00 PM,FALSE
+2,1,4,1,null,5:30:00 PM,FALSE
+2,1,4,1,null,6:00:00 PM,FALSE
+2,2,4,1,3:00:00 PM,null,FALSE
+2,2,4,1,null,3:30:00 PM,FALSE
+2,2,4,1,null,4:00:00 PM,FALSE
+2,2,4,1,null,4:30:00 PM,FALSE
+2,2,4,1,null,5:00:00 PM,FALSE
+2,2,4,1,null,5:30:00 PM,FALSE
+2,2,4,1,null,6:00:00 PM,FALSE
+2,2,4,1,7:00:00 AM,7:30:00 AM,TRUE
+2,3,4,1,12:30:00 PM,null,FALSE
+2,3,4,1,null,1:00:00 PM,FALSE
+2,3,4,1,null,1:30:00 PM,FALSE
+2,3,4,1,null,2:00:00 PM,FALSE
+2,3,4,1,null,2:30:00 PM,FALSE
+2,3,4,1,null,3:00:00 PM,FALSE
+2,3,4,1,null,3:30:00 PM,FALSE
+2,3,4,1,null,4:00:00 PM,FALSE
+2,3,4,1,null,4:30:00 PM,FALSE
+2,3,4,1,null,5:00:00 PM,FALSE
+2,3,4,1,null,5:30:00 PM,FALSE
+2,3,4,1,null,6:00:00 PM,FALSE
+2,4,4,1,3:00:00 PM,null,FALSE
+2,4,4,1,null,3:30:00 PM,FALSE
+2,4,4,1,null,4:00:00 PM,FALSE
+2,4,4,1,null,4:30:00 PM,FALSE
+2,4,4,1,null,5:00:00 PM,FALSE
+2,4,4,1,null,5:30:00 PM,FALSE
+2,4,4,1,null,6:00:00 PM,FALSE
+2,5,4,1,3:00:00 PM,null,FALSE
+2,5,4,1,null,3:30:00 PM,FALSE
+2,5,4,1,null,4:00:00 PM,FALSE
+2,5,4,1,null,4:30:00 PM,FALSE
+2,5,4,1,null,5:00:00 PM,FALSE
+2,5,4,1,null,5:30:00 PM,FALSE
+2,5,4,1,null,6:00:00 PM,FALSE
+1,1,1,2,6:45:00 AM,6:00:00 PM,FALSE
+1,2,1,2,6:45:00 AM,6:00:00 PM,FALSE
+1,3,1,2,6:45:00 AM,6:00:00 PM,FALSE
+1,4,1,2,6:45:00 AM,6:00:00 PM,FALSE
+1,5,1,2,6:45:00 AM,6:00:00 PM,FALSE
+1,1,2,2,6:45:00 AM,6:00:00 PM,FALSE
+1,2,2,2,6:45:00 AM,6:00:00 PM,FALSE
+1,3,2,2,6:45:00 AM,6:00:00 PM,FALSE
+1,4,2,2,6:45:00 AM,6:00:00 PM,FALSE
+1,5,2,2,6:45:00 AM,6:00:00 PM,FALSE
+2,1,1,2,7:00:00 AM,6:00:00 PM,FALSE
+2,2,1,2,7:00:00 AM,6:00:00 PM,FALSE
+2,3,1,2,7:00:00 AM,6:00:00 PM,FALSE
+2,4,1,2,7:00:00 AM,6:00:00 PM,FALSE
+2,5,1,2,7:00:00 AM,6:00:00 PM,FALSE
+1,1,2,3,12:00:00 PM,null,FALSE
+1,1,2,3,null,12:30:00 PM,FALSE
+1,1,2,3,null,1:00:00 PM,FALSE
+1,1,2,3,null,1:30:00 PM,FALSE
+1,1,2,3,null,2:00:00 PM,FALSE
+1,1,2,3,null,2:30:00 PM,FALSE
+1,1,2,3,null,3:00:00 PM,FALSE
+1,1,2,3,null,3:30:00 PM,FALSE
+1,1,2,3,null,4:00:00 PM,FALSE
+1,1,2,3,null,4:30:00 PM,FALSE
+1,1,2,3,null,5:00:00 PM,FALSE
+1,1,2,3,null,5:30:00 PM,FALSE
+1,1,2,3,null,6:00:00 PM,FALSE
+1,1,2,3,6:45:00 AM,7:45:00 AM,TRUE
+1,2,2,3,12:00:00 PM,null,FALSE
+1,2,2,3,null,12:30:00 PM,FALSE
+1,2,2,3,null,1:00:00 PM,FALSE
+1,2,2,3,null,1:30:00 PM,FALSE
+1,2,2,3,null,2:00:00 PM,FALSE
+1,2,2,3,null,2:30:00 PM,FALSE
+1,2,2,3,null,3:00:00 PM,FALSE
+1,2,2,3,null,3:30:00 PM,FALSE
+1,2,2,3,null,4:00:00 PM,FALSE
+1,2,2,3,null,4:30:00 PM,FALSE
+1,2,2,3,null,5:00:00 PM,FALSE
+1,2,2,3,null,5:30:00 PM,FALSE
+1,2,2,3,null,6:00:00 PM,FALSE
+1,2,2,3,6:45:00 AM,7:45:00 AM,TRUE
+1,3,2,3,12:00:00 PM,null,FALSE
+1,3,2,3,null,12:30:00 PM,FALSE
+1,3,2,3,null,1:00:00 PM,FALSE
+1,3,2,3,null,1:30:00 PM,FALSE
+1,3,2,3,null,2:00:00 PM,FALSE
+1,3,2,3,null,2:30:00 PM,FALSE
+1,3,2,3,null,3:00:00 PM,FALSE
+1,3,2,3,null,3:30:00 PM,FALSE
+1,3,2,3,null,4:00:00 PM,FALSE
+1,3,2,3,null,4:30:00 PM,FALSE
+1,3,2,3,null,5:00:00 PM,FALSE
+1,3,2,3,null,5:30:00 PM,FALSE
+1,3,2,3,null,6:00:00 PM,FALSE
+1,3,2,3,6:45:00 AM,7:45:00 AM,TRUE
+1,4,2,3,12:00:00 PM,null,FALSE
+1,4,2,3,null,12:30:00 PM,FALSE
+1,4,2,3,null,1:00:00 PM,FALSE
+1,4,2,3,null,1:30:00 PM,FALSE
+1,4,2,3,null,2:00:00 PM,FALSE
+1,4,2,3,null,2:30:00 PM,FALSE
+1,4,2,3,null,3:00:00 PM,FALSE
+1,4,2,3,null,3:30:00 PM,FALSE
+1,4,2,3,null,4:00:00 PM,FALSE
+1,4,2,3,null,4:30:00 PM,FALSE
+1,4,2,3,null,5:00:00 PM,FALSE
+1,4,2,3,null,5:30:00 PM,FALSE
+1,4,2,3,null,6:00:00 PM,FALSE
+1,4,2,3,6:45:00 AM,7:45:00 AM,TRUE
+1,5,2,3,12:00:00 PM,null,FALSE
+1,5,2,3,null,12:30:00 PM,FALSE
+1,5,2,3,null,1:00:00 PM,FALSE
+1,5,2,3,null,1:30:00 PM,FALSE
+1,5,2,3,null,2:00:00 PM,FALSE
+1,5,2,3,null,2:30:00 PM,FALSE
+1,5,2,3,null,3:00:00 PM,FALSE
+1,5,2,3,null,3:30:00 PM,FALSE
+1,5,2,3,null,4:00:00 PM,FALSE
+1,5,2,3,null,4:30:00 PM,FALSE
+1,5,2,3,null,5:00:00 PM,FALSE
+1,5,2,3,null,5:30:00 PM,FALSE
+1,5,2,3,null,6:00:00 PM,FALSE
+1,5,2,3,6:45:00 AM,7:45:00 AM,TRUE
+1,1,3,4,11:00:00 AM,null,FALSE
+1,1,3,4,null,11:30:00 AM,FALSE
+1,1,3,4,null,12:00:00 PM,FALSE
+1,1,3,4,null,12:30:00 PM,FALSE
+1,1,3,4,null,1:00:00 PM,FALSE
+1,1,3,4,null,1:30:00 PM,FALSE
+1,1,3,4,null,2:00:00 PM,FALSE
+1,1,3,4,null,2:30:00 PM,FALSE
+1,1,3,4,null,3:00:00 PM,FALSE
+1,1,3,4,null,3:30:00 PM,FALSE
+1,1,3,4,null,4:00:00 PM,FALSE
+1,1,3,4,null,4:30:00 PM,FALSE
+1,1,3,4,null,5:00:00 PM,FALSE
+1,1,3,4,null,5:30:00 PM,FALSE
+1,1,3,4,null,6:00:00 PM,FALSE
+1,1,3,4,6:45:00 AM,7:45:00 AM,TRUE
+1,2,3,4,11:00:00 AM,null,FALSE
+1,2,3,4,null,11:30:00 AM,FALSE
+1,2,3,4,null,12:00:00 PM,FALSE
+1,2,3,4,null,12:30:00 PM,FALSE
+1,2,3,4,null,1:00:00 PM,FALSE
+1,2,3,4,null,1:30:00 PM,FALSE
+1,2,3,4,null,2:00:00 PM,FALSE
+1,2,3,4,null,2:30:00 PM,FALSE
+1,2,3,4,null,3:00:00 PM,FALSE
+1,2,3,4,null,3:30:00 PM,FALSE
+1,2,3,4,null,4:00:00 PM,FALSE
+1,2,3,4,null,4:30:00 PM,FALSE
+1,2,3,4,null,5:00:00 PM,FALSE
+1,2,3,4,null,5:30:00 PM,FALSE
+1,2,3,4,null,6:00:00 PM,FALSE
+1,2,3,4,6:45:00 AM,7:45:00 AM,TRUE
+1,3,3,4,11:00:00 AM,null,FALSE
+1,3,3,4,null,11:30:00 AM,FALSE
+1,3,3,4,null,12:00:00 PM,FALSE
+1,3,3,4,null,12:30:00 PM,FALSE
+1,3,3,4,null,1:00:00 PM,FALSE
+1,3,3,4,null,1:30:00 PM,FALSE
+1,3,3,4,null,2:00:00 PM,FALSE
+1,3,3,4,null,2:30:00 PM,FALSE
+1,3,3,4,null,3:00:00 PM,FALSE
+1,3,3,4,null,3:30:00 PM,FALSE
+1,3,3,4,null,4:00:00 PM,FALSE
+1,3,3,4,null,4:30:00 PM,FALSE
+1,3,3,4,null,5:00:00 PM,FALSE
+1,3,3,4,null,5:30:00 PM,FALSE
+1,3,3,4,null,6:00:00 PM,FALSE
+1,3,3,4,6:45:00 AM,7:45:00 AM,TRUE
+1,4,3,4,11:00:00 AM,null,FALSE
+1,4,3,4,null,11:30:00 AM,FALSE
+1,4,3,4,null,12:00:00 PM,FALSE
+1,4,3,4,null,12:30:00 PM,FALSE
+1,4,3,4,null,1:00:00 PM,FALSE
+1,4,3,4,null,1:30:00 PM,FALSE
+1,4,3,4,null,2:00:00 PM,FALSE
+1,4,3,4,null,2:30:00 PM,FALSE
+1,4,3,4,null,3:00:00 PM,FALSE
+1,4,3,4,null,3:30:00 PM,FALSE
+1,4,3,4,null,4:00:00 PM,FALSE
+1,4,3,4,null,4:30:00 PM,FALSE
+1,4,3,4,null,5:00:00 PM,FALSE
+1,4,3,4,null,5:30:00 PM,FALSE
+1,4,3,4,null,6:00:00 PM,FALSE
+1,4,3,4,6:45:00 AM,7:45:00 AM,TRUE
+1,5,3,4,11:00:00 AM,null,FALSE
+1,5,3,4,null,11:30:00 AM,FALSE
+1,5,3,4,null,12:00:00 PM,FALSE
+1,5,3,4,null,12:30:00 PM,FALSE
+1,5,3,4,null,1:00:00 PM,FALSE
+1,5,3,4,null,1:30:00 PM,FALSE
+1,5,3,4,null,2:00:00 PM,FALSE
+1,5,3,4,null,2:30:00 PM,FALSE
+1,5,3,4,null,3:00:00 PM,FALSE
+1,5,3,4,null,3:30:00 PM,FALSE
+1,5,3,4,null,4:00:00 PM,FALSE
+1,5,3,4,null,4:30:00 PM,FALSE
+1,5,3,4,null,5:00:00 PM,FALSE
+1,5,3,4,null,5:30:00 PM,FALSE
+1,5,3,4,null,6:00:00 PM,FALSE
+1,5,3,4,6:45:00 AM,7:45:00 AM,TRUE
+2,1,3,4,11:30:00 AM,null,FALSE
+2,1,3,4,null,12:00:00 PM,FALSE
+2,1,3,4,null,12:30:00 PM,FALSE
+2,1,3,4,null,1:00:00 PM,FALSE
+2,1,3,4,null,1:30:00 PM,FALSE
+2,1,3,4,null,2:00:00 PM,FALSE
+2,1,3,4,null,2:30:00 PM,FALSE
+2,1,3,4,null,3:00:00 PM,FALSE
+2,1,3,4,null,3:30:00 PM,FALSE
+2,1,3,4,null,4:00:00 PM,FALSE
+2,1,3,4,null,4:30:00 PM,FALSE
+2,1,3,4,null,5:00:00 PM,FALSE
+2,1,3,4,null,5:30:00 PM,FALSE
+2,1,3,4,null,6:00:00 PM,FALSE
+2,1,3,4,7:00:00 AM,7:30:00 AM,TRUE
+2,2,3,4,11:30:00 AM,null,FALSE
+2,2,3,4,null,12:00:00 PM,FALSE
+2,2,3,4,null,12:30:00 PM,FALSE
+2,2,3,4,null,1:00:00 PM,FALSE
+2,2,3,4,null,1:30:00 PM,FALSE
+2,2,3,4,null,2:00:00 PM,FALSE
+2,2,3,4,null,2:30:00 PM,FALSE
+2,2,3,4,null,3:00:00 PM,FALSE
+2,2,3,4,null,3:30:00 PM,FALSE
+2,2,3,4,null,4:00:00 PM,FALSE
+2,2,3,4,null,4:30:00 PM,FALSE
+2,2,3,4,null,5:00:00 PM,FALSE
+2,2,3,4,null,5:30:00 PM,FALSE
+2,2,3,4,null,6:00:00 PM,FALSE
+2,2,3,4,7:00:00 AM,7:30:00 AM,TRUE
+2,3,3,4,11:30:00 AM,null,FALSE
+2,3,3,4,null,12:00:00 PM,FALSE
+2,3,3,4,null,12:30:00 PM,FALSE
+2,3,3,4,null,1:00:00 PM,FALSE
+2,3,3,4,null,1:30:00 PM,FALSE
+2,3,3,4,null,2:00:00 PM,FALSE
+2,3,3,4,null,2:30:00 PM,FALSE
+2,3,3,4,null,3:00:00 PM,FALSE
+2,3,3,4,null,3:30:00 PM,FALSE
+2,3,3,4,null,4:00:00 PM,FALSE
+2,3,3,4,null,4:30:00 PM,FALSE
+2,3,3,4,null,5:00:00 PM,FALSE
+2,3,3,4,null,5:30:00 PM,FALSE
+2,3,3,4,null,6:00:00 PM,FALSE
+2,3,3,4,7:00:00 AM,10:00:00 AM,TRUE
+2,4,3,4,11:30:00 AM,null,FALSE
+2,4,3,4,null,12:00:00 PM,FALSE
+2,4,3,4,null,12:30:00 PM,FALSE
+2,4,3,4,null,1:00:00 PM,FALSE
+2,4,3,4,null,1:30:00 PM,FALSE
+2,4,3,4,null,2:00:00 PM,FALSE
+2,4,3,4,null,2:30:00 PM,FALSE
+2,4,3,4,null,3:00:00 PM,FALSE
+2,4,3,4,null,3:30:00 PM,FALSE
+2,4,3,4,null,4:00:00 PM,FALSE
+2,4,3,4,null,4:30:00 PM,FALSE
+2,4,3,4,null,5:00:00 PM,FALSE
+2,4,3,4,null,5:30:00 PM,FALSE
+2,4,3,4,null,6:00:00 PM,FALSE
+2,4,3,4,7:00:00 AM,7:30:00 AM,TRUE
+2,5,3,4,11:30:00 AM,null,FALSE
+2,5,3,4,null,12:00:00 PM,FALSE
+2,5,3,4,null,12:30:00 PM,FALSE
+2,5,3,4,null,1:00:00 PM,FALSE
+2,5,3,4,null,1:30:00 PM,FALSE
+2,5,3,4,null,2:00:00 PM,FALSE
+2,5,3,4,null,2:30:00 PM,FALSE
+2,5,3,4,null,3:00:00 PM,FALSE
+2,5,3,4,null,3:30:00 PM,FALSE
+2,5,3,4,null,4:00:00 PM,FALSE
+2,5,3,4,null,4:30:00 PM,FALSE
+2,5,3,4,null,5:00:00 PM,FALSE
+2,5,3,4,null,5:30:00 PM,FALSE
+2,5,3,4,null,6:00:00 PM,FALSE
+2,5,3,4,7:00:00 AM,7:30:00 AM,TRUE
+1,1,3,5,2:00:00 PM,null,FALSE
+1,1,3,5,null,2:30:00 PM,FALSE
+1,1,3,5,null,3:00:00 PM,FALSE
+1,1,3,5,null,3:30:00 PM,FALSE
+1,1,3,5,null,4:00:00 PM,FALSE
+1,1,3,5,null,4:30:00 PM,FALSE
+1,1,3,5,null,5:00:00 PM,FALSE
+1,1,3,5,null,5:30:00 PM,FALSE
+1,1,3,5,null,6:00:00 PM,FALSE
+1,1,3,5,6:45:00 AM,10:00:00 AM,TRUE
+1,2,3,5,2:00:00 PM,null,FALSE
+1,2,3,5,null,2:30:00 PM,FALSE
+1,2,3,5,null,3:00:00 PM,FALSE
+1,2,3,5,null,3:30:00 PM,FALSE
+1,2,3,5,null,4:00:00 PM,FALSE
+1,2,3,5,null,4:30:00 PM,FALSE
+1,2,3,5,null,5:00:00 PM,FALSE
+1,2,3,5,null,5:30:00 PM,FALSE
+1,2,3,5,null,6:00:00 PM,FALSE
+1,2,3,5,6:45:00 AM,10:00:00 AM,TRUE
+1,4,3,5,2:00:00 PM,null,FALSE
+1,4,3,5,null,2:30:00 PM,FALSE
+1,4,3,5,null,3:00:00 PM,FALSE
+1,4,3,5,null,3:30:00 PM,FALSE
+1,4,3,5,null,4:00:00 PM,FALSE
+1,4,3,5,null,4:30:00 PM,FALSE
+1,4,3,5,null,5:00:00 PM,FALSE
+1,4,3,5,null,5:30:00 PM,FALSE
+1,4,3,5,null,6:00:00 PM,FALSE
+1,4,3,5,6:45:00 AM,10:00:00 AM,TRUE
+1,5,3,5,2:00:00 PM,null,FALSE
+1,5,3,5,null,2:30:00 PM,FALSE
+1,5,3,5,null,3:00:00 PM,FALSE
+1,5,3,5,null,3:30:00 PM,FALSE
+1,5,3,5,null,4:00:00 PM,FALSE
+1,5,3,5,null,4:30:00 PM,FALSE
+1,5,3,5,null,5:00:00 PM,FALSE
+1,5,3,5,null,5:30:00 PM,FALSE
+1,5,3,5,null,6:00:00 PM,FALSE
+1,5,3,5,6:45:00 AM,10:00:00 AM,TRUE
+1,3,3,5,1:00:00 PM,null,FALSE
+1,3,3,5,null,1:30:00 PM,FALSE
+1,3,3,5,null,2:00:00 PM,FALSE
+1,3,3,5,null,2:30:00 PM,FALSE
+1,3,3,5,null,3:00:00 PM,FALSE
+1,3,3,5,null,3:30:00 PM,FALSE
+1,3,3,5,null,4:00:00 PM,FALSE
+1,3,3,5,null,4:30:00 PM,FALSE
+1,3,3,5,null,5:00:00 PM,FALSE
+1,3,3,5,null,5:30:00 PM,FALSE
+1,3,3,5,null,6:00:00 PM,FALSE
+1,3,3,5,6:45:00 AM,9:00:00 AM,TRUE
+2,1,3,5,3:00:00 PM,null,FALSE
+2,1,3,5,null,3:30:00 PM,FALSE
+2,1,3,5,null,4:00:00 PM,FALSE
+2,1,3,5,null,4:30:00 PM,FALSE
+2,1,3,5,null,5:00:00 PM,FALSE
+2,1,3,5,null,5:30:00 PM,FALSE
+2,1,3,5,null,6:00:00 PM,FALSE
+2,1,3,5,7:00:00 AM,11:30:00 AM,TRUE
+2,2,3,5,3:00:00 PM,null,FALSE
+2,2,3,5,null,3:30:00 PM,FALSE
+2,2,3,5,null,4:00:00 PM,FALSE
+2,2,3,5,null,4:30:00 PM,FALSE
+2,2,3,5,null,5:00:00 PM,FALSE
+2,2,3,5,null,5:30:00 PM,FALSE
+2,2,3,5,null,6:00:00 PM,FALSE
+2,2,3,5,7:00:00 AM,11:30:00 AM,TRUE
+2,3,3,5,2:00:00 PM,null,FALSE
+2,3,3,5,null,2:30:00 PM,FALSE
+2,3,3,5,null,3:00:00 PM,FALSE
+2,3,3,5,null,3:30:00 PM,FALSE
+2,3,3,5,null,4:00:00 PM,FALSE
+2,3,3,5,null,4:30:00 PM,FALSE
+2,3,3,5,null,5:00:00 PM,FALSE
+2,3,3,5,null,5:30:00 PM,FALSE
+2,3,3,5,null,6:00:00 PM,FALSE
+2,3,3,5,7:00:00 AM,10:30:00 AM,TRUE
+2,4,3,5,3:00:00 PM,null,FALSE
+2,4,3,5,null,3:30:00 PM,FALSE
+2,4,3,5,null,4:00:00 PM,FALSE
+2,4,3,5,null,4:30:00 PM,FALSE
+2,4,3,5,null,5:00:00 PM,FALSE
+2,4,3,5,null,5:30:00 PM,FALSE
+2,4,3,5,null,6:00:00 PM,FALSE
+2,4,3,5,7:00:00 AM,11:30:00 AM,TRUE
+2,5,3,5,3:00:00 PM,null,FALSE
+2,5,3,5,null,3:30:00 PM,FALSE
+2,5,3,5,null,4:00:00 PM,FALSE
+2,5,3,5,null,4:30:00 PM,FALSE
+2,5,3,5,null,5:00:00 PM,FALSE
+2,5,3,5,null,5:30:00 PM,FALSE
+2,5,3,5,null,6:00:00 PM,FALSE
+2,5,3,5,7:00:00 AM,11:30:00 AM,TRUE
+2,1,1,6,7:00:00 AM,12:30:00 PM,FALSE
+2,2,1,6,7:00:00 AM,12:30:00 PM,FALSE
+2,3,1,6,7:00:00 AM,12:30:00 PM,FALSE
+2,4,1,6,7:00:00 AM,12:30:00 PM,FALSE
+2,5,1,6,7:00:00 AM,12:30:00 PM,FALSE
+2,1,4,6,7:00:00 AM,7:30:00 AM,TRUE
+2,3,4,6,7:00:00 AM,7:30:00 AM,TRUE
+2,4,4,6,7:00:00 AM,7:30:00 AM,TRUE
+2,5,4,6,7:00:00 AM,7:30:00 AM,TRUE
+1,1,1,7,6:45:00 AM,2:00:00 PM,FALSE
+1,2,1,7,6:45:00 AM,2:00:00 PM,FALSE
+1,3,1,7,6:45:00 AM,2:00:00 PM,FALSE
+1,4,1,7,6:45:00 AM,2:00:00 PM,FALSE
+1,5,1,7,6:45:00 AM,2:00:00 PM,FALSE
+1,1,2,7,6:45:00 AM,2:00:00 PM,FALSE
+1,2,2,7,6:45:00 AM,2:00:00 PM,FALSE
+1,3,2,7,6:45:00 AM,2:00:00 PM,FALSE
+1,4,2,7,6:45:00 AM,2:00:00 PM,FALSE
+1,5,2,7,6:45:00 AM,2:00:00 PM,FALSE
+2,1,1,7,7:00:00 AM,2:30:00 PM,FALSE
+2,2,1,7,7:00:00 AM,2:30:00 PM,FALSE
+2,3,1,7,7:00:00 AM,2:30:00 PM,FALSE
+2,4,1,7,7:00:00 AM,2:30:00 PM,FALSE
+2,5,1,7,7:00:00 AM,2:30:00 PM,FALSE
