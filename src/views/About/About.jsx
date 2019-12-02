@@ -17,11 +17,13 @@ export default function About() {
             with over a hundred employees and have had thousands of children under
             our care. In 2003 Dianne and Larry retired turning the company over to
             the capable hands of Dianne’s son, Todd Porter, and Larry’s son, Brian
-            Carbine and we became Dianne Adair Enrichment Programs. Together they
-            have great plans for future growth while maintaining the integrity of
-            the original dream. Please feel free to browse through our pages and
+            Carbine and we became Dianne Adair Enrichment Programs. With Todd's unfortunate
+            passing in August 2019, Brian continues moving forward with great plans
+            for future growth while maintaining the integrity of the original dream. 
+            Please feel free to browse through our pages and
             to contact us any time at one of our sites or the main office for
             questions regarding daycare or employment opportunities.
+    
         </p>
       </div>
       
