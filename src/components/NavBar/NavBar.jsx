@@ -13,6 +13,7 @@ export class navBar extends Component {
       eventsOpen: false,
       formsOpen: false,
       centersOpen: false,
+      aboutUsOpen: false,
       contractOpen: false
     };
   }
@@ -61,18 +62,18 @@ export class navBar extends Component {
         </Link>
       );
     });
-    const displayContract = this.state.centers.map(center => {
-      return (
-        <Link
-          key={center.center_id}
-          style={linkStyle}
-          to={`/contract/${center.center_id}`}
-          onClick={e => this.toggleDropDown(e, "contractOpen", false)}
-        >
-          <li className="navbar-menuItems">{center.center_name}</li>
-        </Link>
-      );
-    });
+    // const displayContract = this.state.centers.map(center => {
+    //   return (
+    //     <Link
+    //       key={center.center_id}
+    //       style={linkStyle}
+    //       to={`/contract/${center.center_id}`}
+    //       onClick={e => this.toggleDropDown(e, "contractOpen", false)}
+    //     >
+    //       <li className="navbar-menuItems">{center.center_name}</li>
+    //     </Link>
+    //   );
+    // });
     // const displayCenterEvents = this.state.centers.map(center => {
     //   return (
     //     <Link key={center.center_id} style={linkStyle} to={`/events/${center.center_id}`}>
@@ -80,7 +81,9 @@ export class navBar extends Component {
     //     </Link>
     //   );
     // });
-    const { formsOpen, centersOpen, contractOpen } = this.state;
+
+    // contractOpen 
+    const { formsOpen, centersOpen, aboutUsOpen } = this.state;
     return (
       <nav className="navbar-container">
         <Link style={linkStyle} to="/">
@@ -157,6 +160,7 @@ export class navBar extends Component {
             to="/about"
           >
             <li>About Us</li>
+            
           </Link>
           <Link
             className="navbar-hidden"
