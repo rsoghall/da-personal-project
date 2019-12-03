@@ -102,3 +102,4 @@ app.get("/api/signs3", authCtrl.aws3);
 app.get("/api/contract", authCtrl.getContractDates);
 app.post("/api/contract", authCtrl.addContract);
 app.get("/api/contract/groups/:centerId", contractCtrl.getOptions);
+app.get("/api/contract/:centerId/:ageGroupId/:programId", contractCtrl.getTimeOptions)
