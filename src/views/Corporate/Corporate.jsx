@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Brian from "../../images/Brian.jpeg";
+import Brian from "../../images/Brian16.JPG";
 import "./Corporate.css";
 
 export class Corporate extends Component {
