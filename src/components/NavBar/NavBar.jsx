@@ -83,7 +83,7 @@ export class navBar extends Component {
     // });
 
     // contractOpen 
-    const { formsOpen, centersOpen, aboutUsOpen } = this.state;
+    const { formsOpen, centersOpen } = this.state;
     return (
       <nav className="navbar-container">
         <Link style={linkStyle} to="/">

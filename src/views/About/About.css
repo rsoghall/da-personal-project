@@ -34,27 +34,6 @@
   padding-right: 15rem;
 }
 
-/* #container {
-  width: 400px;
-  background: yellow;
-}
-#floated {
-  float: cneter;
-  width: 100vw;
-  background: red;
-} */
-
-.About-todd {
-  /* width: 100%;
-  height: auto;
-  margin-top: 2rem;
-  margin-left: 1rem;
-  border: solid 10px purple;
-  background: lightblue;
-  display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-}
 
 .About-todd > img {
   margin-top: 1.5rem;

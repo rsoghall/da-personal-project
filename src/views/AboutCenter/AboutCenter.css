@@ -1,0 +1,23 @@
+.aboutCenter-wrapper {
+    margin: 6rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 3rem;
+    /* text-indent: 8rem; */
+    background-size: cover;
+    background-image: -webkit-gradient(
+      linear,
+      0% 0%,
+      0% 50%,
+      from(rgba(254, 255, 255, 0.817))
+    ),
+    url("../../images/DA-Logo-5-3-transparent-crop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 520px 520px;
+
+}
+.aboutCenter-ElMonte {
+    text-indent: 6rem;
+    margin-bottom: 1rem;
+}

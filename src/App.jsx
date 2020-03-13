@@ -3,7 +3,10 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import axios from "axios";
 import "./App.css";
 import About from "./views/About/About";
+// import AboutCenter from "./views/AboutCenter/AboutCenter"
+import ElMonte from "./views/AboutCenter/ElMonte"
 import Calendars from "./views/Calendars/Calendars";
+import Careers from "./views/Careers/Careers"
 import Centers from "./views/Centers/Centers";
 import CentersDashboard from "./views/CentersDashboard/CentersDashboard";
 import Contact from "./views/Contact/Contact";
@@ -32,6 +35,7 @@ class App extends Component {
     axios.get("/api/forms").then(forms => {
       store.dispatch(getForms(forms.data));
     });
+    
   }
   render() {
     return (
@@ -41,12 +45,15 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
+            <Route path="/aboutcenter/4" component={ElMonte} />
+            {/* <Route path="/centers/aboutcenter/:id" component={AboutCenter}/> */}
             <Route
               path="/centers/centersdashboard"
               component={CentersDashboard}
             />
             <Route path="/centers/staff/:id" component={Staff} />
             <Route path="/centers/allstaff" component={AllStaff} />
+            <Route path="/careers" component={Careers} />
             <Route path="/centers/calendar/:id" component={Calendars} />
             <Route path="/centers/:id" component={Centers} />
             <Route path="/contact/:id" component={Contact} />

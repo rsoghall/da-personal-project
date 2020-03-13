@@ -155,7 +155,7 @@ values
     (
         'Sequoia',
         'Janet Moore',
-        'https://dianne-adair-s3.s3.amazonaws.com/d52cb6c3-588d-4e50-8674-4b5866ee85cb-Janet.jpg',
+        'https://dianne-adair-s3.s3.amazonaws.com/f512d5b1-2d76-472c-ae2e-2a64ca7c2684-Transparent_Background.png',
         '277 Boyd Road, Pleasant Hill, CA 94523',
         'Sequoia@dianneadair.org',
         '925.939.6336',

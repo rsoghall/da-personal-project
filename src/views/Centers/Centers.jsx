@@ -45,7 +45,7 @@ export class Centers extends Component {
           <h4>State License# {displayCenter.state_license}</h4>
         </div>
         <div className="centers-links-container">
-          <Link className="centers-link" to={`/contact`}>
+          <Link className="centers-link" to={`/aboutcenter/${displayCenter.center_id}`}>
             <button>About {displayCenter.center_name}</button>
           </Link>
           <Link
