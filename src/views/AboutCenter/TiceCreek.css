@@ -1,0 +1,47 @@
+.ticeCreek-wrapper {
+    margin: 6rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 3rem;
+    background-size: cover;
+    background-image: -webkit-gradient(
+      linear,
+      0% 0%,
+      0% 50%,
+      from(rgba(254, 255, 255, 0.817))
+    ),
+    url("../../images/DA-Logo-5-3-transparent-crop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 520px 520px;
+
+}
+
+.ticeCreek-logo {
+    width: 250px;
+    height: 250px;
+}
+.ticeCreek-header {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.ticeCreek-header > h4 {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3rem;
+    line-height: 5rem;
+}
+
+.ticeCreek-coyotesLogo {
+    width: 250px;
+    height: 250px;
+}
+
+.ticeCreek-info > p{
+    text-indent: 6rem;
+    margin-bottom: 3rem;
+  }
