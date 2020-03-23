@@ -1,0 +1,40 @@
+.Corona-Wrapper {
+    width: 100vw;
+    height: 50rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin-top: 1rem;
+    background-size: cover;
+    background-image: -webkit-gradient(
+        linear,
+        0% 0%,
+        0% 50%,
+        from(rgba(254, 255, 255, 0.817))
+      ),
+      url("../../images/DA-Logo-5-3-transparent-crop.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 520px 520px;
+}
+
+.Corona-Wrapper p {
+    width: 100vw;
+    margin-top: 1rem;
+    text-indent: 6rem;
+    text-align: justify;
+    font-family: Times, serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.Corona-Wrapper text {
+    width: 100vw;
+    margin-left: 35rem;
+    line-height: 3rem;
+    font-size: 2rem;
+}

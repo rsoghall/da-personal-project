@@ -4,7 +4,6 @@ import axios from "axios";
 import "./App.css";
 import About from "./views/About/About";
 import ElMonte from "./views/AboutCenter/ElMonte"
-// import Sequoia from "./views/AboutCenter/AboutSequoia/Sequoia"
 import Calendars from "./views/Calendars/Calendars";
 import Careers from "./views/Careers/Careers"
 import Centers from "./views/Centers/Centers";
@@ -23,12 +22,8 @@ import Contract from "./views/Contract/Contract";
 import store from "./ducks/store";
 import { getCenters, getStaff, getForms } from "./ducks/store";
 import "./reset.css";
-// import SequoiaLinks from "./views/AboutCenter/AboutSequoia/SequoiaLinks";
-// import InfoGrade from "./views/AboutCenter/AboutSequoia/InfoGrade";
-// import InfoKinder from "./views/AboutCenter/AboutSequoia/InfoKinder";
-// import SummerFun from "./views/AboutCenter/AboutSequoia/SummerFun";
-// import NutsBolts from "./views/AboutCenter/AboutSequoia/NutsBolts";
 import TiceCreek from "./views/AboutCenter/TiceCreek";
+import Corona from "./views/Corona/Corona";
 
 class App extends Component {
   componentDidMount() {
@@ -49,10 +44,10 @@ class App extends Component {
         <NavBar />
         <div className="app-container">
           <Switch>
+            <Route exact path="/Corona" component={Corona}/>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/aboutcenter/4" component={ElMonte} />
-            {/* <Route path="/aboutcenter/8" component={SequoiaLinks} /> */}
             <Route path="/aboutcenter/9" component={TiceCreek} />
             <Route path="/centers/centersdashboard"component={CentersDashboard}/>
             <Route path="/centers/staff/:id" component={Staff} />
@@ -68,13 +63,6 @@ class App extends Component {
             <Route path="/forms/:id" component={Forms} />
             <Route path="/login" component={Login} />
           </Switch>
-          {/* <Switch>
-          <Route path="/InfoGrade" component={InfoGrade} />
-            <Route path="/InfoKinder" component={InfoKinder} />
-            <Route path="/SummerFun" component={SummerFun} />
-            <Route path="/NutsBolts" component={NutsBolts} />
-
-          </Switch> */}
         </div>
         <Footer />
       </Router>
