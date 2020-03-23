@@ -1,4 +1,25 @@
 
+.COVID-19 {
+  position: relative;
+  box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+  border-radius:3px;
+  border:1px solid #942911;
+  display:inline-block;
+  cursor:pointer;
+  font-family:"Times New Roman", Times, serif;
+  font-size:26px;
+  padding:6px 24px;
+  text-shadow:0px 1px 43px #854629;
+}
+
+.COVID-19:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+
+
 .home-outer-container {
   width: 100vw;
   height: calc(100vh - 9rem);
@@ -27,6 +48,7 @@
 }
 .home-logo {
   position: relative;
+  margin-bottom: 2rem;
   width: 520px;
   height: 520px;
   animation: fadein 10s;
