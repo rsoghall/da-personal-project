@@ -32,9 +32,13 @@
     padding-right: 10rem;
 }
 
-.Corona-Wrapper text {
+.Corona-bottom {
     width: 100vw;
-    margin-left: 35rem;
+    /* margin-left: 35rem; */
     line-height: 3rem;
     font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-direction: column; */
 }
