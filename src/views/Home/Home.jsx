@@ -33,7 +33,7 @@ export class Home extends Component {
           <img className="home-logo" src={Logo2} alt="Dianne Adair Logo" />
         </div>
           <div className="home-balls">
-          <div className="COVID-19"> <Link style={{ textDecoration: "none", color: "white" }} to="/Corona">Corona Virus Update</Link></div>
+          
           <div className="home-ball home-Ayers"> <Link style={{ textDecoration: "none", color: "#EEF827" }} to="/centers/1">Ayers</Link></div>
           <div className="home-ball home-Bancroft"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/2'>Bancroft</Link></div>
           <div className="home-ball home-DeltaView"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/3'>Delta <br></br>View</Link></div>

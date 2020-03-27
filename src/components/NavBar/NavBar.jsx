@@ -150,6 +150,7 @@ export class navBar extends Component {
               )}
             </li>
           </div>
+          <div className="COVID-19"> <Link style={{ textDecoration: "none", color: "white" }} to="/Corona">Corona Virus Update</Link></div>
           <Link
             className="navbar-hidden"
             style={{
