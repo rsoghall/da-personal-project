@@ -11,11 +11,12 @@
   font-size:26px;
   padding:6px 24px;
   text-shadow:0px 1px 43px #854629;
+  display: flex;
+  align-content: center;
 }
 
 .COVID-19:hover {
-	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
-	background-color:#bc3315;
+	background:linear-gradient(to bottom,  #417ffc 5%, #93b3dd 100%);
 }
 
 nav.navbar-container {
@@ -31,19 +32,19 @@ nav.navbar-container {
 ul.navbar-links {
   width: 100vw;
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 .navbar-links {
-  margin: 0 10px;
+  /* margin: 0 10px; */
+  margin-left: -6rem;
+  /* margin: auto; */
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .logo {
   padding: 0.4rem;
   border-radius: 50%;
-  /* border: solid #417FFC 1px; */
   width: 70px;
   height: 70px;
 }
