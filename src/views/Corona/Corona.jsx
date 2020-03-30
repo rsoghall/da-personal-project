@@ -30,14 +30,7 @@ export default function Corona() {
                         Open Now
                     </h2>
                     <div>
-                        Tice Creek  
-                    </div>
-                </div>
-                <div>
-                    <h2>
-                        March 30th
-                    </h2>
-                    <div>
+                        Tice Creek<br />  
                         Bancroft<br />
                         Highlands<br />
                         Pleasant Hill
