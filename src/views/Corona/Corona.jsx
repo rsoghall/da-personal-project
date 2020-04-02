@@ -31,29 +31,22 @@ export default function Corona() {
                     </h2>
                     <div>
                         Tice Creek<br />  
-                        Bancroft<br />
-                        Highlands<br />
                         Pleasant Hill
                     </div>
                 </div>
                 <div>
                     <h2>
-                        April 6th
-                    </h2>
-                    <div>
-                        Sequoia<br />
-                        Westwood<br />
-                    </div>
-                </div>
-                <div>
-                    <h2>
-                        April 13th
+                        TBD
                     </h2>
                     <div>
                         Ayers<br />
+                        Bancroft<br />
                         Delta View<br />
                         El Monte<br />
+                        Highlands<br />
                         Monte Gardens<br />
+                        Sequoia<br />
+                        Westwood
                     </div>
                 </div>
 
