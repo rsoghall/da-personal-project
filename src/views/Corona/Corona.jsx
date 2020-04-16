@@ -29,7 +29,7 @@ export default function Corona() {
                     </h2>
                     <div>
                         Tice Creek<br />  
-                        Pleasant Hill
+                        Pleasant Hill<br />
                         Westwood
                     </div>
                 </div>
@@ -44,7 +44,7 @@ export default function Corona() {
                         El Monte<br />
                         Highlands<br />
                         Monte Gardens<br />
-                        Sequoia<br />
+                        Sequoia
                     </div>
                 </div>
 
