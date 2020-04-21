@@ -171,7 +171,7 @@ export class Staff extends Component {
             <h1>{staff.staff_name}</h1>
             <img
               src={staff.staff_url}
-              style={{ width:150 }}
+              style={{ width:275 }}
               alt={staff.staff_name}
             />
             <div className="staff-displayInfo">
@@ -222,9 +222,10 @@ export class Staff extends Component {
             </button>
           </div>
         )}
+        <div>
         <div className="staff-outerWrapper">
           <div className="staff-displayStaffWrapper">{displayStaff}</div>
-
+        </div>
           {modalEditOpen && (
             <Modal onCancel={this.onCancelModal} onConfirm={this.onConfirmEdit}>
               <h3>{targetStaffNameReadOnly}</h3>
