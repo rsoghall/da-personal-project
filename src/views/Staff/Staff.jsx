@@ -166,6 +166,7 @@ export class Staff extends Component {
     const displayStaff = staff
       .filter(staff => centerID === staff.center_id)
       .map(staff => (
+        <div className="staff-displayStaffWrapper">
         <div className="staff-container">
           <div className="staff-display">
             <h1>{staff.staff_name}</h1>
@@ -190,7 +191,8 @@ export class Staff extends Component {
               </button>
             </div>
           )}
-        </div>
+          </div>
+          </div>
       ));
     const [displayCenter] = centers.filter(
       center => centerID === center.center_id
@@ -224,7 +226,9 @@ export class Staff extends Component {
         )}
         <div>
         <div className="staff-outerWrapper">
-          <div className="staff-displayStaffWrapper">{displayStaff}</div>
+            <div>
+              {displayStaff}
+            </div>
         </div>
           {modalEditOpen && (
             <Modal onCancel={this.onCancelModal} onConfirm={this.onConfirmEdit}>
