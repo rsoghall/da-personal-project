@@ -28,14 +28,13 @@
   margin-bottom: 2.5rem;
 }
 .staff-container {
-  width: 50%;
+  width: 51%;
   float: right;
-  margin-right: 2rem;
 }
 
 .staff-display h1 {
   margin: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
 }
 
