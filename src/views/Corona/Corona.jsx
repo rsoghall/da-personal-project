@@ -28,6 +28,9 @@ export default function Corona() {
                         Open Now
                     </h2>
                     <div>
+                        Bancroft<br />
+                        El Monte<br />
+                        Sequoia<br />
                         Tice Creek<br />  
                         Pleasant Hill<br />
                         Westwood
@@ -39,12 +42,9 @@ export default function Corona() {
                     </h2>
                     <div>
                         Ayers<br />
-                        Bancroft<br />
                         Delta View<br />
-                        El Monte<br />
                         Highlands<br />
-                        Monte Gardens<br />
-                        Sequoia
+                        Monte Gardens
                     </div>
                 </div>
 
