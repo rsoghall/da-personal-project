@@ -1,6 +1,6 @@
 import React from 'react'
 import './Corona.css'
-// import Reopen from './Reopen'
+import VideoPlayer from '../../components/Video/VideoPlayer'
 export default function Corona() {
     return (
         <div className="Corona-Wrapper">
@@ -19,6 +19,7 @@ export default function Corona() {
                 Brian Carbine <br />
                 Executive Director/CFO
             </div>
+            <VideoPlayer />
             <h1 className="Corona-Title">
                     Reopen Dates
                 </h1>
