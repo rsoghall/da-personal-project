@@ -32,20 +32,13 @@ export default function Corona() {
                         Ayers<br />
                         Bancroft<br />
                         Delta View<br />
+                        El Monte <br />
                         Highlands<br />
                         Monte Gardens<br />
                         Sequoia<br />
                         Tice Creek<br />  
                         Pleasant Hill<br />
                         Westwood
-                    </div>
-                </div>
-                <div>
-                    <h2>
-                        TBD
-                    </h2>
-                    <div>
-                        El Monte
                     </div>
                 </div>
 
