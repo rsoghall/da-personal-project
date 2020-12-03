@@ -34,11 +34,16 @@ export default function Corona() {
                         Delta View<br />
                         El Monte <br />
                         Highlands<br />
-                        Monte Gardens<br />
                         Sequoia<br />
                         Tice Creek<br />  
                         Pleasant Hill<br />
                         Westwood
+                    </div>
+                    <h2>
+                        Closed
+                    </h2>
+                    <div>
+                        Monte Gardens
                     </div>
                 </div>
 
