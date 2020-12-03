@@ -27,10 +27,10 @@ export default function About() {
         </p>
       </div>
       
-      <h1>Todd Porter</h1>
+      {/* <h1>Todd Porter</h1> */}
       
       
-      <div className="About-todd">
+      {/* <div className="About-todd">
           <img src={Todd} alt="Todd Porter" />
         <p className="About-todd-text">
           Todd Porter, son of Dianne Adair and brother to Brian Carbine, was our
@@ -46,7 +46,7 @@ export default function About() {
           committed to carry the torch nobly as we know he will live on in each
           and every child’s smiling face.
         </p>
-        </div>
+        </div> */}
 
         <h1>Mission Statement</h1>
 

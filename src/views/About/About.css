@@ -35,7 +35,7 @@
 }
 
 
-.About-todd > img {
+/* .About-todd > img {
   margin-top: 1.5rem;
   margin-left: 15rem;
   margin-right: 2rem;
@@ -45,7 +45,7 @@
   box-shadow: 10px 10px 5px lightgrey;
 }
 
-.About-todd-text {
+# .About-todd-text {
   width: 100vw;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -55,7 +55,7 @@
   padding-left: 15rem;
   padding-right: 15rem;
   
-}
+}*/
 
 .aboutUs-statement {
   width: 100vw;
