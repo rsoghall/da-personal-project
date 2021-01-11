@@ -26,17 +26,54 @@
   
 }
 
+.corporate-executives {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+
+}
+
+.corporate-stef-judy > img {
+  margin-top: 5rem;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 10px lightgrey;
+}
+
+.corporate-stef-judy > h2 {
+  margin-top: .5rem;
+  font-size: 1.5rem;
+}
+.corporate-stef-judy {
+  width: 30rem;
+  max-width: 100%;
+  height: 20rem;
+  font-family: Times, serif;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  padding: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 5rem;
+  
+  
+}
 .corporate-brian {
   margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .corporate-brian-info {
   width: 30rem;
   max-width: 100%;
-  height: 30rem;
+  height: 15rem;
   /* margin-top: 2.5rem; */
   font-family: Times, serif;
   display: flex;
@@ -51,6 +88,7 @@
 }
 
 .corporate-brian > img {
+  margin-top: 2rem;
   max-width: 100%;
   height: auto;
   box-shadow: 20px 20px 10px lightgrey;
