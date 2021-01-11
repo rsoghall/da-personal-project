@@ -42,6 +42,7 @@ export class navBar extends Component {
       return (
         <Link
           key={center.center_id}
+          // key={center.center_id}
           className="navbar-dropLinks"
           to={`/centers/${center.center_id}`}
           onClick={e => this.toggleDropDown(e, "centersOpen", false)}
@@ -58,7 +59,7 @@ export class navBar extends Component {
           to={`/forms/${center.center_id}`}
           onClick={e => this.toggleDropDown(e, "formsOpen", false)}
         >
-          <li className="navbar-menuItems">{center.center_name}</li>
+          <li className="navbar-menuItems">{center.center_id}</li>
         </Link>
       );
     });
