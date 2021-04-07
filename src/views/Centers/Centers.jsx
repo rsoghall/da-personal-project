@@ -60,22 +60,6 @@ export class Centers extends Component {
           >
             <button>Calendar</button>
           </Link>
-          {/* <div className="centers-button-hidden">
-            <button>Announcements</button>
-            <button>Pre-K</button>
-            <button>Events</button>
-            <button>Newsletter</button>
-          </div> */}
-          <a
-            className="centers-link"
-            href={displayCenter.registration_form}
-            download
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="centers-hidden">Registration Forms</button>
-          </a>
-          {/* </div> */}
         </div>
       </div>
     );

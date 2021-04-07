@@ -50,10 +50,10 @@ export class CentersDashboard extends Component {
           <Link to={`/forms/${centerId}`}>
             <button>Edit Forms</button>
           </Link>
-          {/* <button>Edit Announcements</button>
-          <button>Edit Pre-K</button>
-          <button>Edit Events</button>
-          <button>Edit Newsletter</button> */}
+          {/* <Link to={'/RegForms'}>
+            <button>Edit Forms</button>
+          </Link> */}
+        
         </div>
       </div>
     );

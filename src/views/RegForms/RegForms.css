@@ -1,0 +1,32 @@
+
+.showForms {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    
+}
+
+.showForms a{
+    position: relative;
+      background-color:#417ffc;
+    border-radius:90px;
+    margin-top: 2rem;
+    text-align: justify;
+    font-family: Times, serif;
+    font-size: 3rem;
+    line-height: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+  
+  .showForms a:hover {
+      background:linear-gradient(to bottom,  #417ffc 5%, #93b3dd 100%);
+  }
+  
