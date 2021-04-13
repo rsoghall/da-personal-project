@@ -15,7 +15,6 @@ import Forms from "./views/Forms/Forms";
 import Home from "./views/Home/Home";
 import Login from "./views/Login/Login";
 import NavBar from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/Footer";
 import Staff from "./views/Staff/Staff";
 import AllStaff from "./views/AllStaff/AllStaff";
 import Contract from "./views/Contract/Contract";
@@ -25,6 +24,8 @@ import "./reset.css";
 import TiceCreek from "./views/AboutCenter/TiceCreek";
 import Corona from "./views/Corona/Corona";
 import RegForms from "./views/RegForms/RegForms";
+import BancroftCal from "./views/Calendars/BancroftCal"
+import TiceCreekCal from "./views/Calendars/TiceCreekCal"
 
 class App extends Component {
   componentDidMount() {
@@ -45,10 +46,12 @@ class App extends Component {
         <NavBar />
         <div className="app-container">
           <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/centers/calendar/9" component={TiceCreekCal} />
+            <Route path="/centers/calendar/2" component={BancroftCal} />
             <Route path="/RegForms" component={RegForms} />
             <Route path="/Corona" component={Corona} />
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
+            <Route path="/about" component={About} /> 
             <Route path="/aboutcenter/4" component={ElMonte} />
             <Route path="/aboutcenter/9" component={TiceCreek} />
             <Route path="/centers/centersdashboard"component={CentersDashboard}/>
@@ -66,7 +69,7 @@ class App extends Component {
             <Route path="/login" component={Login} />
           </Switch>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     );
   }

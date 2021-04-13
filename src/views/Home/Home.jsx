@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import store from "../../ducks/store";
 import Logo2 from "../../images/DA-Logo-5-3-transparent-crop.png";
-
 export class Home extends Component {
   constructor() {
     super();
@@ -24,6 +23,11 @@ export class Home extends Component {
     });
   }
   render() {
+      let linkStyle = {
+        textDecoration: "none",
+        color: "#417FFC",
+        fontWeight: "bold"
+      };
     return (
       <div className="home-outer-container">
         <h1 className="home-title">Dianne Adair Enrichment Programs</h1>
@@ -47,6 +51,13 @@ export class Home extends Component {
           </div>
           {/* <div className="home-absent-dropIn"> <Link style={{ textDecoration: 'none', color: 'white' }} to='/contact/1'>Absent/Drop In</Link></div> */}
         </div>
+          <div className='footer-links'>
+          <Link
+            style={linkStyle}
+            to='/corporate'>
+            Corporate Office
+          </Link>
+          </div>
         </div>
     );
   }

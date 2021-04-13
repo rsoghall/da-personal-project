@@ -70,6 +70,12 @@ export class navBar extends Component {
                 Registration Forms
             </Link>
           </div>
+          <div className="Careers">
+            <Link
+              style={linkStyle} to='/careers'>
+              Careers
+            </Link>
+          </div>
 
           <div
             onMouseEnter={e =>
@@ -89,12 +95,83 @@ export class navBar extends Component {
                 <ul className="centers-dropdown-content">{displayCenters}</ul>
               )}
             </li>
-
           </div>
+
+          
+          {/* CALENDARS */}
+          
+          <div className="dropdown">
+            <button
+              style={linkStyle}
+              className="dropbtn">
+              Calendars &#9776;
+            </button>
+            <div className="dropdown-content">
+
+              {/* <Link
+                to='/centers/calendar/1#'>
+                Ayers
+              </Link> */}
+
+              <Link
+                to='/centers/calendar/2#'>
+                Bancroft
+              </Link>
+
+              {/* <Link
+                to='/centers/calendar/3#'>
+                Delta View
+              </Link> */}
+
+              {/* <Link
+                to='/centers/calendar/4#'>
+                El Monte
+              </Link> */}
+
+              {/* <Link
+                to='/centers/calendar/5#'>
+                Highlands
+              </Link> */}
+
+              {/* <Link
+                to='/centers/calendar/6#'>
+               Monte Gardens
+              </Link> */}
+
+              
+              {/* <Link
+                to='/centers/calendar/7#'>
+                Pleasant Hill
+              </Link> */}
+
+              {/* <Link
+                to='/centers/calendar/8#'>
+                Sequoia
+              </Link> */}
+
+              <Link
+                to='/centers/calendar/9#'>
+                TiceCreek
+              </Link>
+
+              {/* <Link
+                to='/centers/calendar/10#'>
+                Westwood
+              </Link> */}
+            
+            </div>
+          </div>
+
+          
+          
+
           <div className="COVID-19">
-            <Link style={{ textDecoration: "none", color: "white" }} to="/Corona">
+            <Link
+              style={{ textDecoration: "none", color: "red", fontWeight: "bold" }}
+              to="/Corona">
               Corona Virus Update
-            </Link></div>
+            </Link>
+          </div>
           
           <Link
             className="navbar-hidden"

@@ -29,11 +29,12 @@
 button{
   width: 10rem;
   height: 2.5rem;
-  background-color: #417FFC;
-  border-color: #EEF827 solid 15px;
-  border-radius: 25px;
+  padding: 0;
+  border: none;
+  background: none;
   font-size: 1rem;
-  color: white;
+  font-weight: bold;
+  color: #417ffc;
   
 }
 
