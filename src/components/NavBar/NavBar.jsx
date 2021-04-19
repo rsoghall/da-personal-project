@@ -123,10 +123,10 @@ export class navBar extends Component {
                 Delta View
               </Link> */}
 
-              {/* <Link
+              <Link
                 to='/centers/calendar/4#'>
                 El Monte
-              </Link> */}
+              </Link>
 
               {/* <Link
                 to='/centers/calendar/5#'>
