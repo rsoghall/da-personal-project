@@ -27,6 +27,7 @@ import RegForms from "./views/RegForms/RegForms";
 import BancroftCal from "./views/Calendars/BancroftCal"
 import TiceCreekCal from "./views/Calendars/TiceCreekCal"
 import ElMonteCal from "./views/Calendars/ElMonteCal"
+import MonteGardensCal from "./views/Calendars/MonteGardensCal"
 
 class App extends Component {
   componentDidMount() {
@@ -50,6 +51,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/centers/calendar/2" component={BancroftCal} />
             <Route path="/centers/calendar/4" component={ElMonteCal} />
+            <Route path="/centers/calendar/6" component={MonteGardensCal} />
             <Route path="/centers/calendar/9" component={TiceCreekCal} />
             <Route path="/RegForms" component={RegForms} />
             <Route path="/Corona" component={Corona} />

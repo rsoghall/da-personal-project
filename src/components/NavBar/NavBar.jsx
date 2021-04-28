@@ -133,10 +133,10 @@ export class navBar extends Component {
                 Highlands
               </Link> */}
 
-              {/* <Link
+              <Link
                 to='/centers/calendar/6#'>
                Monte Gardens
-              </Link> */}
+              </Link>
 
               
               {/* <Link
