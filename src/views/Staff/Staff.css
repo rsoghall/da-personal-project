@@ -3,7 +3,7 @@
 }
 
 .staff-title {
-  margin-top: 8rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   font-family: Times, serif;
@@ -33,7 +33,7 @@
 }
 
 .staff-display h1 {
-  margin: 1rem;
+  margin: 10rem;
   font-size: 2rem;
   color: white;
 }
