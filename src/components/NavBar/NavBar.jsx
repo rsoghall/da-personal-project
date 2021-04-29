@@ -144,10 +144,10 @@ export class navBar extends Component {
                 Pleasant Hill
               </Link> */}
 
-              {/* <Link
+              <Link
                 to='/centers/calendar/8#'>
                 Sequoia
-              </Link> */}
+              </Link>
 
               <Link
                 to='/centers/calendar/9#'>
