@@ -1,5 +1,5 @@
 import React from 'react'
-import phCal from "../../images/PHSumCal21.jpg";
+import phCal from "../../images/PHSum21Cal.jpg";
 import "./CentersCal.css";
 
 export default function PleasantHillCal() {
