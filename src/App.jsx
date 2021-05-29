@@ -29,6 +29,9 @@ import TiceCreekCal from "./views/Calendars/TiceCreekCal"
 import ElMonteCal from "./views/Calendars/ElMonteCal"
 import MonteGardensCal from "./views/Calendars/MonteGardensCal"
 import SequoiaCal from "./views/Calendars/SequoiaCal"
+import AyersCal from "./views/Calendars/AyersCal"
+import HighlandsCal from "./views/Calendars/HighlandsCal"
+import PleasantHillCal from "./views/Calendars/PleasantHillCal"
 
 class App extends Component {
   componentDidMount() {
@@ -50,9 +53,12 @@ class App extends Component {
         <div className="app-container">
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/centers/calendar/1" component={AyersCal} />
             <Route path="/centers/calendar/2" component={BancroftCal} />
             <Route path="/centers/calendar/4" component={ElMonteCal} />
+            <Route path="/centers/calendar/5" component={HighlandsCal} />
             <Route path="/centers/calendar/6" component={MonteGardensCal} />
+            <Route path="/centers/calendar/7" component={PleasantHillCal} />
             <Route path="/centers/calendar/8" component={SequoiaCal} />
             <Route path="/centers/calendar/9" component={TiceCreekCal} />
             <Route path="/RegForms" component={RegForms} />

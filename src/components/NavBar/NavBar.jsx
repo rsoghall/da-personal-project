@@ -108,10 +108,10 @@ export class navBar extends Component {
             </button>
             <div className="dropdown-content">
 
-              {/* <Link
+              <Link
                 to='/centers/calendar/1#'>
                 Ayers
-              </Link> */}
+              </Link>
 
               <Link
                 to='/centers/calendar/2#'>
@@ -128,10 +128,10 @@ export class navBar extends Component {
                 El Monte
               </Link>
 
-              {/* <Link
+              <Link
                 to='/centers/calendar/5#'>
                 Highlands
-              </Link> */}
+              </Link>
 
               <Link
                 to='/centers/calendar/6#'>
@@ -139,10 +139,10 @@ export class navBar extends Component {
               </Link>
 
               
-              {/* <Link
+              <Link
                 to='/centers/calendar/7#'>
                 Pleasant Hill
-              </Link> */}
+              </Link>
 
               <Link
                 to='/centers/calendar/8#'>
