@@ -33,6 +33,7 @@ export default function Corona() {
                         Bancroft<br />
                         El Monte <br />
                         Highlands<br />
+                        Monte Gardens<br />
                         Sequoia<br />
                         Tice Creek<br />  
                         Pleasant Hill<br />
@@ -42,8 +43,9 @@ export default function Corona() {
                         Closed
                     </h2>
                     <div>
-                        Delta View<br />
-                        Monte Gardens
+                        <br />
+                        Delta View
+                        
                     </div>
                 </div>
 
