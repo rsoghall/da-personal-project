@@ -42,8 +42,8 @@ export default function Corona() {
                     <h2>
                         Closed
                     </h2>
-                    <div>
                         <br />
+                    <div>
                         Delta View
                         
                     </div>
