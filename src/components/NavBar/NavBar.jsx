@@ -154,10 +154,10 @@ export class navBar extends Component {
                 TiceCreek
               </Link>
 
-              {/* <Link
+              <Link
                 to='/centers/calendar/10#'>
                 Westwood
-              </Link> */}
+              </Link>
             
             </div>
           </div>
