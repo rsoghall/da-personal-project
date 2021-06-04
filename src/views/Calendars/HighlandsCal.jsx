@@ -1,5 +1,5 @@
 import React from 'react'
-import highCal from "../../images/HighSum21Cal.jpg";
+import highCal from "../../images/HighSum21Cal2.jpg";
 import "./CentersCal.css";
 
 export default function HighlandsCal() {
