@@ -20,5 +20,47 @@ module.exports = {
       return acc;
     }, [])
     res.send(shapedResults) 
-  }
+  },
+  getTimeOptions: async (req, res) => {
+    const {centerId, ageGroupId, programId} = req.params;
+    const db = req.app.get('db');
+    const times = await db.get_contract_times(centerId, ageGroupId, programId);
+    const formattedTimes = times.reduce((acc, curr) => {
+    const {
+      before_school: beforeSchool,
+      in_time: inTime,
+      out_time: outTime,
+      day_of_week: dayOfWeek,
+     } = curr;
+     let active = acc.find(record => record.day === dayOfWeek);
+     const group = beforeSchool ? 'before' : 'standard';
+      if(!active) {
+        const newRecord = {
+          day: dayOfWeek,
+          before: {
+            in: [],
+            out: [],
+            inOut: []
+          },
+          standard: {
+            in: [],
+            out: [],
+            inOut: []
+          }
+        }
+        active = newRecord;
+        acc.push(newRecord)
+      }
+      const activeGroup = active[group]
+      if(inTime && outTime) {
+        activeGroup.inOut.push([inTime, outTime])
+      } else if(inTime) {
+        activeGroup.in.push(inTime)
+      } else if(outTime) {
+        activeGroup.out.push(outTime)
+      }
+      return acc;
+    }, [])
+    res.send(formattedTimes);
+  } 
 };
