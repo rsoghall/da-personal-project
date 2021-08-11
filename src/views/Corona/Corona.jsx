@@ -31,7 +31,7 @@ export default function Corona() {
                     <div>
                         Ayers<br />
                         Bancroft<br />
-                        Delta View
+                        Delta View <br />
                         El Monte <br />
                         Highlands<br />
                         Monte Gardens<br />
