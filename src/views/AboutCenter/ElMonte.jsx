@@ -10,7 +10,7 @@ export default function ElMonte() {
             <h4>
             
             </h4>
-            <p  className="aboutCenter-ElMonte">
+            <p className="aboutCenter-ElMonte">
                
             </p>
             <p className="aboutCenter-ElMonte">  
