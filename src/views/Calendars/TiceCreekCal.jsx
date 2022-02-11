@@ -1,12 +1,12 @@
 import React from 'react'
-import tcCalKin from "../../images/TC-KinderSummer.jpg";
-import tcCalSA from "../../images/TC-SummerSchoolAge.jpg"
+// import tcCalKin from "../../images/TC-KinderSummer.jpg";
+// import tcCalSA from "../../images/TC-SummerSchoolAge.jpg"
 import "./CentersCal.css";
 
 export default function TiceCreekCal() {
     return (
         <div className="cal-wrapper">
-            <h1>
+           {/*  <h1>
             Kinders & Pre-K Summer 2021
             </h1>
             <img src={tcCalKin}
@@ -15,7 +15,7 @@ export default function TiceCreekCal() {
                 School Age Summer 2021
             </h1>
             <img src={tcCalSA}
-                alt="TiceCreek Calendar" />
+                alt="TiceCreek Calendar" /> */}
             
         </div>
     )
