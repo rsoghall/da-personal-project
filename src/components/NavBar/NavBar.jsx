@@ -165,13 +165,13 @@ export class navBar extends Component {
           
           
 
-          <div className="COVID-19">
+          {/* <div className="COVID-19">
             <Link
               style={{ textDecoration: "none", color: "red", fontWeight: "bold" }}
               to="/Corona">
               Corona Virus Update
             </Link>
-          </div>
+          </div> */}
           
           <Link
             className="navbar-hidden"
