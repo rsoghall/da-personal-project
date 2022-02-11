@@ -64,12 +64,12 @@ export class navBar extends Component {
           </Link>
           </div>
           
-          <div className="RegForms">
+          {/* <div className="RegForms">
             <Link
               style={linkStyle} to="/RegForms">
                 Registration Forms
             </Link>
-          </div>
+          </div> */}
           <div className="Careers">
             <Link
               style={linkStyle} to='/careers'>
