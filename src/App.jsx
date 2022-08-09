@@ -22,7 +22,7 @@ import store from "./ducks/store";
 import { getCenters, getStaff, getForms } from "./ducks/store";
 import "./reset.css";
 import TiceCreek from "./views/AboutCenter/TiceCreek";
-import Corona from "./views/Corona/Corona";
+/* import Corona from "./views/Corona/Corona"; */
 import RegForms from "./views/RegForms/RegForms";
 import BancroftCal from "./views/Calendars/BancroftCal"
 import TiceCreekCal from "./views/Calendars/TiceCreekCal"
@@ -33,6 +33,17 @@ import AyersCal from "./views/Calendars/AyersCal"
 import HighlandsCal from "./views/Calendars/HighlandsCal"
 import PleasantHillCal from "./views/Calendars/PleasantHillCal"
 import WestWoodCal from "./views/Calendars/WestWoodCal"
+import ayersHome from "./views/Home/ayersHome"
+import bancroftHome from "./views/Home/bancroftHome"
+import deltaviewHome from "./views/Home/deltaviewHome"
+import elmonteHome from "./views/Home/elmonteHome"
+import highlandsHome from "./views/Home/highlandsHome"
+import montegardensHome from "./views/Home/montegardensHome"
+import pleasanthillHome from "./views/Home/pleasanthillHome"
+import sequoiaHome from "./views/Home/sequoiaHome"
+import ticecreekHome from "./views/Home/ticecreekHome"
+import westwoodHome from "./views/Home/westwoodHome"
+
 
 class App extends Component {
   componentDidMount() {
@@ -64,7 +75,18 @@ class App extends Component {
             <Route path="/centers/calendar/9" component={TiceCreekCal} />
             <Route path="/centers/calendar/10" component={WestWoodCal} />
             <Route path="/RegForms" component={RegForms} />
-            <Route path="/Corona" component={Corona} />
+
+            <Route path="/ayersHome" component={ayersHome} />
+            <Route path="/bancroftHome" component={bancroftHome} />
+            <Route path="/deltaviewHome" component={deltaviewHome} />
+            <Route path="/elmonteHome" component={elmonteHome} />
+            <Route path="/highlandsHome" component={highlandsHome} />
+            <Route path="/montegardensHome" component={montegardensHome} />
+            <Route path="/pleasanthillHome" component={pleasanthillHome} />
+            <Route path="/sequoiaHome" component={sequoiaHome} />
+            <Route path="/ticecreekHome" component={ticecreekHome} />
+            <Route path="/westwoodHome" component={westwoodHome} />
+
             <Route path="/about" component={About} /> 
             <Route path="/aboutcenter/4" component={ElMonte} />
             <Route path="/aboutcenter/9" component={TiceCreek} />

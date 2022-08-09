@@ -34,22 +34,25 @@ export class Home extends Component {
       <div className="home-container">
         
         <div>
-          <img className="home-logo" src={Logo2} alt="Dianne Adair Logo" />
-        </div>
+            <img className="home-logo" src={Logo2} alt="Dianne Adair Logo" />
+            <div className="new-website">New Website Coming Soon</div>
+          </div>
+        
           <div className="home-balls">
           
-          <div className="home-ball home-Ayers"> <Link style={{ textDecoration: "none", color: "#EEF827" }} to="/centers/1">Ayers</Link></div>
-          <div className="home-ball home-Bancroft"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/2'>Bancroft</Link></div>
-          <div className="home-ball home-DeltaView"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/3'>Delta <br></br>View</Link></div>
-          <div className="home-ball home-ElMonte"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/4'>El Monte</Link></div>
-          <div className="home-ball home-Highlands"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/5'>Highlands</Link></div>
-          <div className="home-ball home-MonteGardens"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/6'>Monte<br></br>Gardens</Link></div>
-          <div className="home-ball home-PleasantHill"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/7'>Pleasant<br></br>Hill</Link></div>
-          <div className="home-ball home-Sequoia"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/8'>Sequoia</Link></div>
-          <div className="home-ball home-TiceCreek"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/centers/9'>Tice<br></br>Creek</Link></div>
-          <div className="home-ball home-Westwood"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/centers/10'>Westwood</Link></div>
+          <div className="home-ball home-Ayers"> <Link style={{ textDecoration: "none", color: "#EEF827" }} to='./ayersHome'>Ayers</Link></div>
+          <div className="home-ball home-Bancroft"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/bancroftHome'>Bancroft</Link></div>
+          <div className="home-ball home-DeltaView"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/deltaviewHome'>Delta <br></br>View</Link></div>
+          <div className="home-ball home-ElMonte"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/elmonteHome'>El Monte</Link></div>
+          <div className="home-ball home-Highlands"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/highlandsHome'>Highlands</Link></div>
+          <div className="home-ball home-MonteGardens"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/montegardensHome'>Monte<br></br>Gardens</Link></div>
+          <div className="home-ball home-PleasantHill"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/pleasanthillHome'>Pleasant<br></br>Hill</Link></div>
+          <div className="home-ball home-Sequoia"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/sequoiaHome'>Sequoia</Link></div>
+          <div className="home-ball home-TiceCreek"> <Link style={{ textDecoration: 'none', color: '#417FFC' }} to='/ticecreekHome'>Tice<br></br>Creek</Link></div>
+          <div className="home-ball home-Westwood"> <Link style={{ textDecoration: 'none', color: '#EEF827' }} to='/westwoodHome'>Westwood</Link></div>
           </div>
           {/* <div className="home-absent-dropIn"> <Link style={{ textDecoration: 'none', color: 'white' }} to='/contact/1'>Absent/Drop In</Link></div> */}
+          
         </div>
           <div className='footer-links'>
           <Link

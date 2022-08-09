@@ -58,6 +58,13 @@
   border-radius: 50%;
   font-weight: bolder;
 }
+.new-website {
+  font-size: 28px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  
+}
 
 .home-Ayers {
   left: 31rem;
