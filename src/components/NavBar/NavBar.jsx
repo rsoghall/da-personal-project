@@ -38,19 +38,19 @@ export class navBar extends Component {
       color: "#417FFC",
       fontWeight: "bold"
     };
-    const displayCenters = this.state.centers.map(center => {
-      return (
-        <Link
-          key={center.center_id}
-          className="navbar-dropLinks"
-          to={`/centers/${center.center_id}`}
-          onClick={e => this.toggleDropDown(e, "centersOpen", false)}
-        >
-          <li className="navbar-menuItems">{center.center_name}</li>
-        </Link>
-      );
-    });
-        
+    // const displayCenters = this.state.centers.map(center => {
+    //   return (
+    //     <Link
+    //       key={center.center_id}
+    //       className="navbar-dropLinks"
+    //       to={`/centers/${center.center_id}`}
+    //       onClick={e => this.toggleDropDown(e, "centersOpen", false)}
+    //     >
+    //       <li className="navbar-menuItems">{center.center_name}</li>
+    //     </Link>
+    //   );
+    // });
+
     // contractOpen 
     const { centersOpen } = this.state;
     return (
@@ -61,9 +61,9 @@ export class navBar extends Component {
           <div className="Covid-19">
             <Link to="/">
               <img className="logo" src={logo} alt="Dianne Adair Logo" />
-          </Link>
+            </Link>
           </div>
-          
+
           {/* <div className="RegForms">
             <Link
               style={linkStyle} to="/RegForms">
@@ -89,17 +89,17 @@ export class navBar extends Component {
           >
             {/* navbar */}
 
-            <li className="navbar-centers">
+            {/* <li className="navbar-centers">
               Centers &#9776;
               {centersOpen && (
                 <ul className="centers-dropdown-content">{displayCenters}</ul>
               )}
-            </li>
+            </li> */}
           </div>
 
-          
+
           {/* CALENDARS */}
-          
+          {/*           
           <div className="dropdown">
             <button
               style={linkStyle}
@@ -116,14 +116,14 @@ export class navBar extends Component {
               <Link
                 to='/centers/calendar/2#'>
                 Bancroft
-              </Link>
+              </Link> */}
 
-              {/* <Link
+          {/* <Link
                 to='/centers/calendar/3#'>
                 Delta View
               </Link> */}
 
-              <Link
+          {/* <Link
                 to='/centers/calendar/4#'>
                 El Monte
               </Link>
@@ -160,10 +160,10 @@ export class navBar extends Component {
               </Link>
             
             </div>
-          </div>
+          </div> */}
 
-          
-          
+
+
 
           {/* <div className="COVID-19">
             <Link
@@ -172,7 +172,7 @@ export class navBar extends Component {
               Corona Virus Update
             </Link>
           </div> */}
-          
+
           <Link
             className="navbar-hidden"
             style={{
@@ -183,9 +183,9 @@ export class navBar extends Component {
             to="/about"
           >
             <li>About Us</li>
-            
+
           </Link>
-          <Link
+          {/* <Link
             className="navbar-hidden"
             style={{
               textDecoration: "none",
@@ -195,7 +195,7 @@ export class navBar extends Component {
             to="/login"
           >
             <li>Log In</li>
-          </Link>
+          </Link> */}
         </ul>
       </nav>
     );
